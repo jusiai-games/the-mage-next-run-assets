@@ -13,6 +13,6 @@
 
 - 마지막 중복 접지 포즈를 빼고 두 걸음을 4프레임으로 균등하게 구성했다. 지나가는 자세에서 후드가 왼쪽으로 치우쳤던 프레임을 1~2px 오른쪽으로 맞췄다.
 - 10 Samples, 반복, 32 PPU에서 이동 속도 1.0 유닛/초를 시작값으로 사용한다. Unity의 실제 재생에서 발 미끄러짐을 확인한다.
-- 최신 걷기 시트와 이동 미리보기는 exports/hood-staff-32-quick-cast/walk-v2. 상태 전환 25개를 다시 검수했다.
+- 최신 걷기 시트는 exports/v1/wizard/walk. 상태 전환 25개를 다시 검수했다.
 
 - 상태 전환 맵은 ../hood-staff-quick-state-transitions.json이다.

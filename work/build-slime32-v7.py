@@ -8,7 +8,7 @@ asset = "meadow_slime_combat32_v7"
 source = game / "sources" / asset / "01"
 work = game / "work" / asset
 approved = game / "approved" / asset
-exports = game / "exports" / asset
+exports = game / "exports/v1/meadow-slime"
 for directory in (work, approved, exports):
     directory.mkdir(parents=True, exist_ok=True)
 

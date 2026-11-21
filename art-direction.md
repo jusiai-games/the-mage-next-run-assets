@@ -24,4 +24,4 @@ UI 레퍼런스의 출처와 [프로젝트에서 제외한 무료판](references
 - [캐릭터 생성 가이드](styles/reference-colors-v1/character-prompt.md)와 [색감 프로파일](styles/reference-colors-v1/profile.json)을 다음 캐릭터 작업에 적용한다. 현재는 캐릭터 두 종으로 만든 초기 기준이다. 재질별 명암과 명도·채도 편차를 참고하고 배경 위에서 함께 확인한다.
 - 새 색조가 필요한 캐릭터는 비슷한 재질의 명암 관계를 가져와 후보 견본을 만든다. 개별 캐릭터의 기본색과 재질은 작업 명세에 기록한다.
 
-- [최종 모바일 초원](exports/meadow-wave-mobile/README.md)은 청록 슬라임, 올리브 전경, 푸른 회색 원경을 사용한다. 원경은 전경보다 부드럽게 유지한다.
+- [최종 모바일 초원](exports/v1/meadow-wave-mobile/README.md)은 청록 슬라임, 올리브 전경, 푸른 회색 원경을 사용한다. 원경은 전경보다 부드럽게 유지한다.

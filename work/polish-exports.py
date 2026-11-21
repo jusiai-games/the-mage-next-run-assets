@@ -53,8 +53,8 @@ ELEMENTS = {
 
 
 def palette_for(path):
-    if len(path.parts) > 4 and path.parts[1] == "sorceress-vfx" and path.parts[3] in ELEMENTS:
-        return ELEMENTS[path.parts[3]]
+    if len(path.parts) > 5 and path.parts[2] == "spell-effects" and path.parts[4] in ELEMENTS:
+        return ELEMENTS[path.parts[4]]
     return WORLD
 
 
@@ -114,7 +114,7 @@ def title_sky(scene):
 
 
 def meadow_tile_ids():
-    layout = Path("exports/meadow-wave-mobile/layout.json")
+    layout = Path("exports/v1/meadow-wave-mobile/layout.json")
     rows = json.loads(layout.read_text(encoding="utf-8"))["tile_rows"]
     return [int(tile[1:]) for row in rows for tile in row]
 
@@ -139,7 +139,7 @@ def detail_meadow(image, top, height, tile_ids):
 
 
 def inventory(stage):
-    package = Path("exports/spells-to-go-ui")
+    package = Path("exports/v1/spells-to-go-ui")
     sprites = package / "package/Assets/SpellsToGo/UI/Sprites"
     output = stage / sprites
     ink, walnut, bevel, gold = "#1d2035", "#4a2d29", "#906047", "#f5c66c"
@@ -210,10 +210,12 @@ def inventory(stage):
 
 
 def finish_title(stage):
-    source = Path("exports/meadow-tilemap/tilemap")
+    source = Path("exports/v1/meadow-tilemap/tilemap")
     folder = stage / source
     background = Image.open(folder / "game-title-background.png").convert("RGBA")
-    atlas = Image.open(folder / "meadow-ui-tiles.png").convert("RGBA")
+    atlas_path = folder / "meadow-ui-tiles.png"
+    atlas_source = atlas_path if atlas_path.is_file() else source / atlas_path.name
+    atlas = Image.open(atlas_source).convert("RGBA")
     tilemap = json.loads((source / "game-title.tmj").read_text(encoding="utf-8"))
     ids = tilemap["layers"][0]["data"]
     assert len(ids) == len(set(ids)) == 220
@@ -221,7 +223,7 @@ def finish_title(stage):
         x, y = (index % 10) * 16, (index // 10) * 16
         atlas.paste(background.crop((x, y, x + 16, y + 16)),
                     (((tile - 1) % 16) * 16, ((tile - 1) // 16) * 16))
-    atlas.save(folder / "meadow-ui-tiles.png", optimize=True)
+    atlas.save(atlas_path, optimize=True)
 
 
 
@@ -230,20 +232,17 @@ def main():
     parser.add_argument("stage", type=Path)
     args = parser.parse_args()
     args.stage.mkdir(parents=True, exist_ok=False)
-    tracked = subprocess.check_output(["git", "ls-files", "-z", "exports"]).decode().split("\0")
     counts = Counter()
-    for entry in filter(None, tracked):
+    tracked = subprocess.check_output(["git", "ls-files", "-z", "-co", "--exclude-standard", "exports/v1"])
+    for entry in filter(None, tracked.decode().split("\0")):
         source = Path(entry)
-        if not source.is_file() or source.suffix != ".png":
-            continue
-        # Source art and retrospective comparison sheets are reference material.
-        if "sources" in source.parts or source.name == "sorceress-vfx-meadow-review.png":
+        if source.suffix != ".png" or not source.is_file():
             continue
         target = args.stage / source
         target.parent.mkdir(parents=True, exist_ok=True)
         if not recolor_png(source, target, palette_for(source)):
             continue
-        counts[(source.parts[1], source.suffix)] += 1
+        counts[(source.parts[2], source.suffix)] += 1
         sprite_data = source.with_suffix(".sprite.json")
         if sprite_data.exists():
             original = sprite_data.read_text(encoding="utf-8")
@@ -255,7 +254,7 @@ def main():
         print(f"{package} {extension}: {count}")
     inventory(args.stage)
     finish_title(args.stage)
-    slicing = Path("exports/sorceress-vfx/unity-slicing.json")
+    slicing = Path("exports/v1/spell-effects/unity-slicing.json")
     data = json.loads(slicing.read_text(encoding="utf-8"))
     for element, colors in data["palettes"].items():
         palette = ELEMENTS[element]

@@ -10,7 +10,7 @@ game = Path(__file__).resolve().parents[2]
 pixel_art = game.parent / 'pixel-art-production/tools/pixel-art/pixel_art.py'
 work = game / 'work/meadow_wave/mobile'
 source = game / 'sources/meadow_wave/01'
-out = game / 'exports/meadow-wave-mobile'
+out = game / 'exports/v1/meadow-wave-mobile'
 approved = game / 'approved/meadow_wave_mobile'
 for folder in (out, approved, work / 'tiles'):
     folder.mkdir(parents=True, exist_ok=True)
@@ -31,8 +31,8 @@ slime_colors = sorted({'#%02X%02X%02X' % pixel[:3] for frame in slime_frames for
 colors = list(dict.fromkeys(meadow + effects + slime_colors))
 write_json(work / 'palette.json', colors)
 
-old = game / 'exports/hood-staff-32-final/meadow'
-quick = game / 'exports/hood-staff-32-quick-cast'
+old = game / 'exports/v1/meadow-terrain/meadow'
+quick = game / 'exports/v1/wizard'
 terrain = Image.open(old / 'terrain.png').convert('RGBA').crop((64,16,224,160))
 terrain.save(out / 'meadow-terrain.png')
 wizard = Image.open(quick / 'idle/hood_staff_idle.png').convert('RGBA').crop((0,0,32,32))

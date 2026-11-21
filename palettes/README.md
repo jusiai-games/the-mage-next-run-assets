@@ -1,6 +1,6 @@
 # 게임 팔레트
 
-아래 31색은 제작 원본과 기존 매니페스트의 sRGB 기준이다. [project.json](project.json)에 원본 허용색을 모았다. 최신 PNG에는 [내보내기 색상 매핑](../work/polish-exports.py)을 적용했다. 원소별 기본색은 [주문 분할 데이터](../exports/sorceress-vfx/unity-slicing.json)에 있다.
+아래 31색은 제작 원본과 기존 매니페스트의 sRGB 기준이다. [project.json](project.json)에 원본 허용색을 모았다. 최신 PNG에는 [내보내기 색상 매핑](../work/polish-exports.py)을 적용했다. 원소별 기본색은 [주문 분할 데이터](../exports/v1/spell-effects/unity-slicing.json)에 있다.
 
 | 에셋 | 실제 사용 HEX |
 | --- | --- |

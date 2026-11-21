@@ -5,8 +5,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine.CoreModule" HintPath="$(UnityReferences)/UnityEngine.CoreModule.dll" />
-    <Compile Include="../../exports/meadow-tilemap/SpellCooldownView.cs" />
-    <Compile Include="../../exports/meadow-tilemap/StartStripScroll.cs" />
-    <Compile Include="../../exports/meadow-tilemap/StageSlimeHop.cs" />
+    <Compile Include="../../exports/v1/meadow-tilemap/SpellCooldownView.cs" />
+    <Compile Include="../../exports/v1/meadow-tilemap/StartStripScroll.cs" />
+    <Compile Include="../../exports/v1/meadow-tilemap/StageSlimeHop.cs" />
   </ItemGroup>
 </Project>

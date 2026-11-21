@@ -3,7 +3,7 @@
     {
       "id": "hood_wizard",
       "role": "character",
-      "png": "../exports/hood-staff-32-quick-cast/idle/hood_staff_idle.png",
+      "png": "../exports/v1/wizard/idle/hood_staff_idle.png",
       "crop": [0, 0, 32, 32],
       "ramps": {
         "robe": ["#28283F", "#393B5B", "#454568", "#505276"]
@@ -12,7 +12,7 @@
     {
       "id": "meadow_slime",
       "role": "character",
-      "png": "../exports/meadow_slime_combat32_v7/idle/slime32_idle.png",
+      "png": "../exports/v1/meadow-slime/idle/slime32_idle.png",
       "crop": [0, 0, 32, 32],
       "ramps": {
         "gel": ["#48643C", "#638752", "#86A866", "#BEDD90"]

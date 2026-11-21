@@ -7,8 +7,8 @@ import os
 from PIL import Image, ImageColor, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parent
-ASSETS = ROOT.parents[1] / "prototypes/meadow-visual/assets"
-REFERENCE_ICONS = ROOT.parents[1] / "references/reference-components/아이콘/스킬"
+ASSETS = ROOT.parents[2] / "prototypes/meadow-visual/assets"
+REFERENCE_ICONS = ROOT.parents[2] / "references/reference-components/아이콘/스킬"
 OUTPUT = ROOT / "tilemap"
 OUTPUT.mkdir(exist_ok=True)
 SPRITES = OUTPUT / "sprites"
@@ -35,8 +35,8 @@ FACE_SIZE, FACE_OFFSET = 18, 2
 DIM = 64
 CLOUD_CYCLE_MS = 16000
 STAGE_CYCLE_MS = 8640
-SLIME_FRAME_DIR = ROOT.parents[1] / "work/color-pass-v3/slime32-v7-state-transitions"
-SLIME_EXPORT = ROOT.parents[1] / "exports/meadow_slime_combat32_v7"
+SLIME_FRAME_DIR = ROOT.parents[2] / "work/color-pass-v3/slime32-v7-state-transitions"
+SLIME_EXPORT = ROOT.parent / "meadow-slime"
 
 
 def rgba(path):

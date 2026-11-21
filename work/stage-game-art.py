@@ -29,7 +29,7 @@ def card_sprites(stage, exports):
     package = exports / "spells-to-go-ui/package/Assets/SpellsToGo/UI/Sprites"
     target = stage / RESOURCES
     target.mkdir(parents=True)
-    panel_meta = Path("exports/spells-to-go-ui/package/Assets/SpellsToGo/UI/Sprites/panel.png.meta")
+    panel_meta = Path("exports/v1/spells-to-go-ui/package/Assets/SpellsToGo/UI/Sprites/panel.png.meta")
     for name, color, icon in [
         ("Fire", "#ef986b", [(16, 2), (19, 5), (18, 8), (14, 8), (13, 5), (15, 6)]),
         ("Wind", "#93dab2", [(13, 6), (16, 3), (20, 3), (18, 5), (20, 6), (17, 8)]),

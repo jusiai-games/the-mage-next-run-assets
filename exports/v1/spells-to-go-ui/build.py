@@ -9,7 +9,7 @@ from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 
 HERE = Path(__file__).resolve().parent
-GAME = HERE.parents[1]
+GAME = HERE.parents[2]
 PROTOTYPES = GAME / "prototypes"
 PACK = HERE / "package"
 SPRITES = PACK / "Assets/SpellsToGo/UI/Sprites"

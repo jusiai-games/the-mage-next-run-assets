@@ -30,7 +30,7 @@ node_modules/
 
 # Local review files and transfer helpers
 /prototypes/.qa-*
-/exports/spells-to-go-ui/qa/
+/exports/v1/spells-to-go-ui/qa/
 /work/meadow-screen-qa/
 /work/meadow-screen-title-source/
 /work/meadow-screen-ui-qa/
@@ -49,8 +49,8 @@ node_modules/
 # ZIPs whose contents are already available as individual files
 /exports/meadow-slime-combat-32-v7.zip
 /exports/sorceress-vfx-30.zip
-/exports/spells-to-go-ui/spells-to-go-unity-ui.zip
-/exports/meadow-tilemap/meadow-tilemap-ui.zip
+/exports/v1/spells-to-go-ui/spells-to-go-unity-ui.zip
+/exports/v1/meadow-tilemap/meadow-tilemap-ui.zip
 /prototypes/meadow-visual/mage-next-run-meadow-pack.zip
 
 # Imported reference originals. Keep provenance and identified CC0 files.
