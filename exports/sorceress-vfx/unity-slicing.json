@@ -3,32 +3,32 @@
   "frameOrder": "row-major, top-left first",
   "palettes": {
     "fire": [
-      "#4F3333",
-      "#6A4757",
-      "#8B6755",
-      "#D88475",
-      "#EAB853",
-      "#F8CFAB",
-      "#F0FCFF"
+      "#3E2734",
+      "#6B3542",
+      "#A74739",
+      "#EC6942",
+      "#FFAD54",
+      "#FFD78F",
+      "#FFF6DC"
     ],
     "cold": [
-      "#28283F",
-      "#354568",
-      "#367CB0",
-      "#589DC8",
-      "#91C7C0",
-      "#ADE9FF",
-      "#F0FCFF"
+      "#242E52",
+      "#334E75",
+      "#447EBC",
+      "#64B8D8",
+      "#97DAD8",
+      "#B8FFF5",
+      "#ECFFFA"
     ],
     "lightning": [
-      "#28283F",
-      "#393B5B",
-      "#505276",
-      "#367CB0",
-      "#589DC8",
-      "#78CBF4",
-      "#ADE9FF",
-      "#F0FCFF"
+      "#302952",
+      "#493E83",
+      "#6464A5",
+      "#5553BF",
+      "#807AF2",
+      "#A8A1FF",
+      "#D9C6FF",
+      "#FBF5FF"
     ]
   },
   "effects": [
@@ -38,7 +38,6 @@
       "source": "fire/fireball",
       "recommendedUse": "Small right-facing projectile",
       "sheet": "spritesheets/fire/fire-bolt.png",
-      "gif": "gifs/fire/fire-bolt.gif",
       "cell": [
         48,
         32
@@ -64,7 +63,6 @@
       "source": "custom/warmth",
       "recommendedUse": "Passive mana recovery aura around the caster",
       "sheet": "spritesheets/fire/warmth.png",
-      "gif": "gifs/fire/warmth.gif",
       "cell": [
         48,
         48
@@ -90,7 +88,6 @@
       "source": "fire/flamethrower",
       "recommendedUse": "Continuous right-facing flame jet",
       "sheet": "spritesheets/fire/inferno.png",
-      "gif": "gifs/fire/inferno.gif",
       "cell": [
         88,
         56
@@ -116,7 +113,6 @@
       "source": "custom/blaze",
       "recommendedUse": "Place persistent flame trail segments at previous caster positions",
       "sheet": "spritesheets/fire/blaze.png",
-      "gif": "gifs/fire/blaze.gif",
       "cell": [
         56,
         32
@@ -142,7 +138,6 @@
       "source": "fire/fireball",
       "recommendedUse": "Heavy right-facing projectile",
       "sheet": "spritesheets/fire/fire-ball.png",
-      "gif": "gifs/fire/fire-ball.gif",
       "cell": [
         72,
         32
@@ -168,7 +163,6 @@
       "source": "custom/fire-wall",
       "recommendedUse": "Persistent horizontal barrier of flame",
       "sheet": "spritesheets/fire/fire-wall.png",
-      "gif": "gifs/fire/fire-wall.gif",
       "cell": [
         104,
         40
@@ -194,7 +188,6 @@
       "source": "fire/spirit-flame",
       "recommendedUse": "Flame to attach to the enchanted weapon",
       "sheet": "spritesheets/fire/enchant.png",
-      "gif": "gifs/fire/enchant.gif",
       "cell": [
         32,
         48
@@ -220,7 +213,6 @@
       "source": "fire/meteor",
       "recommendedUse": "Falling fire mass and ground impact",
       "sheet": "spritesheets/fire/meteor.png",
-      "gif": "gifs/fire/meteor.gif",
       "cell": [
         136,
         120
@@ -246,7 +238,6 @@
       "source": "fire/fire-tornado",
       "recommendedUse": "Optional passive upgrade flourish",
       "sheet": "spritesheets/fire/fire-mastery.png",
-      "gif": "gifs/fire/fire-mastery.gif",
       "cell": [
         48,
         80
@@ -272,7 +263,6 @@
       "source": "custom/hydra",
       "recommendedUse": "Triple flame familiar turret",
       "sheet": "spritesheets/fire/hydra.png",
-      "gif": "gifs/fire/hydra.gif",
       "cell": [
         64,
         48
@@ -298,7 +288,6 @@
       "source": "projectiles/magic-missile",
       "recommendedUse": "Small right-facing cold projectile",
       "sheet": "spritesheets/cold/ice-bolt.png",
-      "gif": "gifs/cold/ice-bolt.gif",
       "cell": [
         88,
         48
@@ -324,7 +313,6 @@
       "source": "custom/frozen-armor",
       "recommendedUse": "Thin frost guard that keeps the caster readable",
       "sheet": "spritesheets/cold/frozen-armor.png",
-      "gif": "gifs/cold/frozen-armor.gif",
       "cell": [
         48,
         40
@@ -350,7 +338,6 @@
       "source": "ice/frost-nova",
       "recommendedUse": "Expanding ground-level wave",
       "sheet": "spritesheets/cold/frost-nova.png",
-      "gif": "gifs/cold/frost-nova.gif",
       "cell": [
         136,
         64
@@ -376,7 +363,6 @@
       "source": "ice/ice-shatter",
       "recommendedUse": "Burst of ice shards at the target",
       "sheet": "spritesheets/cold/ice-blast.png",
-      "gif": "gifs/cold/ice-blast.gif",
       "cell": [
         96,
         56
@@ -402,7 +388,6 @@
       "source": "custom/shiver-armor",
       "recommendedUse": "Ring of raised spikes at the caster",
       "sheet": "spritesheets/cold/shiver-armor.png",
-      "gif": "gifs/cold/shiver-armor.gif",
       "cell": [
         64,
         48
@@ -428,7 +413,6 @@
       "source": "ice/ice-lance",
       "recommendedUse": "Large right-facing spear-shaped projectile",
       "sheet": "spritesheets/cold/glacial-spike.png",
-      "gif": "gifs/cold/glacial-spike.gif",
       "cell": [
         72,
         24
@@ -454,7 +438,6 @@
       "source": "custom/blizzard",
       "recommendedUse": "Sustained staggered ice strikes across an area",
       "sheet": "spritesheets/cold/blizzard.png",
-      "gif": "gifs/cold/blizzard.gif",
       "cell": [
         104,
         88
@@ -480,7 +463,6 @@
       "source": "scifi/force-field",
       "recommendedUse": "Dome used to signal projectile defense",
       "sheet": "spritesheets/cold/chilling-armor.png",
-      "gif": "gifs/cold/chilling-armor.gif",
       "cell": [
         88,
         48
@@ -506,7 +488,6 @@
       "source": "arcane/arcane-orb",
       "recommendedUse": "Spinning cold orb shedding ice motes",
       "sheet": "spritesheets/cold/frozen-orb.png",
-      "gif": "gifs/cold/frozen-orb.gif",
       "cell": [
         48,
         64
@@ -532,7 +513,6 @@
       "source": "ice/snowflake-burst",
       "recommendedUse": "Optional passive upgrade flourish",
       "sheet": "spritesheets/cold/cold-mastery.png",
-      "gif": "gifs/cold/cold-mastery.gif",
       "cell": [
         56,
         64
@@ -558,7 +538,6 @@
       "source": "custom/charged-bolt",
       "recommendedUse": "Three short ground arcs moving right",
       "sheet": "spritesheets/lightning/charged-bolt.png",
-      "gif": "gifs/lightning/charged-bolt.gif",
       "cell": [
         88,
         56
@@ -584,7 +563,6 @@
       "source": "custom/static-field",
       "recommendedUse": "Low expanding electric field",
       "sheet": "spritesheets/lightning/static-field.png",
-      "gif": "gifs/lightning/static-field.gif",
       "cell": [
         112,
         56
@@ -610,7 +588,6 @@
       "source": "custom/telekinesis",
       "recommendedUse": "Remote pull with a converging field at the target",
       "sheet": "spritesheets/lightning/telekinesis.png",
-      "gif": "gifs/lightning/telekinesis.gif",
       "cell": [
         88,
         72
@@ -636,7 +613,6 @@
       "source": "lightning/thunderclap",
       "recommendedUse": "Electric area burst around the caster",
       "sheet": "spritesheets/lightning/nova.png",
-      "gif": "gifs/lightning/nova.gif",
       "cell": [
         136,
         72
@@ -662,7 +638,6 @@
       "source": "arcane/arcane-beam",
       "recommendedUse": "Sustained straight right-facing electric beam",
       "sheet": "spritesheets/lightning/lightning.png",
-      "gif": "gifs/lightning/lightning.gif",
       "cell": [
         120,
         48
@@ -688,7 +663,6 @@
       "source": "lightning/chain-lightning",
       "recommendedUse": "Sequential links between targets",
       "sheet": "spritesheets/lightning/chain-lightning.png",
-      "gif": "gifs/lightning/chain-lightning.gif",
       "cell": [
         112,
         48
@@ -714,7 +688,6 @@
       "source": "arcane/blink-in",
       "recommendedUse": "Arrival burst at the destination",
       "sheet": "spritesheets/lightning/teleport.png",
-      "gif": "gifs/lightning/teleport.gif",
       "cell": [
         48,
         48
@@ -740,7 +713,6 @@
       "source": "lightning/lightning-strike",
       "recommendedUse": "Vertical strike at the chosen target",
       "sheet": "spritesheets/lightning/thunder-storm.png",
-      "gif": "gifs/lightning/thunder-storm.gif",
       "cell": [
         112,
         136
@@ -766,7 +738,6 @@
       "source": "holy/divine-shield",
       "recommendedUse": "Sustained protection around the caster",
       "sheet": "spritesheets/lightning/energy-shield.png",
-      "gif": "gifs/lightning/energy-shield.gif",
       "cell": [
         40,
         48
@@ -792,7 +763,6 @@
       "source": "lightning/charge-up",
       "recommendedUse": "Optional passive upgrade flourish",
       "sheet": "spritesheets/lightning/lightning-mastery.png",
-      "gif": "gifs/lightning/lightning-mastery.gif",
       "cell": [
         120,
         88

@@ -7,7 +7,7 @@
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "028c65b4e70b52cada1ffcb3b8a4d5c3e9f5d7361efe1d58a429315e41621383",
+  "sha256": "cb58b8cf06e70ff61b2fdeb100e1909f9fc1093f0ae48bd5f488454414e36f49",
   "sprites": [
     {
       "name": "hood_staff_idle_right_00",

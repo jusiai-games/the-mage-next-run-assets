@@ -6,10 +6,6 @@
 
 | 파일 | 내용 |
 | --- | --- |
-| `meadow-tilemap-preview.png` | 게임 시작, 전투 시작, 전투 중 화면의 3배 그리드 미리보기 |
-| `mobile-battle-390.png` | 390×844 화면에 맞춘 전투 HUD 크기 예시 |
-| `game-title-clouds.gif` | 캐릭터 없이 구름만 흐르는 게임 시작 화면 |
-| `stage-start-slime-hop.gif` | 슬라임의 전진 점프와 초원 스크롤이 맞물리는 전투 시작 화면 |
 | `game-title-background.png`, `game-title-clouds.png` | 타이틀의 고정 배경과 반복 구름 레이어 |
 | `stage-far-loop.png`, `stage-ground-loop.png` | 전투 시작의 반복 원경과 흙길이 합쳐진 초원 레이어 |
 | `stage-path-strip.png` | 기존 초원 그림의 흙길 부분을 16×16px 텍스처로 잘라 구성한 별도 텍스처 레이어 |
@@ -17,7 +13,6 @@
 | `*-foreground.png` | 시작 화면의 정지 제목과 버튼 레이어 |
 | `spell-slot-layouts.png` | 주문 3개와 6개를 장착했을 때의 하단 HUD 비교 |
 | `spell-cooldown-styles.png` | 세 주문의 시전 직후, 25%, 50%, 75%, 사용 가능 |
-| `spell-cooldown.gif` | 세 주문을 함께 썼을 때 각각의 충전 속도를 보여주는 순환 예시 |
 | `sprites/` | 슬롯 프레임 22×22px, 주문 안쪽 18×18px 6종, 준비 테두리 22×22px, 원소별 충전 경계 18×1px 6종 |
 | `SpellCooldownView.cs` | 주문마다 별도로 연결하는 Unity 슬롯 표시 코드 |
 | `StartStripScroll.cs`, `StageSlimeHop.cs` | 배경 레이어 반복과 슬라임 전진 재생 코드 |
@@ -42,7 +37,6 @@
 - `spellFace` 아래에 자식 SpriteRenderer 두 개를 만든다. `chargeFace`는 빈 스프라이트로 시작하고, `chargeEdge`에는 주문 이름이 같은 `*-cooldown-edge.png`를 같은 PPU와 중앙 피벗으로 넣는다. 그리기 순서는 `spellFace` → `chargeFace` → `chargeEdge`다. 자식의 회전과 크기는 기본값을 사용한다.
 - 마법 발동이 확정되면 해당 슬롯의 `TryStartCooldown(seconds)`를 호출한다. 같은 슬롯이 충전 중이면 호출은 `false`를 반환한다.
 - 슬롯 안쪽은 어두운 색으로 시작한다. 충전된 높이만큼 아래에서 원래 색이 드러나며, 밝은 경계선이 위로 이동한다. 가득 차면 경계선은 사라지고 금색 테두리가 켜진다. 시간이 멈춘 전투에서는 쿨타임도 멈춘다.
-- GIF의 시연 값은 화염탄 0.72초, 연쇄 번개 2.4초, 마력 폭발 3.4초다.
 
 ## 참고한 파일
 

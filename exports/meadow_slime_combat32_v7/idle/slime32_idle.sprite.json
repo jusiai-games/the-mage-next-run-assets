@@ -7,7 +7,7 @@
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "d18f4fefdf5bd713a7b42a2aa8962d7684708e6654f6ac5fbfae18b06322713f",
+  "sha256": "b1468c02de393157cb9d9fad67ab7c87b02624a18c92327ddc83dbb09cf194ce",
   "sprites": [
     {
       "name": "slime32_idle_left_00",

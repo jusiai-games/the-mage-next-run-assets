@@ -1,7 +1,5 @@
 # 번개 매직 볼트
 
-[스태프 발사부터 슬라임 적중까지](cast-flight-impact.gif)
-
 | 구간 | 시트 | 재생 |
 | --- | --- | --- |
 | 발사 | [4프레임](launch/magic_bolt_electric_launch.png) | 120ms, 반복 끔 |

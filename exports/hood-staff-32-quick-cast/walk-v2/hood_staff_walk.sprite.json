@@ -7,7 +7,7 @@
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "497396876fa00e3996706fe41aa4c6cd417380d666fa4481e12d16a7644d7fe5",
+  "sha256": "a82f65b4e497d60f6520153a86c7cb781d034320d71323ae1787f7999aa072b6",
   "sprites": [
     {
       "name": "hood_staff_walk_right_00",

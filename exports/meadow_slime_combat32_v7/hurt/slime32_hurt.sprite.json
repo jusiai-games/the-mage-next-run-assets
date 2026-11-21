@@ -7,7 +7,7 @@
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "b06fb43d95c48cdfd386ed0bcfe029abe14a4137fd14df0427bd8f3be5e9b0b3",
+  "sha256": "fe1ae1cb6b727f3a376129bbcdd1702956cd14d750c871a3a7ed667c46fe1364",
   "sprites": [
     {
       "name": "slime32_hurt_left_00",

@@ -1,10 +1,8 @@
 # 주문 넣고 갑니다 · 주문 이펙트 30종
 
-화염·냉기·번개 각 10종. 각 주문은 같은 이름의 투명 RGBA PNG 스프라이트시트와 애니메이션 GIF를 한 장씩 제공합니다. GIF는 2배 확대와 어두운 미리보기 배경으로 반복 재생됩니다. 1회 재생 효과의 GIF에는 다음 재생 전 200ms 여백이 있습니다.
+화염·냉기·번개 각 10종의 투명 RGBA PNG 스프라이트시트를 제공합니다.
 
 - `spritesheets/{fire,cold,lightning}/` — Unity에서 사용하는 시트 30장.
-- `gifs/{fire,cold,lightning}/` — 주문별 재생 미리보기 30개.
-- [전체 미리보기](contact-sheet.png) — 주문마다 대표 프레임 한 장.
 - [Unity 분할 데이터](unity-slicing.json) — 주문별 셀 너비·높이, 사용 프레임 수, 재생 방식, 피벗, 경로, 권장 배치.
 
 ## Unity 2D

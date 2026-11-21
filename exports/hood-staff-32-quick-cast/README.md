@@ -1,7 +1,5 @@
 # 빠른 시전 후드 마법사
 
-[전체 동작](all-states-walk-v2.gif) · [검수 보고서](walk-v2/transition-review/report.json)
-
 네 동작 모두 32×32, 발 피벗 (16, 28), 32 PPU다. 각 PNG를 같은 이름의 .sprite.json과 함께 Unity로 가져온다.
 
 - [걷기 4프레임](walk-v2/hood_staff_walk.png)

@@ -1,6 +1,6 @@
 # 게임 팔레트
 
-최신 내보내기 PNG의 알파가 0보다 큰 픽셀에서 추출한 sRGB 31색이다. 합성 화면과 GIF의 미리보기용 색은 제외했다. [project.json](project.json)은 중복을 제거한 전체 색 목록이다.
+아래 31색은 제작 원본과 기존 매니페스트의 sRGB 기준이다. [project.json](project.json)에 원본 허용색을 모았다. 최신 PNG에는 [내보내기 색상 매핑](../work/polish-exports.py)을 적용했다. 원소별 기본색은 [주문 분할 데이터](../exports/sorceress-vfx/unity-slicing.json)에 있다.
 
 | 에셋 | 실제 사용 HEX |
 | --- | --- |
@@ -16,4 +16,4 @@
 
 동작별 제작 허용색은 `hood_staff_32_quick.json`, `hood_staff_32_cast_quick.json`, `meadow_slime_attack.json`에 있다. 초원은 `hood_staff_32_meadow.json`, 번개 볼트와 모바일 UI는 각 매니페스트 및 작업 폴더에 기록한 허용색을 사용한다.
 
-팔레트 기준은 [최신 게임 에셋](../exports/INDEX.md)의 배경·UI·캐릭터·번개 매직 볼트 PNG다. 마법사의 이전 단일 투사체는 번개 매직 볼트로 교체했다.
+배경·UI·캐릭터·번개 매직 볼트의 최신 시트는 [게임 에셋 목록](../exports/INDEX.md)에서 확인할 수 있다.
