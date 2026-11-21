@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "tile32",
+  "width": 192,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.5,
+  "sha256": "c784ac3ffa78d14578b15d2b04abcb95af6336e14a5b49bf3990512bfc6dbc14",
+  "sprites": [
+    {
+      "name": "magic_bolt_electric_flight_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_flight_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_flight_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_flight_03",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_flight_04",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_flight_05",
+      "x": 160,
+      "y": 0
+    }
+  ]
+}

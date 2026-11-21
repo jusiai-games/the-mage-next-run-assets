@@ -1,0 +1,631 @@
+{
+  "failed": 0,
+  "warned": 0,
+  "edges": [
+    {
+      "id": "walk_00_to_idle_00",
+      "from": "work/hood-staff-walk-v2/review/frames/hood_staff_walk_right_00.png",
+      "to": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 228,
+      "overlap": 0.8571428571428571,
+      "color_shift": 0.056953507660047246,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.011623872310895178,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "walk_01_to_idle_00",
+      "from": "work/hood-staff-walk-v2/review/frames/hood_staff_walk_right_01.png",
+      "to": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 266,
+      "overlap": 0.8131578947368421,
+      "color_shift": 0.06911509055005147,
+      "outline_coverage": [
+        0.9871794871794872,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.03060606060606058,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "walk_02_to_idle_00",
+      "from": "work/hood-staff-walk-v2/review/frames/hood_staff_walk_right_02.png",
+      "to": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 251,
+      "overlap": 0.8394736842105263,
+      "color_shift": 0.073543144546929,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.06499485974445585,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "walk_03_to_idle_00",
+      "from": "work/hood-staff-walk-v2/review/frames/hood_staff_walk_right_03.png",
+      "to": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 222,
+      "overlap": 0.8467741935483871,
+      "color_shift": 0.07922263164150718,
+      "outline_coverage": [
+        0.987012987012987,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.02971792120190092,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_00_to_cast_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "to": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "mode": "exact",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 0,
+      "overlap": 1.0,
+      "color_shift": 0.0,
+      "outline_coverage": [
+        0.9861111111111112,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.0,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_00_to_fall_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "mode": "exact",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 0,
+      "overlap": 1.0,
+      "color_shift": 0.0,
+      "outline_coverage": [
+        0.9861111111111112,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.0,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_01_to_cast_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_01.png",
+      "to": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 108,
+      "overlap": 0.9637883008356546,
+      "color_shift": 0.06980825270072287,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.03261863922241276,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_01_to_fall_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_01.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 108,
+      "overlap": 0.9637883008356546,
+      "color_shift": 0.06980825270072287,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.03261863922241276,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_02_to_cast_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_02.png",
+      "to": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 171,
+      "overlap": 0.930939226519337,
+      "color_shift": 0.07465718638902996,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.04669947886508391,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_02_to_fall_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_02.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 171,
+      "overlap": 0.930939226519337,
+      "color_shift": 0.07465718638902996,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.04669947886508391,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_03_to_cast_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_03.png",
+      "to": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 86,
+      "overlap": 0.9694444444444444,
+      "color_shift": 0.034203950405067726,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.015782044042913557,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_03_to_fall_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_03.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 86,
+      "overlap": 0.9694444444444444,
+      "color_shift": 0.034203950405067726,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.015782044042913557,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_04_to_cast_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_04.png",
+      "to": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 91,
+      "overlap": 0.9695290858725761,
+      "color_shift": 0.039288144713311275,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.02188811188811185,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "idle_04_to_fall_00",
+      "from": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_04.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 91,
+      "overlap": 0.9695290858725761,
+      "color_shift": 0.039288144713311275,
+      "outline_coverage": [
+        1.0,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.02188811188811185,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_00_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_00.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 341,
+      "overlap": 0.6282973621103117,
+      "color_shift": 0.07857776849579699,
+      "outline_coverage": [
+        0.9861111111111112,
+        1.0
+      ],
+      "cluster_shift": 0.03502400495586183,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_01_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_01.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 335,
+      "overlap": 0.6470588235294118,
+      "color_shift": 0.0834997470511489,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.02284561730577611,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_02_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_02.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 333,
+      "overlap": 0.6437346437346437,
+      "color_shift": 0.06579654098184551,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.05401342819921834,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_03_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_03.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 315,
+      "overlap": 0.648854961832061,
+      "color_shift": 0.07210837691846009,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.04630346623532311,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_04_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_04.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 341,
+      "overlap": 0.6282973621103117,
+      "color_shift": 0.07857776849579699,
+      "outline_coverage": [
+        0.9861111111111112,
+        1.0
+      ],
+      "cluster_shift": 0.03502400495586183,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "cast_04_to_idle_00",
+      "from": "work/hood-staff-32-quick-cast/cast/review/frames/hood_staff_cast_right_04.png",
+      "to": "work/hood-staff-32-quick-cast/idle/review/frames/hood_staff_idle_right_00.png",
+      "mode": "exact",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 0,
+      "overlap": 1.0,
+      "color_shift": 0.0,
+      "outline_coverage": [
+        0.9861111111111112,
+        0.9861111111111112
+      ],
+      "cluster_shift": 0.0,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "fall_00_to_fall_01",
+      "from": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_00.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_01.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 276,
+      "overlap": 0.7596899224806202,
+      "color_shift": 0.08453396059982354,
+      "outline_coverage": [
+        0.9861111111111112,
+        1.0
+      ],
+      "cluster_shift": 0.028808563450201663,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "fall_01_to_fall_02",
+      "from": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_01.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 267,
+      "overlap": 0.7692307692307693,
+      "color_shift": 0.03398821407559582,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.006215441505660169,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "fall_02_to_fall_03",
+      "from": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_02.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_03.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 287,
+      "overlap": 0.7097701149425287,
+      "color_shift": 0.08076949314414353,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.0002487223168654018,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "fall_03_to_fall_04",
+      "from": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_03.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_04.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 309,
+      "overlap": 0.5714285714285714,
+      "color_shift": 0.1210610646252448,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.02064077669902914,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "id": "fall_04_to_fall_05",
+      "from": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_04.png",
+      "to": "work/hood-staff-32-quick-cast/fall/review/frames/hood_staff_fall_right_05.png",
+      "mode": "pose",
+      "limits": {
+        "min_overlap": 0.35,
+        "max_color_shift": 0.4,
+        "min_outline_coverage": 0.64,
+        "max_cluster_shift": 0.19,
+        "max_contact_shift": 2
+      },
+      "off_palette": {},
+      "changed_pixels": 315,
+      "overlap": 0.47126436781609193,
+      "color_shift": 0.08034068912117691,
+      "outline_coverage": [
+        1.0,
+        1.0
+      ],
+      "cluster_shift": 0.023802067021609752,
+      "contact_shift_px": 0,
+      "failures": [],
+      "warnings": []
+    }
+  ]
+}

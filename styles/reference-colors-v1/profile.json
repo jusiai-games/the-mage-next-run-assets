@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "colorSpace": "OKLCH",
+  "referenceCount": 2,
+  "roles": {
+    "character": {
+      "status": "limited",
+      "referenceCount": 2,
+      "metrics": {
+        "lightness": {
+          "p10": {
+            "median": 0.2823642761363956,
+            "minOffset": -0.026739075022936598,
+            "maxOffset": 0.026739075022936654,
+            "tolerance": 0.03964335262900584,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.5275742535315142,
+            "minOffset": -0.162358750929951,
+            "maxOffset": 0.162358750929951,
+            "tolerance": 0.24071308412874534,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.5709902042799745,
+            "minOffset": -0.11894280018149067,
+            "maxOffset": 0.11894280018149073,
+            "tolerance": 0.1763445955490781,
+            "referenceCount": 2
+          }
+        },
+        "chroma": {
+          "p10": {
+            "median": 0.042796700974152835,
+            "minOffset": -0.00547322294598275,
+            "maxOffset": 0.00547322294598275,
+            "tolerance": 0.02,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.07594815750983161,
+            "minOffset": -0.022817117193464187,
+            "maxOffset": 0.0228171171934642,
+            "tolerance": 0.03382865795103001,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.07872688380259735,
+            "minOffset": -0.020038390900698477,
+            "maxOffset": 0.020038390900698463,
+            "tolerance": 0.02970891834937555,
+            "referenceCount": 2
+          }
+        },
+        "contrast": {
+          "median": 0.2886259281435789,
+          "minOffset": -0.09220372515855407,
+          "maxOffset": 0.09220372515855407,
+          "tolerance": 0.13670124292007227,
+          "referenceCount": 2
+        },
+        "shadowHueShift": {
+          "median": 2.939657821840001,
+          "minOffset": -2.9696018842842022,
+          "maxOffset": 2.9696018842842307,
+          "tolerance": 12,
+          "referenceCount": 2
+        },
+        "paletteSize": {
+          "median": 7.5,
+          "minOffset": -2.5,
+          "maxOffset": 2.5,
+          "tolerance": 3.7064999999999997,
+          "referenceCount": 2
+        }
+      },
+      "typicalRampColors": 4.0,
+      "typicalRampSpan": 0.2753740115985489
+    },
+    "environment": {
+      "status": "insufficient",
+      "referenceCount": 0,
+      "metrics": {}
+    },
+    "effect": {
+      "status": "insufficient",
+      "referenceCount": 0,
+      "metrics": {}
+    }
+  },
+  "references": [
+    {
+      "id": "hood_wizard",
+      "role": "character",
+      "png": "../exports/hood-staff-32-quick-cast/idle/hood_staff_idle.png",
+      "crop": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "ramps": {
+        "robe": {
+          "colors": [
+            "#28283F",
+            "#393B5B",
+            "#454568",
+            "#505276"
+          ],
+          "lightnessSteps": [
+            0.07722182465486277,
+            0.040738165811898264,
+            0.04609373568502234
+          ],
+          "lightnessSpan": 0.16405372615178337,
+          "shadowHueShift": -0.029944062444201336
+        }
+      },
+      "alpha": {
+        "transparent": 666,
+        "partial": 0,
+        "opaque": 358
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.255625201113459,
+          "p50": 0.3652155026015632,
+          "p90": 0.4520474040984838
+        },
+        "chroma": {
+          "p10": 0.037323478028170085,
+          "p50": 0.05313104031636742,
+          "p90": 0.05868849290189887
+        },
+        "contrast": 0.19642220298502483,
+        "paletteSize": 10,
+        "shadowHueShift": -0.029944062444201336
+      }
+    },
+    {
+      "id": "meadow_slime",
+      "role": "character",
+      "png": "../exports/meadow_slime_combat32_v7/idle/slime32_idle.png",
+      "crop": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "ramps": {
+        "gel": {
+          "colors": [
+            "#48643C",
+            "#638752",
+            "#86A866",
+            "#BEDD90"
+          ],
+          "lightnessSteps": [
+            0.11248790760769717,
+            0.10749979822337485,
+            0.16670659121424247
+          ],
+          "lightnessSpan": 0.3866942970453145,
+          "shadowHueShift": 5.909259706124232
+        }
+      },
+      "alpha": {
+        "transparent": 567,
+        "partial": 0,
+        "opaque": 457
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.30910335115933224,
+          "p50": 0.6899330044614652,
+          "p90": 0.6899330044614652
+        },
+        "chroma": {
+          "p10": 0.048269923920135585,
+          "p50": 0.09876527470329581,
+          "p90": 0.09876527470329581
+        },
+        "contrast": 0.380829653302133,
+        "paletteSize": 5,
+        "shadowHueShift": 5.909259706124232
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "tileSize": 12,
+  "origin": "top-left",
+  "sprites": {
+    "panel": {
+      "col": 0,
+      "row": 0,
+      "columns": 3,
+      "rows": 3
+    },
+    "dialogue": {
+      "col": 3,
+      "row": 0,
+      "columns": 3,
+      "rows": 3
+    },
+    "nameplate": {
+      "col": 6,
+      "row": 0,
+      "columns": 3,
+      "rows": 3
+    },
+    "button-normal": {
+      "col": 9,
+      "row": 0,
+      "columns": 3,
+      "rows": 3
+    },
+    "button-highlighted": {
+      "col": 0,
+      "row": 3,
+      "columns": 3,
+      "rows": 3
+    },
+    "button-pressed": {
+      "col": 3,
+      "row": 3,
+      "columns": 3,
+      "rows": 3
+    },
+    "button-disabled": {
+      "col": 6,
+      "row": 3,
+      "columns": 3,
+      "rows": 3
+    },
+    "speaker-scroll": {
+      "col": 0,
+      "row": 6,
+      "columns": 3,
+      "rows": 3
+    },
+    "dialogue-tail": {
+      "col": 9,
+      "row": 3,
+      "columns": 2,
+      "rows": 1
+    },
+    "spell-clasp": {
+      "col": 11,
+      "row": 3,
+      "columns": 1,
+      "rows": 1
+    },
+    "panel-crest": {
+      "col": 9,
+      "row": 4,
+      "columns": 3,
+      "rows": 1
+    }
+  }
+}

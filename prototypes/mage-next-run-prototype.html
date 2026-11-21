@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Mage Next Run · 화면 시안</title>
+<style>
+:root{color-scheme:dark;--bg:#13121b;--panel:#201e2b;--panel-dark:#191823;--edge:#393347;--ink:#f2e6d0;--muted:#b1a6bd;--gold:#f2c775;--blue:#9ee4ec;--violet:#cfadfb;--green:#c9dfa4;font-family:Inter,"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 48% 0,#282139 0,transparent 57%),var(--bg)}button{font:inherit;cursor:pointer}button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}button:disabled{cursor:default}h1,h2,p{margin:0}.shell{max-width:1230px;margin:auto;padding:33px 30px 36px}.pagehead{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:21px}.pagehead .project{color:var(--gold);font:700 11px/1.4 ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase}.pagehead h1{font-size:26px;letter-spacing:-.05em;margin-top:6px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:start;gap:22px}.game{border:1px solid #57475c;background:var(--panel-dark);box-shadow:0 15px 55px #09070f91;min-width:0;overflow:hidden}.scene{position:relative;width:100%;isolation:isolate;overflow:hidden;background:#9accc9;aspect-ratio:2.25;min-height:242px}.scene.splash,.scene.intro,.scene.outcome{aspect-ratio:auto;height:clamp(475px,65vh,625px);min-height:0}.land{position:absolute;inset:0;z-index:-3;overflow:hidden}.sky,.terrain,.hedge{position:absolute;background-repeat:no-repeat;image-rendering:pixelated}.sky{background-image:url(data:image/png;base64,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);inset:0 0 32%;background-size:100% 100%}.terrain{background-image:url(data:image/png;base64,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);inset:62% 0 0;background-size:100% 200%;background-position:center 26%}.hedge{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAATCAYAAAAXkQb2AAAEUklEQVR4nO1ZTWtTURBNSpEgoQXrotgfIP4c9y5cSRciCF1JlsVVoVBcFFcu3PtzxB+Q4qIVLEWKm8qJnjI5nZl373vPpKYeCE1u8+7MnTnzdTMc3AHsvXtxZT8fvHw/XJ42/2Gx8o6YfHg1Rz5ga/Pe4PXTg5U/uwbhaDyaW7u8uFx6QA5XPePB6CCcYjo9X8lsuPfn7PZcXFNbnH3/uXQSDletlFpjAx75LAGjff5F7L59djXeuH9jPQpCS8A2dkB12X9+1Ml2a4NbVh77AgwekQ+Gv+s4c2wAAuO1KPIBwzbZZ2dnY/a3Sx91+GnvCkYoPYRmP+Li/MeNNWQB6miNDUJq1HOP4zcfb00WnLRwriWOzYJZ2c1smdmDiWMhBFTHW8e27SNqyWdLi0c4QEuPbbipH9c8AhLLJuIkIB8JpvpFxGuyhULtir0if/aV/apLsE5RpVkKCttyC/JF5TECDFRKPhr69OTb7MXnsJaRD/BKUJdWAcHGV9t9d41O0fuIfPbcEfkssA/3YkkuKc3q414IGBHKQg/lPaPRotcgnnNKYI2lUGJ5nyNC/61oV+zLvm0I2QW0QWlgR3K7lOQbBMzYDrJhekQGw8tOkt4euo9nYKx5vWSTkbOIbyJW0/8pu0vmw7MaWFgrsUmJL3S9iUyK6HteKc7AMyr5kIhKEti6/aDpHcpE5S0DntGDcACwBofyGfnaRHrmgFLnWNnaKjT1aNZettXAe7QDHg6NHWDbPjOc6lRig8jvgNUt6uUt8fA+mw3mCFiiWElUeAp7Y390FdC0pw4kNfp4ePjoweyvEmQWaIaAIF9JH3X9LM4on3lGHSYmPV5J1QRalz2UfNE9ZDRAzZVgbWiz/koVpbJZGVDn0pklaTqTqes1wPkeP9m+vjMkERXQFXqSRBokXvYrafAHpjIA2N8rgV0DDGgqz5kM2EVtEwVMrQ+GnkFVmawvqBHIQ9j7uOgejxN3VLa6gjIsAVSe1SPStURGNnmPzXea+i9PfpS9a/XE9Rp6+uiMkEMZlNlkE68VI5gN19pES23DS2WarkAYaSQGs5I6omtG4PPQh+TjlY2C1xf2CsrLCB5wPrunZ7OLgFS0A4H39tx4X6JDCUA+bYc08+IcKs+2QJ5PMn4w6a331fAqoCwjBGUOQITNnO5ELL6vN/YA1qaGuDxoFl010Cj29mVAnJ78/kw9tza3B18+f+1FByvfDi6EBq+XNZsu6yPwNoPPRUSzoP8ok8FSO+ilQ0hbB9tsRwVpzGxPz+AgXx9Es4iGF2t4m61oXC/jlJTAmmuh0Xjk9oQaGFH5w/O19tLv24zvEcsbxEqHM0X1/Vv2U5AHGyGZk6yBSyK5rwyY/fRmz8YeiD2bXj3YSc+zCeXY/x0HsjHwLOPnwWxa5eBBH9rvqL6KTH/3HxGpmgyRGb4U3hWFt/+inWKb8BrZ3nmyMw5E7iJ/my6RWaJ7DX4BF6v6Lfx5J0sAAAAASUVORK5CYII=);inset:56% 0 auto;height:15%;background-size:100% 100%;opacity:.9;mask-image:linear-gradient(black 65%,transparent)}.shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,#1822381a,transparent 45%,#27351e22);pointer-events:none}.splash .sky,.intro .sky,.outcome .sky{inset:0 0 24%}.splash .terrain,.intro .terrain,.outcome .terrain{top:65%}.splash .hedge,.intro .hedge,.outcome .hedge{top:61%}.splash .shade,.intro .shade{background:linear-gradient(180deg,#15243b9e 0%,#25304b3a 53%,#25263a25 73%,#171925ca 100%)}.outcome .shade{background:linear-gradient(150deg,#221627df,#1b1929c7 60%,#182324cc)}.outcome.win .shade{background:linear-gradient(150deg,#283543ca,#1a2434b5 60%,#142c26cb)}.hud{position:absolute;z-index:4;left:17px;right:17px;top:15px;display:flex;justify-content:space-between;align-items:center;gap:9px}.hud>div{background:#1c1a2bea;border:1px solid #59506a;box-shadow:0 3px 0 #1f1a2a55;padding:8px 11px}.hud .hud-label{display:block;font-size:10px;letter-spacing:.04em;color:#ded0b7;margin-bottom:4px}.hud strong{font-size:14px}.shieldstat{display:flex;align-items:center;gap:8px}.pips{display:flex;gap:3px}.pip{width:10px;height:12px;background:#3f3652;clip-path:polygon(16% 0,84% 0,100% 18%,100% 70%,50% 100%,0 70%,0 18%)}.pip.live{background:linear-gradient(120deg,#daffff 0 30%,#87d3ef 31% 75%,#5da2ce 76%)}.actor{position:absolute;object-fit:contain;image-rendering:pixelated;transform:translate(-50%,-80%);width:clamp(76px,17%,140px);z-index:2;pointer-events:none}.mage{left:15%;top:77%;z-index:3}.mage.big{left:50%;top:73%;width:clamp(114px,22%,184px)}.intro .mage.big{top:69%}.mage.cast{content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACgklEQVR42u2Xz2vTYBjHP5llg61dy2yFQJlhSRjDCSKD1XkSvOlBdvXmH+BJ8erFf2DgQTx632ln2WlrYeilw4220lYkylpolqyOqo2H7u3StHZJl52255LwJnm/z4/v93mfwGU3aZSPNDXjeNeKpexIe0VGAV+4/ZCp2HR37cg6BHBGcUIKGrUX3G07W+uBsyGNEvVJxAMd2dlaD+RAJAj4kXWI1bQAiE3GvCVgKjbN0spqoHL44sAg8EHZ+PHzOwBpddm3E74cOAscYG93GwDbNIQD5y+BpmactLo8FNxqWjRqVZSIAUA5LgdSwbVhD2dm0q/b7TbHTZPjpkk8foPxiYluRlq/WyQaOVbvX+fF0wcct3/xufqXmrFHKBwolrKSkF80LnczIa6JRo63r56QnF+ktp/n43YF2yRcFYjNut0vOdv3Tm0/z6M3OUAGDF/9ROwbuBM2atXTe+QT4I4lkrPYpjEU/NOXDlnvLtxziqWsFMiBRHK2j4iChMK5aFweeFYAPH98M5xO6JWnUIGS0nn57BbJ+UXevf/A2kblzNIGysCRddgT/bfqLkrE4I6sA3qHIvOLAKxtVHyRUfIbvTChgB7t/znVvhIxyNch1FYsQN0kFOBKSoeDAvl6R6pBwH13Qi/7BThA+aCA6BMXNpDEJmM0XOBKSu97p2zY2KYReDIa8wMuSmCbg8HPY2NBm4/bNg27WwJ3Wc7tgKZmHE3NOEsrqz0EdNd58yTlbgUMa0IjcUDMeAK4E2VvCWzToBxxqSEMEnqJpKkZJxqXUVI6c1qLr8VxT1YM5rQWoJOvF8LnQLGUldyHzJzW6jLeu37hY/n/5oWwflSu7PLZP18FYg3oryWeAAAAAElFTkSuQmCC)}.mage-shadow,.mob-shadow{position:absolute;width:9%;height:3%;border-radius:50%;background:#26362e55;transform:translate(-50%,-50%);z-index:0}.mage-shadow{left:15%;top:80%}.barrier{position:absolute;z-index:1;left:23%;top:37%;height:50%;width:5%;border:2px solid #d0f6f7;border-right-width:3px;border-left-width:0;border-radius:0 62% 66% 0;background:linear-gradient(90deg,transparent,#90e0ec70);box-shadow:5px 0 13px #75d7ef86}.barrier.weak{border-color:#f7ce8d;box-shadow:4px 0 12px #ffbd6c95;background:linear-gradient(90deg,transparent,#edb57474)}.mob{transition:opacity .18s,filter .18s}.mob.hit{opacity:0;filter:brightness(2)}.mobtag{position:absolute;z-index:3;transform:translateX(-50%);background:#263025d9;color:#e5ecc5;font-size:10px;padding:2px 5px;border:1px solid #ced8a255}.mobtag.alert{color:#ffe0a7;border-color:#efbe72a0}.field-notice{position:absolute;bottom:13px;left:50%;transform:translateX(-50%);color:#eff4d9;background:#1c2827eb;border:1px solid #bccfb267;padding:6px 12px;font-size:12px;white-space:nowrap;z-index:4}.fx{position:absolute;z-index:5;pointer-events:none}.fx.bolt{top:65%;left:16%;width:39%;height:6px;background:linear-gradient(90deg,#f7ca5900,#f9a74b,#ffffbe);box-shadow:0 0 14px #fbb149;clip-path:polygon(0 35%,86% 15%,91% 0,100% 50%,90% 100%,85% 80%,0 63%);animation:bolt .42s ease-out both}.fx.bolt.magic{height:9px;width:25%;background:linear-gradient(90deg,transparent,#5cb3e6,#edffff);box-shadow:0 0 16px #a1efff}.fx.blast{left:64%;top:66%;width:100px;aspect-ratio:1;transform:translate(-50%,-50%);display:grid;place-items:center;border-radius:50%;border:3px double #ebd9ff;box-shadow:0 0 20px #e0a3fb,inset 0 0 29px #a968e5;background:#a96ada51;color:#fff0fd;font-size:clamp(32px,7vw,68px);animation:blast .52s ease-out both}.fx.blast.electric{border-color:#b0effd;color:#ecffff;box-shadow:0 0 18px #7cddf9;background:#63d8f345}@keyframes bolt{from{opacity:0;translate:-15% 0}30%{opacity:1}to{opacity:0;translate:22% 0}}@keyframes blast{from{opacity:.2;scale:.5}40%{opacity:1}to{opacity:0;scale:1.36}}
+.dock{border-top:2px solid #b38a51;padding:15px 18px 18px;background:linear-gradient(155deg,#2a2435,var(--panel-dark) 72%);min-height:174px}.dock-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.dock-head h2{font-size:13px;color:#e7d4b2}.dock-head span{color:var(--muted);font-size:11px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.card{position:relative;display:flex;flex-direction:column;text-align:left;gap:5px;min-height:102px;padding:10px 11px;background:linear-gradient(142deg,var(--tint,#312837),#211d2d 70%);border:1px solid var(--stroke,#675475);box-shadow:inset 0 0 0 2px #1a172567,0 3px 0 #12111b;color:var(--ink);min-width:0}.card:not(:disabled):hover{filter:brightness(1.18);border-color:var(--accent,var(--gold))}.card-icon{width:34px;height:31px;display:grid;place-items:center;background:#161622b5;border:1px solid var(--stroke);color:var(--accent);text-shadow:0 0 10px var(--accent);font:700 21px/1 ui-monospace,monospace}.fire{--accent:#ffcb83;--stroke:#876549;--tint:#573640}.lightning{--accent:#a6ecfc;--stroke:#56889e;--tint:#2c485f}.burst{--accent:#edc8ff;--stroke:#8862ad;--tint:#4b3565}.card strong{font-size:14px;letter-spacing:-.04em}.card small{font-size:11px;color:var(--muted)}.card .tag{color:var(--accent);font-size:10px;line-height:1.1}.card.empty{background:#19172488;border:1px dashed #595066;color:#a79bb6;align-items:center;justify-content:center;box-shadow:none}.empty strong{font-size:12px}.empty .plus{font:22px/1 ui-monospace,monospace;color:#8e7ea1}.card.empty.available{border-color:#cba4f0;color:#ecd6ff;background:#372748;box-shadow:inset 0 0 13px #b086d129}.charge{display:flex;gap:3px;margin-top:2px}.charge i{flex:1;height:4px;background:#494054}.charge i.lit{background:var(--accent);box-shadow:0 0 5px color-mix(in srgb,var(--accent),transparent 70%)}.equip .card{min-height:76px}.equip .card-icon{width:23px;height:22px;font-size:15px}.inventory{margin-top:12px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.inventory button{color:#edd6fc;background:#392a4b;border:1px solid #9572b3;font-size:12px;padding:5px 9px}.inventory button[aria-pressed=true]{box-shadow:0 0 0 1px #e4bafa;background:#513865}.dock-actions{display:flex;justify-content:flex-end;margin-top:12px}
+.primary{min-height:42px;min-width:142px;padding:9px 19px;color:#241d26;background:#f1c679;border:1px solid #ffe0a4;box-shadow:inset 0 -3px #bd8647,0 4px 0 #251a24;font-weight:800;font-size:13px;letter-spacing:-.015em}.primary:hover{background:#ffda91}.primary:active{translate:0 2px;box-shadow:inset 0 -2px #bd8647}.hero-copy{position:absolute;z-index:4;left:12px;right:12px;top:12%;text-align:center;text-shadow:0 3px 0 #292740,0 6px 18px #201829c0}.hero-copy .chapter{font:700 12px/1.4 ui-monospace,monospace;letter-spacing:.22em;color:#ffe1a0}.hero-copy h2{font-family:Georgia,"Batang",serif;color:#fff1ce;line-height:.95;font-size:clamp(46px,8vw,96px);letter-spacing:-.055em}.hero-copy h2 span{display:block;font-size:.71em;letter-spacing:.01em;margin-bottom:8px}.intro .hero-copy{top:17%}.intro .hero-copy h2{font-family:inherit;font-size:clamp(38px,6vw,66px);letter-spacing:-.075em;margin-top:8px}.hero-action{position:absolute;z-index:4;bottom:10%;left:0;right:0;text-align:center}
+.result{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%;padding:27px 12px;text-align:center;gap:15px}.result h2{font-size:clamp(30px,5vw,55px);line-height:1.06;letter-spacing:-.075em;color:#ffe4bf;text-shadow:0 4px 0 #3b2641}.result .sub{font-size:13px;color:#e3cbd8}.result .balance{width:min(100%,380px);text-align:left;background:#1b1725eb;border:1px solid #766077;padding:10px 13px}.amount{display:flex;justify-content:space-between;gap:14px;padding:4px 0;font-size:13px;color:#e2d4e5}.amount strong{font-variant-numeric:tabular-nums}.amount.total{margin-top:4px;padding-top:9px;border-top:1px solid #68556c;color:#ffe0a1;font-weight:700}.shop{width:min(100%,380px);display:grid;gap:7px}.upgrade{display:flex;gap:10px;justify-content:space-between;align-items:center;text-align:left;padding:8px 10px;border:1px solid #7a627c;background:#302439;color:var(--ink);min-height:51px}.upgrade:hover:not(:disabled){border-color:var(--gold);background:#41324b}.upgrade:disabled{border-color:#54445a}.upgrade strong,.upgrade small{display:block}.upgrade strong{font-size:13px}.upgrade small{font-size:11px;color:#d2bfd5;margin-top:3px}.upgrade em{font-style:normal;font-size:11px;color:#ffdf9f;background:#1d1928;padding:4px 7px;white-space:nowrap}.upgrade:disabled em{color:#c4aec4}.crest{font:38px/1 Georgia,serif;color:#ffda8a;text-shadow:0 0 26px #f5b95a}.win .result h2{color:#fff0b9;text-shadow:0 3px 0 #263931}.win .sub{color:#dfefc9}
+.review{padding:13px;background:#1d1a27;border:1px solid #3d3449;min-width:0}.review h2{font-size:14px;padding:4px 5px 10px}.review nav{display:grid;gap:3px}.step{width:100%;display:grid;grid-template-columns:23px 1fr;gap:6px;align-items:center;text-align:left;word-break:keep-all;background:transparent;color:#d2c6d6;border:1px solid transparent;padding:8px 5px;font-size:12px;min-height:38px}.step b{color:#ae9db7;font:11px ui-monospace,monospace}.step:hover{background:#2d263a}.step[aria-current=step]{color:#fff0cf;border-color:#68543f;background:#372e36}.step[aria-current=step] b{color:var(--gold)}.preview-next{border-top:1px solid #413748;margin-top:10px;padding-top:10px}.preview-next:empty{display:none}.preview-next button{width:100%;background:#282239;border:1px solid #665475;color:#ecdef0;padding:8px 5px;font-size:11px}.preview-next button:hover{background:#3a2b4d}.footer{margin-top:11px;color:#b5a9be;font-size:11px;line-height:1.65}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:760px){.shell{max-width:590px;padding:20px 12px}.pagehead{margin-bottom:14px}.pagehead h1{font-size:22px}.layout{grid-template-columns:1fr;gap:12px}.review nav{grid-template-columns:repeat(3,minmax(0,1fr))}.step{padding:5px 3px;grid-template-columns:19px 1fr;font-size:11px;gap:3px}.hud{left:9px;right:9px;top:9px}.hud>div{padding:5px 8px}.scene{min-height:222px}.scene.splash,.scene.intro,.scene.outcome{height:505px}.dock{padding:12px 9px 13px;min-height:153px}.cards{gap:6px}.card{padding:7px;min-height:88px;gap:4px}.card strong{font-size:12px}.card small{font-size:10px}.card-icon{width:27px;height:26px;font-size:17px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="pagehead"><div><p class="project">The Mage Next Run</p><h1>초원 스테이지 · 화면 시안</h1></div></header>
+<div class="layout">
+<section id="game" class="game" aria-label="게임 시안"></section>
+<aside class="review"><h2>화면 바로 보기</h2><nav id="steps" aria-label="시안 화면"></nav><div id="preview-next" class="preview-next"></div></aside>
+</div>
+<p class="footer">전투와 결과 수치는 와이어프레임의 상황을 재현합니다. 주문 사용, 카드 장착, 강화를 직접 눌러볼 수 있습니다.</p>
+<p id="announcement" class="sr" role="status"></p>
+</main>
+<script>
+const images = {mage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACy0lEQVR42u2WsU8TURzHPyXVAe7oJbbRi6RtaBskQELUCDgY0rDJgDo7GjZX/gIX3Uxc2Rwc1KUjMVUTbBOjJpRg0jYpB+QgFHLwSoeGpA70Ha0Uem3PSX7L3b17d9/f7/0+7/d78L+bp5uPo5HJ6t9juXyqrX96uxEeiEyg9qr0qf0AHIlDgGo7Tng6ER8em7FF/7YjccjaypLjlfB0Kl6LFlEW3Lh+88zc78sfHDnR06m4KAtEWaD2qg3RS7t7/3FTRrpmQIoDZ/Jf7xzA8NhMSya8TqMfiEzYP24mDrC9s4VVNE4/9AdxLQUAVtHAKhpNxUVZoFlppnWFsNcEYDOfbsmB4xRs5tMoPh2gqTjAm4U5AF4tQuZ31j0Ic/mUJ5dPeUoHpi1cD+L4lX3ezuv4h0Z5/+UnSbPUkL6LYGwLwlw+5YlGJqui3Dy3CwvvSJoVNH8Q7ST/1eezIZb375wLY0eVUIJWE6Gwm+Xhi1LDGMDsrRjL+2Pul2IpYhUNNH8QS5sAeV80+PXjowdAuzdZjUcrvE6sn8uDt5tKqAZH6FP72d7ZIuw1KRQbVwC4ULwtB2QtkFa/EzQrTXwqxKdv61gEGb/9qAad6W43lGVX7gDJwrQeAyqEAzGSpmHXgfhUiExi3b1CJMqCDWOVDWMVzUoD2GIAg9GKfR+fCjH/7CmfX8652w0Vn07Ya9aiLZ1xIrMHik9nWlcYbAFgxwzEh6/y5MEILK7W3sbseYXjEqUDkyQ6oLjTC6S42qvaefcPjZ47X/HpyKrZ9YGkXlxuOemEXPrMHoxeg3AgRmE3S+FYr8GpkGjRE3raPQuckq+cCNbE5BWwo084aEg9Trdfn9qPKAtKB2YDdM2WWoLqxBw5sLayxPbOlv0cDsQYjFYo7GbtMUl9OBDD1WN53RJWZXT1e73wtdIw/8Qxk396LG+3hXNpl3aB/QE143H0jINCkgAAAABJRU5ErkJggg==",slime:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABj0lEQVR42u1WP2uDQBz9KX4CA8kQHNRMhYCFEsRVaD5HR4f2w7SDY4Z+Cgt2LBIKLQidEh1KBoXkEwSuQzHoef8ROtQ3et69d+9+v3cHMGLEiD+GpjLJCjxEG/t++5Ra01Ah9aOQ9SuSEaOJEjekq9VVZ3y7/erNKYsaAACqJOeKMHjks/USbGfaIxbBbL0EwzVR+fyqSTtgBR7yo5BJTNo9yQmWGwaLXIWUarVrggUewkVwi1CVEMfN7TVkcdr7rsvsXha2M+0dB97COm8RkmpVGK7JdwAnf9jcU0VkcQrvLx/CAiaLOV8Abv/j3RNT3Hl/EhZw3B1+i7F1DLpoxJJAE0dqQxqYR9C4MVRRCiVhWdSd6qWRDyVKx2+yKsk71pVFfSm0LE4vY7zuELGfGMVN/uN9nMUp+FEIZVFDleRUB2jEx90BAADO+1Mnkpk10G6xhtB2psrkwpeRFXioHRqTxbzjhozdbXJ899zbkJZepEDh7bbJC2EBeC6QhPCAhxTpOtaGeAcO9T4c8T/xA+OvviyM0W+EAAAAAElFTkSuQmCC",attack:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfElEQVR42u1WvYrCQBCeDXkCD0xxWKhXCQEFCWJ5gnmKK670de4Kn0XBNogcXEC4yp8iWCjoEwh71YbJsrM/iXDF5asWJjvft99MZhegRo0afwxWdmNr3OdULEtS67x+WdLRbKL7lNuKYS7EgjSKenlss/kh9x0PFzgvtloRzIY8iENod5oFYgyViOPhkq/Piy3phlZA++2VD6cDJ2KTEFmErzv5cDooTaxCEIeQJam5CYXtVQmp3NgFj7S/03wIoSoP/ps8U4Io6sF6virUUo6t5yunMmB4KnXid8Ok192plAMq4VoBMj7ePwEA4L6/kTEXXHcn8LuNvAyebf10k0+21QU+ZZsg1xHrYibrrUsAAIUmw+uv5XclcnIS4vErE49mk8LahRw38n1/gyxJGTMNIpd54EpO9kCWpCyIQ46TUkJsSZ1vw9a4z/1uA55enkt1N0WOT2+8DYUIAZMY3YnFHJFvQ+byCsJibICHF/UoYY96B1Z9G9b4v/gF2wDAfILdnh4AAAAASUVORK5CYII="};
+const labels = ["타이틀","전투 시작","웨이브 1 전투","주문 보상","카드 장착","웨이브 2 전투","실드 붕괴","재도전","스테이지 클리어"];
+const spells = {
+  fire:{name:"화염탄",icon:"✦",type:"강화",note:"처치에 3발 → 2발",meter:3},
+  lightning:{name:"연쇄 번개",icon:"ϟ",type:"새 주문",note:"최대 2마리",meter:1},
+  burst:{name:"마력 폭발",icon:"✸",type:"새 주문",note:"범위 피해",meter:1}
+};
+const game = document.querySelector("#game");
+const nav = document.querySelector("#steps");
+const preview = document.querySelector("#preview-next");
+const announcement = document.querySelector("#announcement");
+let state;
+let timers = [];
+
+function reset(scene) {
+  return {scene,held:scene===5?"burst":null, slots:scene===6?["fire","burst",null]:["fire",null,null],
+    selected:scene===5,fireLevel:1,ward:scene>=8?1:0,haste:0,balance:scene===9?82:scene===8?7:67,defeated:0,
+    meters:scene===3?{fire:2}:{fire:3,burst:1,lightning:1}};
+}
+function change(scene, jump=false) {
+  timers.forEach(clearTimeout);
+  timers = [];
+  if (jump) state = reset(scene);
+  if (!jump && scene === 6) {state.meters={fire:3,burst:1,lightning:1};state.defeated=0;}
+  if (!jump && scene === 7) {state.balance=67;state.ward=0;state.haste=0;}
+  if (!jump && scene === 8) {
+    state.slots=["fire",null,null];state.held=null;state.fireLevel=1;state.defeated=0;state.meters={fire:3};
+  }
+  if (!jump && scene === 9) state.balance += 75;
+  state.scene = scene;
+  render();
+  announcement.textContent = labels[scene-1];
+}
+function element(tag, cls, text) {
+  const item=document.createElement(tag);
+  item.className=cls;
+  if (text) item.textContent=text;
+  return item;
+}
+function action(label, cmd, cls="primary") {
+  return '<button type="button" class="'+cls+'" data-act="'+cmd+'">'+label+'</button>';
+}
+function land() {
+  return '<div class="land" aria-hidden="true"><div class="sky"></div><div class="terrain"></div><div class="hedge"></div></div><div class="shade"></div>';
+}
+function mage(big=false) {
+  return (big?"":'<div class="mage-shadow"></div>')+'<img class="actor mage'+(big?" big":"")+'" alt="마법사" src="'+images.mage+'">';
+}
+function hero(scene) {
+  const title=scene===1;
+  const heading=title?'<h2><span>THE MAGE</span>NEXT RUN</h2>':'<p class="chapter">스테이지 1</p><h2>초원</h2>';
+  return '<div class="scene '+(title?"splash":"intro")+'">'+land()+mage(true)+'<div class="hero-copy">'+heading+'</div><div class="hero-action">'+
+    action(title?"게임 시작":"전투 시작",title?"intro":"battle")+'</div></div>';
+}
+function hud(scene,complete) {
+  const maximum=5+state.ward;
+  const shield=scene===3?2:scene===8?maximum:3;
+  const wave=scene===6?2:1;
+  const pips=Array.from({length:maximum},(_,i)=>'<i class="pip'+(i<shield?" live":"")+'"></i>').join("");
+  return '<div class="hud"><div><span class="hud-label">스테이지 1 · 초원</span><strong>웨이브 '+wave+'/5'+(complete?" 방어 완료":"")+'</strong></div>'+
+    '<div><span class="hud-label">실드</span><div class="shieldstat"><span class="pips" aria-hidden="true">'+pips+'</span><strong>'+shield+'/'+maximum+'</strong></div></div></div>';
+}
+function enemy(x,y,index,tag) {
+  const loc='left:'+x+'%;top:'+y+'%';
+  const tagMarkup=tag?'<span class="mobtag '+(tag==="준비"?"alert":"")+'" style="left:'+x+'%;top:'+(y+4)+'%">'+tag+'</span>':"";
+  return '<div data-enemy="'+index+'" '+(index<state.defeated?"hidden":"")+'><span class="mob-shadow" style="left:'+x+'%;top:'+(y+4)+'%"></span>'+
+    '<img class="actor mob" alt="슬라임" style="'+loc+'" src="'+(tag==="준비"?images.attack:images.slime)+'">'+tagMarkup+'</div>';
+}
+function field(scene) {
+  const complete=scene===4||scene===5;
+  let foes="";
+  if (scene===3) foes=enemy(33,68,0,"준비")+enemy(50,76,1,"준비")+enemy(78,82,2,"대기");
+  if (scene===6) foes=enemy(50,73,0)+enemy(69,84,1)+enemy(80,58,2);
+  if (scene===8) foes=enemy(68,76,0)+enemy(83,66,1);
+  const initialBolt=scene===3?'<span class="fx bolt magic" style="animation:none;opacity:.9" aria-hidden="true"></span>':"";
+  return '<div class="scene meadow">'+land()+hud(scene,complete)+mage()+'<div class="barrier'+(scene===3?" weak":"")+'" aria-hidden="true"></div>'+foes+initialBolt+
+    (complete?'<p class="field-notice">웨이브 1 방어 완료 · 실드 +1</p>':"")+'</div>';
+}
+function card(key, mode, index) {
+  if (!key) {
+    const available=mode==="equip"&&state.selected&&state.held;
+    return '<button type="button" class="card empty'+(available?" available":"")+'" data-act="equip-'+index+'" aria-label="'+(index+1)+'번 슬롯, 빈 슬롯" '+(available?"":"disabled")+'><span class="plus">+</span><strong>빈 슬롯</strong></button>';
+  }
+  const spell=spells[key];
+  const reward=mode==="reward";
+  const equipping=mode==="equip";
+  const cmd=reward?"reward-"+key:equipping?"":"cast-"+key;
+  const charge=state.meters[key]??spell.meter;
+  const meter=Array.from({length:5},(_,i)=>'<i class="'+(i<charge?"lit":"")+'"></i>').join("");
+  return '<button type="button" class="card '+key+'" data-act="'+cmd+'" '+(equipping?"disabled":'aria-label="'+spell.name+(reward?" "+spell.type:" 시전")+'"')+'><span class="card-icon" aria-hidden="true">'+spell.icon+'</span>'+
+    '<strong>'+spell.name+'</strong>'+(reward?'<span class="tag">'+spell.type+'</span><small>'+spell.note+'</small>':
+    equipping?'<small>Lv.'+(key==="fire"?state.fireLevel:1)+'</small>':'<span class="charge" aria-label="충전 '+charge+'/5">'+meter+'</span>')+'</button>';
+}
+function dock(scene) {
+  const reward=scene===4;
+  const equip=scene===5;
+  const title=reward?"주문 보상":equip?"장착 슬롯":"장착 주문";
+  const meta=reward?"한 장 선택":equip?"웨이브 1 종료":"";
+  const cards=reward?["lightning","fire","burst"]:state.slots;
+  const mode=reward?"reward":equip?"equip":"battle";
+  let inventory="";
+  if (equip) {
+    const held=state.held;
+    const equipped=state.slots.find(key=>key&&key!=="fire");
+    const content=held?'<button type="button" data-act="select" aria-pressed="'+state.selected+'">'+spells[held].name+' Lv.1</button>'+
+      (state.selected?"<span>빈 슬롯을 눌러 장착</span>":""):equipped?"<span>"+spells[equipped].name+" 장착 완료</span>":"<span>화염탄 Lv."+state.fireLevel+"</span>";
+    inventory='<div class="inventory"><span>보유 카드</span>'+content+'</div><div class="dock-actions">'+action("다음 웨이브","next")+'</div>';
+  }
+  return '<div class="dock '+(equip?"equip":"")+'"><div class="dock-head"><h2>'+title+'</h2><span>'+meta+'</span></div><div class="cards">'+
+    cards.map((key,index)=>card(key,mode,index)).join("")+'</div>'+inventory+'</div>';
+}
+function result(win) {
+  const row=(name,value,cls="")=>'<div class="amount '+cls+'"><span>'+name+'</span><strong>'+value+'</strong></div>';
+  const upgrade=(type,title,desc,owned)=>'<button type="button" class="upgrade" data-act="buy-'+type+'" '+(owned||state.balance<60?"disabled":"")+'><span><strong>'+title+'</strong><small>'+desc+'</small></span><em>'+ (owned?"구매 완료":"60개")+'</em></button>';
+  const shop=win?"":'<div class="shop">'+upgrade("ward","최대 방어막 · Lv.0 → Lv.1","실드 5칸 → 6칸",state.ward)+
+    upgrade("haste","주문 쿨타임 · Lv.0 → Lv.1","기본 쿨타임 대비 −5%",state.haste)+'</div>';
+  const balance=(win?"":row("이전 잔액",35))+row("이번 도전",win?"+75 잔재":"+32 잔재")+
+    row("보유 마력 잔재",state.balance,"total");
+  return '<div class="scene outcome '+(win?"win":"")+'">'+land()+'<div class="result">'+(win?'<div class="crest" aria-hidden="true">✦</div>':"")+
+    '<h2>'+(win?"스테이지 1 클리어":"실드 붕괴")+'</h2><p class="sub">'+(win?"방어 완료 · 5/5 웨이브":"스테이지 1 · 웨이브 3/5")+'</p>'+
+    '<div class="balance">'+balance+'</div>'+shop+action("다시 도전",win?"replay":"retry")+'</div></div>';
+}
+function render() {
+  const scene=state.scene;
+  game.innerHTML=scene<=2?hero(scene):scene===7||scene===9?result(scene===9):field(scene)+dock(scene);
+  nav.innerHTML=labels.map((label,index)=>'<button type="button" class="step" data-jump="'+(index+1)+'" '+(index+1===scene?'aria-current="step"':"")+'><b>'+String(index+1).padStart(2,"0")+'</b><span>'+label+'</span></button>').join("");
+  const shortcuts={3:["방어 완료 장면 보기","done"],6:["실패 결과 보기","failed"],8:["클리어 결과 보기","clear"]};
+  const shortcut=shortcuts[scene];
+  preview.innerHTML=shortcut?action(shortcut[0],shortcut[1],"skip"):"";
+}
+function cast(key,button) {
+  if (![3,6,8].includes(state.scene)||button.disabled) return;
+  const scene=state.scene;
+  const targetScene=game.querySelector(".meadow");
+  const caster=game.querySelector(".mage");
+  const fx=element("div","fx "+(key==="fire"?"bolt":"blast "+(key==="lightning"?"electric":"")),key==="fire"?"":spells[key].icon);
+  fx.setAttribute("aria-hidden","true");
+  const ready=state.meters[key]??spells[key].meter;
+  state.meters[key]=0;
+  button.disabled=true;
+  button.querySelectorAll(".charge i").forEach(segment=>segment.classList.remove("lit"));
+  caster.classList.add("cast");
+  targetScene.querySelector(".magic")?.remove();
+  targetScene.append(fx);
+  const count=scene===3?3:scene===8?2:0;
+  const hit=count?targetScene.querySelector('[data-enemy="'+state.defeated+'"]'):null;
+  if (hit) state.defeated++;
+  timers.push(setTimeout(()=>{
+    if (hit) hit.querySelector(".mob").classList.add("hit");
+  },180));
+  timers.push(setTimeout(()=>{
+    fx.remove();
+    caster.classList.remove("cast");
+    if (hit) hit.hidden=true;
+    if(count&&state.defeated===count) {
+      change(scene===3?4:9);
+      return;
+    }
+    state.meters[key]=ready;
+    button.querySelectorAll(".charge i").forEach((segment,index)=>segment.classList.toggle("lit",index<ready));
+    button.disabled=false;
+  },state.haste?620:650));
+  announcement.textContent=spells[key].name+" 시전";
+}
+game.addEventListener("click",event=>{
+  const button=event.target.closest("[data-act]");
+  if (!button) return;
+  const cmd=button.dataset.act;
+  if (cmd.startsWith("cast-")) return cast(cmd.slice(5),button);
+  if (cmd.startsWith("reward-")) {
+    const key=cmd.slice(7);
+    if (key==="fire") {state.fireLevel=2;state.held=null;}
+    else {state.held=key;state.selected=true;}
+    return change(5);
+  }
+  if (cmd==="select") {state.selected=!state.selected;render();game.querySelector('[data-act="select"]').focus();return;}
+  if (cmd.startsWith("equip-")) {
+    const index=Number(cmd.slice(6));
+    if (!state.selected||!state.held||state.slots[index]) return;
+    const item=state.held;
+    state.slots[index]=item;state.held=null;state.selected=false;render();announcement.textContent=spells[item].name+" 장착 완료";
+    game.querySelector('[data-act="next"]').focus();
+    return;
+  }
+  if (cmd.startsWith("buy-")) {
+    const key=cmd.slice(4);
+    if (state.balance<60||state[key]) return;
+    state[key]=1;state.balance-=60;render();
+    announcement.textContent="강화 구매 완료 · 보유 마력 잔재 "+state.balance;
+    game.querySelector('[data-act="retry"]').focus();
+    return;
+  }
+  if (cmd==="replay") {state.slots=["fire",null,null];state.held=null;state.fireLevel=1;change(8);return;}
+  const destinations={intro:2,battle:3,next:6,retry:8};
+  if (destinations[cmd]) change(destinations[cmd]);
+});
+nav.addEventListener("click",event=>{
+  const button=event.target.closest("[data-jump]");
+  if (!button) return;
+  change(Number(button.dataset.jump),true);
+  nav.querySelector('[aria-current="step"]').focus();
+});
+preview.addEventListener("click",event=>{
+  const button=event.target.closest("[data-act]");
+  const destinations={done:4,failed:7,clear:9};
+  if (button) change(destinations[button.dataset.act]);
+});
+change(1,true);
+</script>
+</body>
+</html>

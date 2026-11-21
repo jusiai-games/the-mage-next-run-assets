@@ -1,0 +1,12 @@
+{
+  "kind": "tile32",
+  "name": "magic_bolt_electric_launch",
+  "tiles": [
+    "launch_00",
+    "launch_01",
+    "launch_02",
+    "launch_03"
+  ],
+  "columns": 4,
+  "palette": "../sources/magic_bolt_electric_fx/01/palette.json"
+}

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 160,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "570152113e10f8d995496f015a658f9c85f9371847db760a96d5d595da983799",
+  "sprites": [
+    {
+      "name": "hood_staff_cast_right_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_cast_right_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_cast_right_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_cast_right_03",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_cast_right_04",
+      "x": 128,
+      "y": 0
+    }
+  ]
+}

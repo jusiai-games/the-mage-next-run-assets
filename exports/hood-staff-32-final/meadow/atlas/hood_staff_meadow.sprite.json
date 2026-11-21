@@ -1,0 +1,1198 @@
+{
+  "version": 1,
+  "kind": "tile",
+  "width": 256,
+  "height": 240,
+  "cell": 16,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.5,
+  "sha256": "64888c452154d3681d82741eff0173d1604aa1e4095bae45367874ae86d21e32",
+  "sprites": [
+    {
+      "name": "hood_staff_meadow_t000",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t001",
+      "x": 16,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t002",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t003",
+      "x": 48,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t004",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t005",
+      "x": 80,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t006",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t007",
+      "x": 112,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t008",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t009",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t010",
+      "x": 160,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t011",
+      "x": 176,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t012",
+      "x": 192,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t013",
+      "x": 208,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t014",
+      "x": 224,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t015",
+      "x": 240,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_meadow_t016",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t017",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t018",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t019",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t020",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t021",
+      "x": 80,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t022",
+      "x": 96,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t023",
+      "x": 112,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t024",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t025",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t026",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t027",
+      "x": 176,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t028",
+      "x": 192,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t029",
+      "x": 208,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t030",
+      "x": 224,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t031",
+      "x": 240,
+      "y": 16
+    },
+    {
+      "name": "hood_staff_meadow_t032",
+      "x": 0,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t033",
+      "x": 16,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t034",
+      "x": 32,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t035",
+      "x": 48,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t036",
+      "x": 64,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t037",
+      "x": 80,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t038",
+      "x": 96,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t039",
+      "x": 112,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t040",
+      "x": 128,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t041",
+      "x": 144,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t042",
+      "x": 160,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t043",
+      "x": 176,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t044",
+      "x": 192,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t045",
+      "x": 208,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t046",
+      "x": 224,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t047",
+      "x": 240,
+      "y": 32
+    },
+    {
+      "name": "hood_staff_meadow_t048",
+      "x": 0,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t049",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t050",
+      "x": 32,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t051",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t052",
+      "x": 64,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t053",
+      "x": 80,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t054",
+      "x": 96,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t055",
+      "x": 112,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t056",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t057",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t058",
+      "x": 160,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t059",
+      "x": 176,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t060",
+      "x": 192,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t061",
+      "x": 208,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t062",
+      "x": 224,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t063",
+      "x": 240,
+      "y": 48
+    },
+    {
+      "name": "hood_staff_meadow_t064",
+      "x": 0,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t065",
+      "x": 16,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t066",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t067",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t068",
+      "x": 64,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t069",
+      "x": 80,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t070",
+      "x": 96,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t071",
+      "x": 112,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t072",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t073",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t074",
+      "x": 160,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t075",
+      "x": 176,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t076",
+      "x": 192,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t077",
+      "x": 208,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t078",
+      "x": 224,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t079",
+      "x": 240,
+      "y": 64
+    },
+    {
+      "name": "hood_staff_meadow_t080",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t081",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t082",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t083",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t084",
+      "x": 64,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t085",
+      "x": 80,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t086",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t087",
+      "x": 112,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t088",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t089",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t090",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t091",
+      "x": 176,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t092",
+      "x": 192,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t093",
+      "x": 208,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t094",
+      "x": 224,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t095",
+      "x": 240,
+      "y": 80
+    },
+    {
+      "name": "hood_staff_meadow_t096",
+      "x": 0,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t097",
+      "x": 16,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t098",
+      "x": 32,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t099",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t100",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t101",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t102",
+      "x": 96,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t103",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t104",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t105",
+      "x": 144,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t106",
+      "x": 160,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t107",
+      "x": 176,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t108",
+      "x": 192,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t109",
+      "x": 208,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t110",
+      "x": 224,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t111",
+      "x": 240,
+      "y": 96
+    },
+    {
+      "name": "hood_staff_meadow_t112",
+      "x": 0,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t113",
+      "x": 16,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t114",
+      "x": 32,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t115",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t116",
+      "x": 64,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t117",
+      "x": 80,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t118",
+      "x": 96,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t119",
+      "x": 112,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t120",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t121",
+      "x": 144,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t122",
+      "x": 160,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t123",
+      "x": 176,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t124",
+      "x": 192,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t125",
+      "x": 208,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t126",
+      "x": 224,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t127",
+      "x": 240,
+      "y": 112
+    },
+    {
+      "name": "hood_staff_meadow_t128",
+      "x": 0,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t129",
+      "x": 16,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t130",
+      "x": 32,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t131",
+      "x": 48,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t132",
+      "x": 64,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t133",
+      "x": 80,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t134",
+      "x": 96,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t135",
+      "x": 112,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t136",
+      "x": 128,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t137",
+      "x": 144,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t138",
+      "x": 160,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t139",
+      "x": 176,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t140",
+      "x": 192,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t141",
+      "x": 208,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t142",
+      "x": 224,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t143",
+      "x": 240,
+      "y": 128
+    },
+    {
+      "name": "hood_staff_meadow_t144",
+      "x": 0,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t145",
+      "x": 16,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t146",
+      "x": 32,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t147",
+      "x": 48,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t148",
+      "x": 64,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t149",
+      "x": 80,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t150",
+      "x": 96,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t151",
+      "x": 112,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t152",
+      "x": 128,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t153",
+      "x": 144,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t154",
+      "x": 160,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t155",
+      "x": 176,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t156",
+      "x": 192,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t157",
+      "x": 208,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t158",
+      "x": 224,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t159",
+      "x": 240,
+      "y": 144
+    },
+    {
+      "name": "hood_staff_meadow_t160",
+      "x": 0,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t161",
+      "x": 16,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t162",
+      "x": 32,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t163",
+      "x": 48,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t164",
+      "x": 64,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t165",
+      "x": 80,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t166",
+      "x": 96,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t167",
+      "x": 112,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t168",
+      "x": 128,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t169",
+      "x": 144,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t170",
+      "x": 160,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t171",
+      "x": 176,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t172",
+      "x": 192,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t173",
+      "x": 208,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t174",
+      "x": 224,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t175",
+      "x": 240,
+      "y": 160
+    },
+    {
+      "name": "hood_staff_meadow_t176",
+      "x": 0,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t177",
+      "x": 16,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t178",
+      "x": 32,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t179",
+      "x": 48,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t180",
+      "x": 64,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t181",
+      "x": 80,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t182",
+      "x": 96,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t183",
+      "x": 112,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t184",
+      "x": 128,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t185",
+      "x": 144,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t186",
+      "x": 160,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t187",
+      "x": 176,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t188",
+      "x": 192,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t189",
+      "x": 208,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t190",
+      "x": 224,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t191",
+      "x": 240,
+      "y": 176
+    },
+    {
+      "name": "hood_staff_meadow_t192",
+      "x": 0,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t193",
+      "x": 16,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t194",
+      "x": 32,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t195",
+      "x": 48,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t196",
+      "x": 64,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t197",
+      "x": 80,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t198",
+      "x": 96,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t199",
+      "x": 112,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t200",
+      "x": 128,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t201",
+      "x": 144,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t202",
+      "x": 160,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t203",
+      "x": 176,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t204",
+      "x": 192,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t205",
+      "x": 208,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t206",
+      "x": 224,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t207",
+      "x": 240,
+      "y": 192
+    },
+    {
+      "name": "hood_staff_meadow_t208",
+      "x": 0,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t209",
+      "x": 16,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t210",
+      "x": 32,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t211",
+      "x": 48,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t212",
+      "x": 64,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t213",
+      "x": 80,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t214",
+      "x": 96,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t215",
+      "x": 112,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t216",
+      "x": 128,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t217",
+      "x": 144,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t218",
+      "x": 160,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t219",
+      "x": 176,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t220",
+      "x": 192,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t221",
+      "x": 208,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t222",
+      "x": 224,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t223",
+      "x": 240,
+      "y": 208
+    },
+    {
+      "name": "hood_staff_meadow_t224",
+      "x": 0,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t225",
+      "x": 16,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t226",
+      "x": 32,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t227",
+      "x": 48,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t228",
+      "x": 64,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t229",
+      "x": 80,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t230",
+      "x": 96,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t231",
+      "x": 112,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t232",
+      "x": 128,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t233",
+      "x": 144,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t234",
+      "x": 160,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t235",
+      "x": 176,
+      "y": 224
+    },
+    {
+      "name": "hood_staff_meadow_t236",
+      "x": 192,
+      "y": 224
+    }
+  ]
+}

@@ -1,0 +1,2362 @@
+{
+  "name": "Questwood Pixel UI",
+  "version": "1.2",
+  "baseAssets": 200,
+  "counts": {
+    "windowFrames": 16,
+    "buttonSlotTabStates": 16,
+    "controls": 32,
+    "items": 64,
+    "interfaceIcons": 48,
+    "skillStatusIcons": 24
+  },
+  "scales": [
+    1,
+    2,
+    4
+  ],
+  "text": "Separate text-free component images. Fonts are not included. All border, inset and anchor coordinates use 1x pixels. Keep text anchors fixed when swapping state images.",
+  "assets": [
+    {
+      "id": "panel_wide",
+      "group": "Windows",
+      "path": "UI/패널과-창/범용-가로-패널-Questwood-1x.png",
+      "width": 256,
+      "height": 192,
+      "border": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "id": "panel_tall",
+      "group": "Windows",
+      "path": "UI/패널과-창/범용-세로-패널-Questwood-1x.png",
+      "width": 160,
+      "height": 192,
+      "border": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "id": "dialogue",
+      "group": "Windows",
+      "path": "UI/패널과-창/대화-상자-Questwood-1x.png",
+      "width": 256,
+      "height": 96,
+      "border": {
+        "left": 48,
+        "top": 32,
+        "right": 48,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 52,
+        "top": 36,
+        "right": 52,
+        "bottom": 28
+      }
+    },
+    {
+      "id": "tooltip",
+      "group": "Windows",
+      "path": "UI/패널과-창/툴팁-Questwood-1x.png",
+      "width": 160,
+      "height": 96,
+      "border": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "id": "button_normal",
+      "group": "Buttons",
+      "path": "UI/버튼/기본-버튼/기본-버튼-기본-Questwood-1x.png",
+      "width": 96,
+      "height": 36,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 9,
+        "right": 14,
+        "bottom": 11
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 17.0
+      },
+      "state": "normal"
+    },
+    {
+      "id": "button_hover",
+      "group": "Buttons",
+      "path": "UI/버튼/기본-버튼/기본-버튼-호버-Questwood-1x.png",
+      "width": 96,
+      "height": 36,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 9,
+        "right": 14,
+        "bottom": 11
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 17.0
+      },
+      "state": "hover"
+    },
+    {
+      "id": "button_pressed",
+      "group": "Buttons",
+      "path": "UI/버튼/기본-버튼/기본-버튼-누름-Questwood-1x.png",
+      "width": 96,
+      "height": 36,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 9,
+        "right": 14,
+        "bottom": 11
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 17.0
+      },
+      "state": "pressed"
+    },
+    {
+      "id": "button_disabled",
+      "group": "Buttons",
+      "path": "UI/버튼/기본-버튼/기본-버튼-비활성-Questwood-1x.png",
+      "width": 96,
+      "height": 36,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 9,
+        "right": 14,
+        "bottom": 11
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 17.0
+      },
+      "state": "disabled"
+    },
+    {
+      "id": "icon_button_normal",
+      "group": "Buttons",
+      "path": "UI/버튼/아이콘-버튼/아이콘-버튼-기본-Questwood-1x.png",
+      "width": 40,
+      "height": 40,
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 20.0,
+        "y": 19.0
+      },
+      "state": "normal"
+    },
+    {
+      "id": "icon_button_hover",
+      "group": "Buttons",
+      "path": "UI/버튼/아이콘-버튼/아이콘-버튼-호버-Questwood-1x.png",
+      "width": 40,
+      "height": 40,
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 20.0,
+        "y": 19.0
+      },
+      "state": "hover"
+    },
+    {
+      "id": "icon_button_pressed",
+      "group": "Buttons",
+      "path": "UI/버튼/아이콘-버튼/아이콘-버튼-누름-Questwood-1x.png",
+      "width": 40,
+      "height": 40,
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 20.0,
+        "y": 19.0
+      },
+      "state": "pressed"
+    },
+    {
+      "id": "icon_button_disabled",
+      "group": "Buttons",
+      "path": "UI/버튼/아이콘-버튼/아이콘-버튼-비활성-Questwood-1x.png",
+      "width": 40,
+      "height": 40,
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 20.0,
+        "y": 19.0
+      },
+      "state": "disabled"
+    },
+    {
+      "id": "slot_normal",
+      "group": "Buttons",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-기본-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "contentInsets": {
+        "left": 8,
+        "top": 8,
+        "right": 8,
+        "bottom": 8
+      },
+      "textAnchor": {
+        "x": 24.0,
+        "y": 23.0
+      },
+      "state": "normal"
+    },
+    {
+      "id": "slot_hover",
+      "group": "Buttons",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-호버-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "contentInsets": {
+        "left": 8,
+        "top": 8,
+        "right": 8,
+        "bottom": 8
+      },
+      "textAnchor": {
+        "x": 24.0,
+        "y": 23.0
+      },
+      "state": "hover"
+    },
+    {
+      "id": "slot_selected",
+      "group": "Buttons",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-선택-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "contentInsets": {
+        "left": 8,
+        "top": 8,
+        "right": 8,
+        "bottom": 8
+      },
+      "textAnchor": {
+        "x": 24.0,
+        "y": 23.0
+      },
+      "state": "selected"
+    },
+    {
+      "id": "slot_disabled",
+      "group": "Buttons",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-비활성-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "contentInsets": {
+        "left": 8,
+        "top": 8,
+        "right": 8,
+        "bottom": 8
+      },
+      "textAnchor": {
+        "x": 24.0,
+        "y": 23.0
+      },
+      "state": "disabled"
+    },
+    {
+      "id": "tab_normal",
+      "group": "Buttons",
+      "path": "UI/탭/기본-탭/기본-탭-기본-Questwood-1x.png",
+      "width": 96,
+      "height": 32,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 7,
+        "right": 14,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 15.0
+      },
+      "state": "normal"
+    },
+    {
+      "id": "tab_hover",
+      "group": "Buttons",
+      "path": "UI/탭/기본-탭/기본-탭-호버-Questwood-1x.png",
+      "width": 96,
+      "height": 32,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 7,
+        "right": 14,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 15.0
+      },
+      "state": "hover"
+    },
+    {
+      "id": "tab_pressed",
+      "group": "Buttons",
+      "path": "UI/탭/기본-탭/기본-탭-누름-Questwood-1x.png",
+      "width": 96,
+      "height": 32,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 7,
+        "right": 14,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 15.0
+      },
+      "state": "pressed"
+    },
+    {
+      "id": "tab_disabled",
+      "group": "Buttons",
+      "path": "UI/탭/기본-탭/기본-탭-비활성-Questwood-1x.png",
+      "width": 96,
+      "height": 32,
+      "border": {
+        "left": 14,
+        "top": 10,
+        "right": 14,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 7,
+        "right": 14,
+        "bottom": 9
+      },
+      "textAnchor": {
+        "x": 48.0,
+        "y": 15.0
+      },
+      "state": "disabled"
+    },
+    {
+      "id": "checkbox_off",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/체크박스/체크박스-꺼짐-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "checkbox_on",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/체크박스/체크박스-켜짐-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "checkbox_disabled",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/체크박스/체크박스-비활성-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "radio_off",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/라디오-버튼/라디오-버튼-꺼짐-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "radio_on",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/라디오-버튼/라디오-버튼-켜짐-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "toggle_off",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/토글/토글-꺼짐-Questwood-1x.png",
+      "width": 56,
+      "height": 28
+    },
+    {
+      "id": "toggle_on",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/토글/토글-켜짐-Questwood-1x.png",
+      "width": 56,
+      "height": 28
+    },
+    {
+      "id": "bar_track",
+      "group": "Controls",
+      "path": "UI/게이지/가로-게이지/가로-게이지-트랙-Questwood-1x.png",
+      "width": 128,
+      "height": 40,
+      "border": {
+        "left": 20,
+        "top": 12,
+        "right": 20,
+        "bottom": 12
+      }
+    },
+    {
+      "id": "bar_fill_red",
+      "group": "Controls",
+      "path": "UI/게이지/가로-게이지/가로-게이지-채움-빨강-Questwood-1x.png",
+      "width": 112,
+      "height": 12
+    },
+    {
+      "id": "bar_fill_blue",
+      "group": "Controls",
+      "path": "UI/게이지/가로-게이지/가로-게이지-채움-파랑-Questwood-1x.png",
+      "width": 112,
+      "height": 12
+    },
+    {
+      "id": "bar_fill_green",
+      "group": "Controls",
+      "path": "UI/게이지/가로-게이지/가로-게이지-채움-초록-Questwood-1x.png",
+      "width": 112,
+      "height": 12
+    },
+    {
+      "id": "slider_track",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/슬라이더/슬라이더-트랙-Questwood-1x.png",
+      "width": 128,
+      "height": 16,
+      "border": {
+        "left": 8,
+        "top": 6,
+        "right": 8,
+        "bottom": 6
+      }
+    },
+    {
+      "id": "slider_thumb",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/슬라이더/슬라이더-손잡이-Questwood-1x.png",
+      "width": 20,
+      "height": 24
+    },
+    {
+      "id": "scroll_track",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/스크롤바/스크롤바-트랙-Questwood-1x.png",
+      "width": 12,
+      "height": 96,
+      "border": {
+        "left": 4,
+        "top": 8,
+        "right": 4,
+        "bottom": 8
+      }
+    },
+    {
+      "id": "scroll_thumb",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/스크롤바/스크롤바-손잡이-Questwood-1x.png",
+      "width": 16,
+      "height": 36,
+      "border": {
+        "left": 4,
+        "top": 8,
+        "right": 4,
+        "bottom": 8
+      }
+    },
+    {
+      "id": "divider",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/구분선/구분선-Questwood-1x.png",
+      "width": 128,
+      "height": 40
+    },
+    {
+      "id": "short_sword",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/단검보다-긴-검-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "greatsword",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/대검-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "battle_axe",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/전투-도끼-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "war_hammer",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/전투-망치-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "spear",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/창-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "dagger",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/단검-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "short_bow",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/단궁-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "quiver",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/화살통-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "round_shield",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/원형-방패-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "kite_shield",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/연꼴-방패-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "iron_helmet",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/철제-투구-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "wizard_hat",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/마법사-모자-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "leather_armor",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/가죽-갑옷-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "chainmail",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/사슬-갑옷-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "boots",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/장화-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "gloves",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/장갑-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "health_flask",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/체력-물약-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "mana_bottle",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/마나-물약-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "antidote_vial",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/해독제-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "gold_coin",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/금화-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "coin_pouch",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/동전-주머니-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "ruby",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/루비-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "crystal_cluster",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/푸른-수정-무리-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "brass_key",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/황동-열쇠-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "locked_chest",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/잠긴-상자-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "scroll",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/주문-두루마리-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "spell_book",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/마법책-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "torch",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/횃불-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "bread",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/빵-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "cooked_meat",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/구운-고기-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "mushroom",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/버섯-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "herb_bundle",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/약초-묶음-Questwood-1x.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "id": "heart",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/체력-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "mana",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/마나-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "bolt",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/번개-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "coin",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/금화-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "sword",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/검-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "shield",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/방패-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "backpack",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/배낭-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "scroll_icon",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/두루마리-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "gear",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/설정-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "chat",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/말풍선-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "close",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/닫기-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "arrow_left",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/왼쪽-화살표-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "arrow_right",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/오른쪽-화살표-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "check",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/체크-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "lock",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/잠금-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "unlock",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/잠금-해제-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "play",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/재생-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "pause",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/일시정지-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "plus",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/더하기-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "minus",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/빼기-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "search",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/검색-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "music",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/음악-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "sound_on",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/소리-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "sound_off",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/음소거-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "warning",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/경고-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "question",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/도움말-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "info",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/정보-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "trash",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/휴지통-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "sun",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/태양-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "moon",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/달-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "star",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/별-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "save",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/조작과-이동/저장-Questwood-1x.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "id": "quest_board",
+      "group": "Windows",
+      "path": "UI/패널과-창/퀘스트-게시판-Questwood-1x.png",
+      "width": 192,
+      "height": 224,
+      "addedIn": "1.1",
+      "border": {
+        "left": 36,
+        "top": 76,
+        "right": 36,
+        "bottom": 28
+      },
+      "contentInsets": {
+        "left": 40,
+        "top": 84,
+        "right": 40,
+        "bottom": 32
+      },
+      "titleRect": {
+        "x": 40,
+        "y": 28,
+        "w": 112,
+        "h": 20
+      }
+    },
+    {
+      "id": "confirmation_window",
+      "group": "Windows",
+      "path": "UI/패널과-창/확인-창-Questwood-1x.png",
+      "width": 192,
+      "height": 144,
+      "addedIn": "1.1",
+      "border": {
+        "left": 28,
+        "top": 52,
+        "right": 28,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 32,
+        "top": 56,
+        "right": 32,
+        "bottom": 28
+      },
+      "titleRect": {
+        "x": 48,
+        "y": 15,
+        "w": 96,
+        "h": 18
+      }
+    },
+    {
+      "id": "notification_banner",
+      "group": "Windows",
+      "path": "UI/패널과-창/알림-배너-Questwood-1x.png",
+      "width": 192,
+      "height": 48,
+      "addedIn": "1.1",
+      "border": {
+        "left": 32,
+        "top": 14,
+        "right": 32,
+        "bottom": 14
+      },
+      "contentInsets": {
+        "left": 40,
+        "top": 16,
+        "right": 40,
+        "bottom": 16
+      }
+    },
+    {
+      "id": "portrait_frame",
+      "group": "Windows",
+      "path": "UI/패널과-창/초상화-프레임-Questwood-1x.png",
+      "width": 96,
+      "height": 96,
+      "addedIn": "1.1",
+      "contentInsets": {
+        "left": 16,
+        "top": 16,
+        "right": 16,
+        "bottom": 16
+      }
+    },
+    {
+      "id": "world_map",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/세계-지도-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "compass",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/나침반-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "quest_marker",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/퀘스트-표식-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "anvil",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/모루-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "crafting_tools",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/제작-도구-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "fishing_rod",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/낚싯대-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "pickaxe",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/곡괭이-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "seedling",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/새싹-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "watering_can",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/물뿌리개-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "trophy",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/트로피-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "silver_coin",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/은화-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "copper_coin",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/동화-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "ladder",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/사다리-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "campfire",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/모닥불-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "bell",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/탐험과-생활/종-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "blue_shards",
+      "group": "Icons",
+      "path": "아이콘/인터페이스/전투와-재화/푸른-수정-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.1"
+    },
+    {
+      "id": "crossbow",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/석궁-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "halberd",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/미늘창-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "flail",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/쇠사슬-철퇴-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "katana",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/일본도-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "trident",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/삼지창-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "spiked_mace",
+      "group": "Items",
+      "path": "아이콘/아이템/무기/가시-철퇴-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "buckler",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/버클러-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "tower_shield",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/대형-방패-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "crown",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/왕관-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "ranger_hood",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/사냥꾼-후드-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "wizard_robe",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/마법사-로브-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "plate_armor",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/판금-갑옷-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "cape",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/망토-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "iron_ring",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/철제-반지-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "moon_amulet",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/달-부적-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "leather_belt",
+      "group": "Items",
+      "path": "아이콘/아이템/방어구/가죽-허리띠-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "raw_fish",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/생선-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "cheese",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/치즈-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "apple",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/사과-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "carrot",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/당근-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "pumpkin",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/호박-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "egg",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/달걀-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "honey_jar",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/꿀단지-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "milk_bottle",
+      "group": "Items",
+      "path": "아이콘/아이템/식량과-포션/우유-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "rope_bundle",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/밧줄-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "iron_ingot",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/철괴-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "gold_ingot",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/금괴-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "leather_roll",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/가죽-두루마리-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "wood_bundle",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/장작-묶음-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "feather",
+      "group": "Items",
+      "path": "아이콘/아이템/재료와-재화/깃털-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "sewing_kit",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/바느질-도구-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "treasure_map",
+      "group": "Items",
+      "path": "아이콘/아이템/도구와-장신구/보물-지도-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "fireball",
+      "group": "Skills",
+      "path": "아이콘/스킬/화염탄/화염탄-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "ice_spike",
+      "group": "Skills",
+      "path": "아이콘/스킬/얼음-가시/얼음-가시-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "lightning_burst",
+      "group": "Skills",
+      "path": "아이콘/스킬/번개-폭발/번개-폭발-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "wind_cut",
+      "group": "Skills",
+      "path": "아이콘/스킬/바람-베기/바람-베기-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "earth_spike",
+      "group": "Skills",
+      "path": "아이콘/스킬/대지-가시/대지-가시-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "water_wave",
+      "group": "Skills",
+      "path": "아이콘/스킬/물결/물결-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "healing_spark",
+      "group": "Skills",
+      "path": "아이콘/스킬/치유-섬광/치유-섬광-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "magic_barrier",
+      "group": "Skills",
+      "path": "아이콘/스킬/마법-방어막/마법-방어막-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "poison_cloud",
+      "group": "Skills",
+      "path": "아이콘/스킬/독구름/독구름-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "shadow_step",
+      "group": "Skills",
+      "path": "아이콘/스킬/그림자-이동/그림자-이동-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "holy_beam",
+      "group": "Skills",
+      "path": "아이콘/스킬/신성-광선/신성-광선-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "arcane_orb",
+      "group": "Skills",
+      "path": "아이콘/스킬/비전-구체/비전-구체-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "sword_dash",
+      "group": "Skills",
+      "path": "아이콘/스킬/검-돌진/검-돌진-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "arrow_volley",
+      "group": "Skills",
+      "path": "아이콘/스킬/화살-연사/화살-연사-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "summon_wisp",
+      "group": "Skills",
+      "path": "아이콘/스킬/정령-소환/정령-소환-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "time_slow",
+      "group": "Skills",
+      "path": "아이콘/스킬/시간-감속/시간-감속-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_burn",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/화상-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_freeze",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/빙결-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_poison",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/중독-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_stun",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/기절-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_bleed",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/출혈-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_haste",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/가속-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_defense",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/방어-증가-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "status_regen",
+      "group": "Skills",
+      "path": "아이콘/상태-이상과-강화/재생-Questwood-1x.png",
+      "width": 24,
+      "height": 24,
+      "addedIn": "1.2"
+    },
+    {
+      "id": "wide_button_normal",
+      "group": "Controls",
+      "path": "UI/버튼/넓은-버튼/넓은-버튼-기본-Questwood-1x.png",
+      "width": 128,
+      "height": 80,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 24,
+        "right": 28,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 30,
+        "top": 28,
+        "right": 30,
+        "bottom": 28
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 40
+      }
+    },
+    {
+      "id": "wide_button_hover",
+      "group": "Controls",
+      "path": "UI/버튼/넓은-버튼/넓은-버튼-호버-Questwood-1x.png",
+      "width": 128,
+      "height": 80,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 24,
+        "right": 28,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 30,
+        "top": 28,
+        "right": 30,
+        "bottom": 28
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 40
+      }
+    },
+    {
+      "id": "wide_button_pressed",
+      "group": "Controls",
+      "path": "UI/버튼/넓은-버튼/넓은-버튼-누름-Questwood-1x.png",
+      "width": 128,
+      "height": 80,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 24,
+        "right": 28,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 30,
+        "top": 28,
+        "right": 30,
+        "bottom": 28
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 40
+      }
+    },
+    {
+      "id": "wide_button_disabled",
+      "group": "Controls",
+      "path": "UI/버튼/넓은-버튼/넓은-버튼-비활성-Questwood-1x.png",
+      "width": 128,
+      "height": 80,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 24,
+        "right": 28,
+        "bottom": 24
+      },
+      "contentInsets": {
+        "left": 30,
+        "top": 28,
+        "right": 30,
+        "bottom": 28
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 40
+      }
+    },
+    {
+      "id": "compact_tab_normal",
+      "group": "Controls",
+      "path": "UI/탭/소형-탭/소형-탭-기본-Questwood-1x.png",
+      "width": 64,
+      "height": 40,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 18,
+        "right": 16,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 17,
+        "right": 14,
+        "bottom": 7
+      },
+      "textAnchor": {
+        "x": 32,
+        "y": 25
+      }
+    },
+    {
+      "id": "compact_tab_hover",
+      "group": "Controls",
+      "path": "UI/탭/소형-탭/소형-탭-호버-Questwood-1x.png",
+      "width": 64,
+      "height": 40,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 18,
+        "right": 16,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 17,
+        "right": 14,
+        "bottom": 7
+      },
+      "textAnchor": {
+        "x": 32,
+        "y": 25
+      }
+    },
+    {
+      "id": "compact_tab_pressed",
+      "group": "Controls",
+      "path": "UI/탭/소형-탭/소형-탭-누름-Questwood-1x.png",
+      "width": 64,
+      "height": 40,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 18,
+        "right": 16,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 17,
+        "right": 14,
+        "bottom": 7
+      },
+      "textAnchor": {
+        "x": 32,
+        "y": 25
+      }
+    },
+    {
+      "id": "compact_tab_disabled",
+      "group": "Controls",
+      "path": "UI/탭/소형-탭/소형-탭-비활성-Questwood-1x.png",
+      "width": 64,
+      "height": 40,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 18,
+        "right": 16,
+        "bottom": 10
+      },
+      "contentInsets": {
+        "left": 14,
+        "top": 17,
+        "right": 14,
+        "bottom": 7
+      },
+      "textAnchor": {
+        "x": 32,
+        "y": 25
+      }
+    },
+    {
+      "id": "slot_rare",
+      "group": "Controls",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-희귀-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      }
+    },
+    {
+      "id": "slot_epic",
+      "group": "Controls",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-영웅-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      }
+    },
+    {
+      "id": "slot_quest",
+      "group": "Controls",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-퀘스트-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      }
+    },
+    {
+      "id": "slot_empty_locked",
+      "group": "Controls",
+      "path": "UI/카드와-슬롯/정사각-슬롯/정사각-슬롯-빈칸-잠금-Questwood-1x.png",
+      "width": 48,
+      "height": 48,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 9,
+        "top": 9,
+        "right": 9,
+        "bottom": 9
+      }
+    },
+    {
+      "id": "input_field",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/입력란/입력란-Questwood-1x.png",
+      "width": 128,
+      "height": 48,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 14,
+        "right": 16,
+        "bottom": 14
+      },
+      "contentInsets": {
+        "left": 20,
+        "top": 17,
+        "right": 20,
+        "bottom": 17
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 24
+      }
+    },
+    {
+      "id": "dropdown_field",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/드롭다운/드롭다운-Questwood-1x.png",
+      "width": 128,
+      "height": 48,
+      "addedIn": "1.2",
+      "border": {
+        "left": 16,
+        "top": 14,
+        "right": 32,
+        "bottom": 14
+      },
+      "contentInsets": {
+        "left": 20,
+        "top": 17,
+        "right": 36,
+        "bottom": 17
+      },
+      "textAnchor": {
+        "x": 56,
+        "y": 24
+      }
+    },
+    {
+      "id": "quantity_stepper",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/수량-조절/수량-조절-Questwood-1x.png",
+      "width": 128,
+      "height": 48,
+      "addedIn": "1.2",
+      "border": {
+        "left": 32,
+        "top": 14,
+        "right": 32,
+        "bottom": 14
+      },
+      "contentInsets": {
+        "left": 36,
+        "top": 17,
+        "right": 36,
+        "bottom": 17
+      },
+      "textAnchor": {
+        "x": 64,
+        "y": 24
+      }
+    },
+    {
+      "id": "keycap_blank",
+      "group": "Controls",
+      "path": "UI/입력-컨트롤/빈-키캡/빈-키캡-Questwood-1x.png",
+      "width": 32,
+      "height": 32,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 8,
+        "top": 8,
+        "right": 8,
+        "bottom": 8
+      },
+      "textAnchor": {
+        "x": 16,
+        "y": 16
+      }
+    },
+    {
+      "id": "crafting_panel",
+      "group": "Windows",
+      "path": "UI/패널과-창/제작-패널-Questwood-1x.png",
+      "width": 256,
+      "height": 160,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 32,
+        "top": 48,
+        "right": 100,
+        "bottom": 28
+      },
+      "titleRect": {
+        "x": 80,
+        "y": 14,
+        "w": 100,
+        "h": 24
+      },
+      "regions": {
+        "ingredients": {
+          "x": 28,
+          "y": 52,
+          "w": 116,
+          "h": 80
+        },
+        "output": {
+          "x": 174,
+          "y": 66,
+          "w": 48,
+          "h": 48
+        }
+      }
+    },
+    {
+      "id": "skill_tree_panel",
+      "group": "Windows",
+      "path": "UI/패널과-창/스킬-트리-패널-Questwood-1x.png",
+      "width": 192,
+      "height": 192,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 48,
+        "right": 28,
+        "bottom": 28
+      },
+      "contentInsets": {
+        "left": 32,
+        "top": 56,
+        "right": 32,
+        "bottom": 32
+      },
+      "titleRect": {
+        "x": 52,
+        "y": 20,
+        "w": 88,
+        "h": 20
+      }
+    },
+    {
+      "id": "quest_list_panel",
+      "group": "Windows",
+      "path": "UI/패널과-창/퀘스트-목록-패널-Questwood-1x.png",
+      "width": 160,
+      "height": 192,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 28,
+        "top": 48,
+        "right": 28,
+        "bottom": 24
+      },
+      "titleRect": {
+        "x": 48,
+        "y": 20,
+        "w": 64,
+        "h": 20
+      },
+      "regions": {
+        "row1": {
+          "x": 30,
+          "y": 44,
+          "w": 100,
+          "h": 40
+        },
+        "row2": {
+          "x": 30,
+          "y": 88,
+          "w": 100,
+          "h": 40
+        },
+        "row3": {
+          "x": 30,
+          "y": 132,
+          "w": 100,
+          "h": 40
+        }
+      }
+    },
+    {
+      "id": "shop_item_card",
+      "group": "Windows",
+      "path": "UI/패널과-창/상점-아이템-카드-Questwood-1x.png",
+      "width": 128,
+      "height": 176,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 24,
+        "top": 32,
+        "right": 24,
+        "bottom": 24
+      },
+      "regions": {
+        "portrait": {
+          "x": 32,
+          "y": 34,
+          "w": 64,
+          "h": 64
+        },
+        "description": {
+          "x": 28,
+          "y": 116,
+          "w": 72,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "journal_book",
+      "group": "Windows",
+      "path": "UI/패널과-창/펼친-일지-Questwood-1x.png",
+      "width": 256,
+      "height": 160,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "regions": {
+        "leftPage": {
+          "x": 28,
+          "y": 28,
+          "w": 80,
+          "h": 104
+        },
+        "rightPage": {
+          "x": 148,
+          "y": 28,
+          "w": 80,
+          "h": 104
+        }
+      }
+    },
+    {
+      "id": "reward_panel",
+      "group": "Windows",
+      "path": "UI/패널과-창/보상-패널-Questwood-1x.png",
+      "width": 256,
+      "height": 192,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 84,
+        "right": 28,
+        "bottom": 28
+      },
+      "contentInsets": {
+        "left": 36,
+        "top": 92,
+        "right": 36,
+        "bottom": 32
+      },
+      "titleRect": {
+        "x": 48,
+        "y": 56,
+        "w": 160,
+        "h": 24
+      }
+    },
+    {
+      "id": "equipment_panel",
+      "group": "Windows",
+      "path": "UI/패널과-창/장비-패널-Questwood-1x.png",
+      "width": 192,
+      "height": 192,
+      "addedIn": "1.2",
+      "contentInsets": {
+        "left": 28,
+        "top": 48,
+        "right": 28,
+        "bottom": 24
+      },
+      "titleRect": {
+        "x": 56,
+        "y": 22,
+        "w": 80,
+        "h": 20
+      },
+      "regions": {
+        "slot0": {
+          "x": 28,
+          "y": 52,
+          "w": 28,
+          "h": 28
+        },
+        "slot1": {
+          "x": 28,
+          "y": 92,
+          "w": 28,
+          "h": 28
+        },
+        "slot2": {
+          "x": 28,
+          "y": 132,
+          "w": 28,
+          "h": 28
+        },
+        "slot3": {
+          "x": 136,
+          "y": 52,
+          "w": 28,
+          "h": 28
+        },
+        "slot4": {
+          "x": 136,
+          "y": 92,
+          "w": 28,
+          "h": 28
+        },
+        "slot5": {
+          "x": 136,
+          "y": 132,
+          "w": 28,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "scroll_window",
+      "group": "Windows",
+      "path": "UI/패널과-창/두루마리-창-Questwood-1x.png",
+      "width": 192,
+      "height": 160,
+      "addedIn": "1.2",
+      "border": {
+        "left": 28,
+        "top": 32,
+        "right": 28,
+        "bottom": 32
+      },
+      "contentInsets": {
+        "left": 36,
+        "top": 40,
+        "right": 36,
+        "bottom": 40
+      }
+    }
+  ],
+  "newInVersion": {
+    "version": "1.2",
+    "assets": [
+      "crossbow",
+      "halberd",
+      "flail",
+      "katana",
+      "trident",
+      "spiked_mace",
+      "buckler",
+      "tower_shield",
+      "crown",
+      "ranger_hood",
+      "wizard_robe",
+      "plate_armor",
+      "cape",
+      "iron_ring",
+      "moon_amulet",
+      "leather_belt",
+      "raw_fish",
+      "cheese",
+      "apple",
+      "carrot",
+      "pumpkin",
+      "egg",
+      "honey_jar",
+      "milk_bottle",
+      "rope_bundle",
+      "iron_ingot",
+      "gold_ingot",
+      "leather_roll",
+      "wood_bundle",
+      "feather",
+      "sewing_kit",
+      "treasure_map",
+      "fireball",
+      "ice_spike",
+      "lightning_burst",
+      "wind_cut",
+      "earth_spike",
+      "water_wave",
+      "healing_spark",
+      "magic_barrier",
+      "poison_cloud",
+      "shadow_step",
+      "holy_beam",
+      "arcane_orb",
+      "sword_dash",
+      "arrow_volley",
+      "summon_wisp",
+      "time_slow",
+      "status_burn",
+      "status_freeze",
+      "status_poison",
+      "status_stun",
+      "status_bleed",
+      "status_haste",
+      "status_defense",
+      "status_regen",
+      "wide_button_normal",
+      "wide_button_hover",
+      "wide_button_pressed",
+      "wide_button_disabled",
+      "compact_tab_normal",
+      "compact_tab_hover",
+      "compact_tab_pressed",
+      "compact_tab_disabled",
+      "slot_rare",
+      "slot_epic",
+      "slot_quest",
+      "slot_empty_locked",
+      "input_field",
+      "dropdown_field",
+      "quantity_stepper",
+      "keycap_blank",
+      "crafting_panel",
+      "skill_tree_panel",
+      "quest_list_panel",
+      "shop_item_card",
+      "journal_book",
+      "reward_panel",
+      "equipment_panel",
+      "scroll_window"
+    ]
+  }
+}

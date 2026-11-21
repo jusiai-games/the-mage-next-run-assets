@@ -1,0 +1,15 @@
+project\game\exports\meadow-wave-mobile\meadow-hedge.png: 160x19, content box=(0, 0, 160, 19)
+
+project\game\exports\meadow-wave-mobile\meadow-terrain.png: 160x144, content box=(0, 0, 160, 144)
+
+project\game\exports\meadow-wave-mobile\distant-meadow.png: 160x80, content box=(0, 0, 160, 80)
+
+project\game\exports\meadow-wave-mobile\wizard-idle.png: 32x32, content box=(8, 2, 27, 28)
+
+project\game\exports\meadow-wave-mobile\spell-panel.png: 160x128, content box=(0, 0, 160, 128)
+
+project\game\exports\meadow-wave-mobile\spell-slots.png: 72x24, content box=(1, 0, 72, 24)
+
+project\game\exports\meadow-wave-mobile\meadow-wave-preview.png: 640x1408, content box=(0, 0, 640, 1408)
+
+Exact atlas reconstruction verified. Binary alpha, 32px character cell, locked (16,28) pivot.

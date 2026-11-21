@@ -1,0 +1,10 @@
+{
+  "kind": "character",
+  "name": "hood_staff_idle",
+  "directions": [
+    "right"
+  ],
+  "frames_per_direction": 5,
+  "columns": 5,
+  "palette": "../palettes/hood_staff_32_quick.json"
+}

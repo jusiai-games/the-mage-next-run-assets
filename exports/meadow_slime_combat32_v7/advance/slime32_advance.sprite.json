@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 576,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "716035e5f2e3779d75258340321dcce6e1cef31a5882b3de41890c56ce317e53",
+  "sprites": [
+    {
+      "name": "slime32_advance_left_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_03",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_04",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_05",
+      "x": 160,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_06",
+      "x": 192,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_07",
+      "x": 224,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_08",
+      "x": 256,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_09",
+      "x": 288,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_10",
+      "x": 320,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_11",
+      "x": 352,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_12",
+      "x": 384,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_13",
+      "x": 416,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_14",
+      "x": 448,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_15",
+      "x": 480,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_16",
+      "x": 512,
+      "y": 0
+    },
+    {
+      "name": "slime32_advance_left_17",
+      "x": 544,
+      "y": 0
+    }
+  ]
+}

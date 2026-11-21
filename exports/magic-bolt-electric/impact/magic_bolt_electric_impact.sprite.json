@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "kind": "tile32",
+  "width": 128,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.5,
+  "sha256": "f49b6934d73550ec7818597a35daf795eb8396ba8d3612149259c7647f0cc1b7",
+  "sprites": [
+    {
+      "name": "magic_bolt_electric_impact_impact_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_impact_impact_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_impact_impact_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_impact_impact_03",
+      "x": 96,
+      "y": 0
+    }
+  ]
+}

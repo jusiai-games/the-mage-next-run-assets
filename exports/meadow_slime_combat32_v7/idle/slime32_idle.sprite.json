@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 96,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "d18f4fefdf5bd713a7b42a2aa8962d7684708e6654f6ac5fbfae18b06322713f",
+  "sprites": [
+    {
+      "name": "slime32_idle_left_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "slime32_idle_left_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "slime32_idle_left_02",
+      "x": 64,
+      "y": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "character",
+  "name": "hood_staff_walk",
+  "directions": [
+    "right"
+  ],
+  "frames_per_direction": 4,
+  "columns": 4,
+  "palette": "../palettes/hood_staff_32_quick.json"
+}

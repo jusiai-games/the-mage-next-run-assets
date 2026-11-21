@@ -1,0 +1,12 @@
+{
+  "kind": "tile32",
+  "name": "magic_bolt_electric_impact",
+  "tiles": [
+    "impact_00",
+    "impact_01",
+    "impact_02",
+    "impact_03"
+  ],
+  "columns": 4,
+  "palette": "../sources/magic_bolt_electric_fx/01/palette.json"
+}

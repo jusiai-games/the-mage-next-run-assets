@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mage Next Run · 초원</title>
+<style>
+:root{color-scheme:dark;--ink:#f7ecd6;--muted:#b9adc2;--gold:#f6d087;--gold2:#dcaa5d;--bg:#14121e;--panel:#211c30;--line:#41364e;--cyan:#a7eaff;font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 45% -45%,#392a46 0,transparent 66%),var(--bg)}button{font:inherit;color:inherit;cursor:pointer}button:disabled{cursor:default}button:focus-visible,canvas:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}h1,h2,h3,p{margin:0}button,img,canvas{-webkit-tap-highlight-color:transparent}img{image-rendering:pixelated}.shell{max-width:1440px;margin:auto;padding:30px 40px 24px}.top{display:flex;align-items:center;justify-content:space-between;padding:0 0 21px;border-bottom:1px solid var(--line);margin-bottom:24px}.branding{display:flex;gap:13px;align-items:center}.sigil{display:grid;place-items:center;width:36px;height:36px;border:1px solid #785d52;background:#2a2132;color:var(--gold);font-size:24px}.brand{font:bold 19px/1.05 Georgia,serif;letter-spacing:.02em}.brand small,.proto,.kicker,.chapter,.eyebrow,.nav-group{font:700 10px/1.4 ui-monospace,monospace;letter-spacing:.15em}.brand small{display:block;color:var(--muted);margin-top:5px}.proto{color:var(--gold);border:1px solid #695243;padding:7px 10px}.desk{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:24px;align-items:start}.main{min-width:0}.game{border:1px solid #685354;box-shadow:0 12px 44px #08061083;background:#211824;overflow:hidden}.scene{aspect-ratio:16/9;position:relative;isolation:isolate;overflow:hidden;background:#77a9c5;container-type:inline-size}.scene::before,.scene::after{position:absolute;inset:0;content:"";z-index:-1;pointer-events:none}.art::before{background:var(--back) center/cover;image-rendering:pixelated}.field::before,.ritual::before{background:var(--field) center/100% 100%;image-rendering:pixelated}.art::after{background:linear-gradient(90deg,#131424ea 1%,#14172594 34%,#13162511 71%),linear-gradient(0deg,#16142485,transparent 44%)}.art{--back:var(--title)}.retreat::after{background:linear-gradient(90deg,#1c182cef 0,#1c182cc4 37%,#2c1a3d69 100%),linear-gradient(0deg,#120f23aa,transparent 60%)}.victory::after{background:linear-gradient(90deg,#181827ec 0,#1818279c 42%,#1818270a 85%)}.opening,.story{position:absolute;left:7.3%;top:17%;width:68%;z-index:2}.opening .chapter,.story .chapter{color:var(--gold);font-size:clamp(10px,1.2cqw,13px)}.opening h1{font:700 clamp(32px,9.3cqw,114px)/.82 Georgia,serif;letter-spacing:-.066em;color:#ffeac0;margin:4.5% 0 4%;text-shadow:0 4px 0 #3d282a,0 8px 30px #160f22aa}.opening h1 em{display:block;font-style:normal;color:var(--gold);margin-top:.09em}.opening p,.story p{color:#f2dec7;line-height:1.55;font-size:clamp(12px,1.7cqw,18px)}.opening .primary,.story .primary,.story .ghost{margin-top:4.5%}.title-mage{position:absolute;width:clamp(75px,22%,255px);bottom:7%;right:10%;filter:drop-shadow(0 4px 0 #2723208a)}.ground-shade{position:absolute;right:15.7%;bottom:9.4%;width:11%;height:3.3%;border-radius:50%;background:#312d317d}.story{top:22%;width:52%}.story h2{font:700 clamp(30px,7cqw,83px)/1.03 Georgia,"Malgun Gothic",serif;letter-spacing:-.075em;margin:4% 0}.story .small-title{font-size:clamp(25px,5.2cqw,61px)}.primary,.ghost,.mini{min-height:40px;padding:9px 17px;font-weight:800;border-radius:2px}.primary{background:linear-gradient(#ffe29e,#dfaa5f);color:#302034;border:1px solid #ffdfa6;box-shadow:inset 0 -3px #a6745099,0 3px 0 #302238}.primary:hover{background:#ffe8b4}.ghost,.mini{background:#2d2439;border:1px solid #63546c}.ghost:hover,.mini:hover{border-color:var(--gold);color:var(--gold)}.mini{font-size:12px;min-height:32px;padding:6px 10px}.primary:disabled,.ghost:disabled,.mini:disabled{opacity:.46}.buttons{display:flex;gap:9px;flex-wrap:wrap}.portal{position:absolute;right:11%;bottom:9%;width:22%;aspect-ratio:1/1.5;border:clamp(2px,.55cqw,7px) solid #c8a7ff;border-radius:50%;background:radial-gradient(ellipse,#cfa9ff60 0,#7046bd91 46%,#201a3faa 77%);box-shadow:0 0 27px #9869eb,0 0 65px #7850c7,inset 0 0 22px #b99aff;opacity:.83}.retreat .title-mage{right:22%;width:18%}.hud{display:flex;justify-content:space-between;position:absolute;left:3%;right:3%;top:5%;align-items:start;gap:10px}.hud-box{background:#1d192be8;border:1px solid #776078;padding:9px 13px;box-shadow:0 3px #2b253065;display:grid;gap:3px}.hud-box .eyebrow{font-size:clamp(8px,1.15cqw,11px);color:var(--gold)}.hud-box strong{font-size:clamp(12px,1.9cqw,21px)}.shield-count{display:flex;gap:4px;align-items:center}.pip{width:clamp(6px,1.3cqw,14px);aspect-ratio:1.1;background:#494052;border:1px solid #796d82;clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%)}.pip.live{background:#a2efff;border-color:#dcf9ff}.pip.danger{background:#ffac7a;border-color:#ffdfac}.actors{position:absolute;inset:0;pointer-events:none}.actor{width:10%;aspect-ratio:1;position:absolute;transform:translate(-50%,-87.5%);z-index:2;object-fit:contain}.actor.enemy{transition:left .24s ease,opacity .2s}.actor.hit{filter:brightness(1.9) saturate(.5)}.drop{position:absolute;transform:translate(-50%,-60%);width:7%;aspect-ratio:4/1;border-radius:50%;background:#29374756;z-index:1}.barrier{position:absolute;left:18%;top:69%;width:20%;aspect-ratio:1.28;transform:translate(-50%,-80%);border-right:clamp(2px,.45cqw,5px) solid #cafaffc9;border-left:1px solid #bcf4ff64;border-radius:50%;box-shadow:5px 0 20px #71dffc91,inset -12px 0 20px #b1f6ff6b;z-index:1}.barrier.danger{border-right-color:#ffbd9a;box-shadow:5px 0 18px #fd9f7ca0,inset -10px 0 18px #ffcb9e6b}.bolt{position:absolute;width:9%;top:58%;left:24%;animation:bolt .32s linear forwards;z-index:4}.bolt.fire{filter:hue-rotate(183deg) saturate(2)}@keyframes bolt{to{transform:translateX(490%);opacity:.25}}.flash{position:absolute;left:59%;top:40%;width:15%;z-index:4;animation:flash .52s both}@keyframes flash{0%{transform:scale(.3);opacity:.5}40%{opacity:1}100%{transform:scale(1.8);opacity:0}}.field-message{position:absolute;left:50%;top:37%;width:max-content;max-width:90%;transform:translateX(-50%);padding:12px 20px;text-align:center;border:1px solid #d7b270;color:#ffe6b7;background:#272035ef;box-shadow:0 4px 0 #211b2a68;font-weight:900}.warning-dot{position:absolute;color:#5b2e31;background:#ffe0a0;border:1px solid #6c433a;z-index:3;border-radius:2px;padding:1px 5px;font:800 clamp(10px,1.1cqw,15px) monospace;transform:translate(-50%,-50%)}
+.dock{padding:15px 21px 20px;background:linear-gradient(105deg,#2b2237,#1f1a2b);border-top:1px solid #9e7757}.dock-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}.dock-head h2{font-size:16px;letter-spacing:-.035em}.dock-head p,.dock-sub{font-size:12px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.card{display:grid;grid-template-columns:46px minmax(0,1fr);grid-template-rows:auto auto;align-items:center;column-gap:10px;row-gap:4px;text-align:left;min-height:73px;padding:9px 12px;background:linear-gradient(145deg,#413149,#282238);border:1px solid #6b5574;border-radius:2px;position:relative;box-shadow:inset 0 0 0 2px #282139}.card:hover:not(:disabled){border-color:#e2bb81;box-shadow:inset 0 0 0 2px #4c3c55}.card img{width:100%;grid-row:span 2;background:#1d192c8c;border:1px solid #665572}.card strong{font-size:14px;color:#f9ecdd}.card small{font-size:11px;line-height:1.45;color:#d4c5d8}.card .type{color:#ffd69c}.card.lightning{border-color:#577184}.card.burst{border-color:#87649e}.card.empty{box-shadow:none;border-style:dashed;background:#221e2e;color:#8e829b;text-align:center;display:grid;place-items:center;grid-template:1fr/1fr;min-height:69px}.card.empty .plus{font-size:21px;font-weight:300;line-height:1}.card.empty strong{color:inherit;font-size:12px}.card.empty.available{color:var(--gold);border-color:#b59161;background:#392c3b}.card.cool img{opacity:.48}.charge{display:block;height:4px;border-radius:2px;background:#4a3c56;overflow:hidden;max-width:110px}.charge i{display:block;width:100%;height:100%;background:#ffd184}.lightning .charge i{background:#a7e9ff}.burst .charge i{background:#e3b2ff}.cool .charge i{transform-origin:left;animation:ready var(--cooldown) linear}@keyframes ready{from{transform:scaleX(0)}to{transform:scaleX(1)}}.inventory{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}.inventory .selected{border-color:var(--gold);color:var(--gold)}.inventory .dock-sub{flex:1}.retreat-dock .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.upgrade{display:flex;justify-content:space-between;gap:8px;text-align:left;align-items:center;background:#2e253a;border:1px solid #68536c;padding:12px 13px}.upgrade:hover:not(:disabled){border-color:var(--gold)}.upgrade strong,.upgrade small{display:block}.upgrade small{color:var(--muted);font-size:11px;margin-top:4px}.upgrade b{color:var(--gold);font-size:12px;white-space:nowrap}.upgrade:disabled{opacity:.55}.balance{display:inline-block;background:#241d31d9;border:1px solid #7e645e;padding:8px 12px;margin-top:5%;font-size:clamp(11px,1.6cqw,16px)}.balance b{color:var(--gold)}.ritual::after{background:#161326db;z-index:1}.ritual-ui{position:absolute;inset:0;z-index:2;display:grid;grid-template-rows:auto minmax(0,1fr) auto;place-items:center;padding:3%;text-align:center}.ritual-ui h2{font-size:clamp(15px,3.2cqw,31px)}.ritual-ui p{color:#e3c5fc;font-size:clamp(10px,1.5cqw,15px);margin:4px 0}.ritual-ui canvas{height:100%;max-height:100%;width:auto;max-width:100%;aspect-ratio:1.46;touch-action:none;cursor:crosshair;min-height:0}.ritual-ui .mini{min-height:28px}.rail{border:1px solid var(--line);padding:15px 12px;background:#1d1828}.rail h2{font-size:13px;margin:2px 5px 13px}.nav-group{color:#a393b1;margin:13px 6px 4px}.step{width:100%;display:flex;align-items:center;gap:9px;text-align:left;background:transparent;border:1px solid transparent;padding:6px;border-radius:2px;font-size:12px;min-height:31px;color:#d1c6d7}.step b{color:#9889a5;font:11px ui-monospace,monospace}.step[aria-current="step"]{background:#35273b;border-color:#705666;color:#ffe0a4}.step[aria-current="step"] b,.step:hover{color:var(--gold)}.preview{margin-top:10px;padding-top:8px;border-top:1px solid var(--line)}.preview:empty{display:none}.preview .mini{display:block;width:100%;margin-top:5px;text-align:left}.caption{margin:12px 1px 0;color:#c0b3c8;line-height:1.5;font-size:12px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:900px){.shell{padding:22px 22px}.desk{grid-template-columns:minmax(0,1fr) 176px;gap:14px}}@media(max-width:720px){.shell{padding:15px 12px}.top{padding-bottom:13px;margin-bottom:12px}.desk{grid-template-columns:1fr;gap:14px}.rail nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 7px}.nav-group{grid-column:1/-1}.preview{display:flex;gap:6px}.scene{aspect-ratio:4/3}.opening,.story{top:17%}.opening h1{font-size:11cqw}.story h2{font-size:8cqw}.story{width:65%}.title-mage{right:7%;width:24%}.dock{padding:11px 10px}.card{grid-template-columns:1fr;text-align:center;justify-items:center;padding:5px 4px;row-gap:4px;column-gap:0}.card img{width:34px;grid-row:auto}.card strong{font-size:12px}.card small{font-size:10px}.charge{width:75%}.primary,.ghost{font-size:12px;min-height:34px;padding:7px 11px}.hud-box{padding:6px 8px}.actor{width:13%}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+__UI_THEME__
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top"><div class="branding"><span class="sigil" aria-hidden="true"></span><div class="brand">The Mage Next Run<small>초원 · 스테이지 1</small></div></div><span class="proto">플레이 시안</span></header>
+<div class="desk">
+<div class="main"><section class="game" id="game" aria-label="게임 화면"></section><p class="caption" id="caption"></p></div>
+<aside class="rail"><h2>화면 바로 보기</h2><nav id="steps" aria-label="전체 게임 화면"></nav><div class="preview" id="preview"></div></aside>
+</div><p class="sr" id="status" role="status"></p>
+</main>
+<script>
+const assets = __ASSETS__;
+document.documentElement.style.setProperty('--title', 'url('+assets.title+')');
+document.documentElement.style.setProperty('--field', 'url('+assets.field+')');
+for(const [key,url] of Object.entries(assets)){
+ if(key.startsWith('ui-'))document.documentElement.style.setProperty('--'+key,'url('+url+')');
+}
+document.querySelector('.sigil').innerHTML=img('ui-rune');
+const game = document.querySelector('#game');
+const steps = document.querySelector('#steps');
+const preview = document.querySelector('#preview');
+const status = document.querySelector('#status');
+const scenes = {
+ title:['타이틀','시작','스테이지 1 초원에서 첫 방어를 시작합니다.'],
+ intro:['전투 시작','','한 스테이지는 5개 웨이브로 구성됩니다.'],
+ battle:['웨이브 1 전투','첫 도전','주문 카드를 누르거나 1–3 키로 시전하세요.'],
+ reward:['주문 보상','','첫 웨이브를 막고 주문 보상 한 장을 고릅니다.'],
+ equip:['카드 장착','','손패를 좌우로 넘겨 카드를 고르고, 위 슬롯으로 끌어 장착하거나 합치세요.'],
+ later:['웨이브 2–5 전투','','다가오는 적을 막으세요. 실드가 0이 되면 포탈로 후퇴합니다.'],
+ trace:['별 그리기','','첫 점에서 별의 점들을 순서대로 이으세요.'],
+ retreat:['실드 붕괴 · 강화','결과','보유한 마력 잔재로 영구 강화를 구매할 수 있습니다.'],
+ retry:['재도전','','영구 강화는 유지됩니다. 이번 도전에서 얻은 주문은 다시 획득합니다.'],
+ clear:['스테이지 클리어','','웨이브 5/5 방어를 완료했습니다.'],
+ road:['다음 지역 선택','','다음 지역으로 이동하거나 준비 거점으로 돌아갈 수 있습니다.']
+};
+const spells = {
+ fire:{name:'화염탄',icon:'fire',type:'기존 주문 강화',desc:'화염탄 피해 증가',cd:720},
+ lightning:{name:'연쇄 번개',icon:'lightning',type:'새 주문',desc:'최대 두 마리 타격',cd:2400},
+ burst:{name:'마력 폭발',icon:'burst',type:'새 주문',desc:'별을 그려 범위 타격',cd:3400}
+};
+const combat = ['battle','later','retry'];
+let state;
+let timers = new Set();
+let traceFrom = 'later';
+let tracing = null;
+let handGesture = null;
+let skipHandClickUntil = 0;
+function reset(){
+ return {scene:'title',wave:1,ward:0,haste:0,hp:5,coins:35,
+   loot:0,handPick:null,rewardUsed:false,equipNote:'',slots:['fire',null,null],levels:{},shieldHitUntil:0,
+   foes:[],cool:{},casting:false,notice:''};
+}
+function schedule(fn, delay){
+ const timer=setTimeout(()=>{timers.delete(timer);fn()},delay);
+ timers.add(timer);
+}
+function stop(){timers.forEach(clearTimeout);timers.clear()}
+function loadWave(wave){
+ state.wave=wave;
+ state.foes=Array.from({length:wave===1?3:Math.min(6,wave+2)},(_,i)=>({
+   x: [67,79,91,85,101,108][i],y:[72,61,79,66,73,81][i],hp:wave>=4&&i%3===1?2:1
+ }));
+ state.cool={};state.casting=false;state.notice='';
+}
+function go(scene,focus=true){
+ stop();handGesture?.ghost?.remove();handGesture=null;state.scene=scene;render();
+ if(focus) game.querySelector('[data-focus]')?.focus({preventScroll:true});
+ status.textContent=scenes[scene][0];
+ if(combat.includes(scene)) schedule(tick,2700);
+ if(scene==='trace') setupTrace();
+}
+function jump(scene){
+ state=reset();
+ if(scene==='reward'||scene==='equip')state.notice='웨이브 1 방어 완료';
+ if(scene==='later'||scene==='trace'){state.slots[1]='burst';loadWave(2);}
+ if(scene==='battle'||scene==='retry')loadWave(1);
+ if(scene==='retreat'){state.wave=3;state.hp=0;state.loot=32;state.coins=67;}
+ if(scene==='retry'){state.ward=1;state.hp=6;state.coins=7;}
+ if(scene==='clear'||scene==='road'){state.wave=5;state.loot=75;state.coins=110;}
+ traceFrom='later';go(scene,false);
+}
+function btn(label, cmd, cls='primary', extra=''){
+ return '<button type="button" class="'+cls+'" data-act="'+cmd+'" '+extra+'>'+label+'</button>';
+}
+function img(key, cls='', alt=''){
+ return '<img class="'+cls+'" draggable="false" src="'+assets[key]+'" alt="'+alt+'">';
+}
+function art(kind,inner,portal=false){
+ return '<div class="scene art '+kind+'"><span class="ground-shade"></span>'+(portal?img('ui-portal','portal'):'')+img('mage','title-mage','마법사')+inner+'</div>';
+}
+function hero(scene){
+ if(scene==='title')return art('title','<div class="opening"><p class="chapter">마법사 로그라이크</p><h1>'+img('ui-title-lockup','title-lockup','The Mage Next Run')+'</h1><p>초원 끝, 당신은 첫 방어선을 세운다.</p>'+btn('게임 시작','intro','primary','data-focus')+'</div>');
+ return art('intro','<div class="story"><p class="chapter">스테이지 1</p><h2>초원</h2><p>밀려오는 슬라임을 막아내세요.<br>방어 목표 · 웨이브 5개</p>'+btn('전투 시작','start','primary','data-focus')+'</div>');
+}
+function shield(){
+ const pips=Array.from({length:5+state.ward},(_,i)=>img(i>=state.hp?'ui-pip-off':state.hp<=2?'ui-pip-low':'ui-pip-on','pip')).join('');
+ return '<div class="hud-box"><span class="eyebrow">실드</span><div class="shield-count" aria-label="실드 '+state.hp+' / '+(5+state.ward)+'"><span class="shield-count" aria-hidden="true">'+pips+'</span><strong>'+state.hp+'/'+(5+state.ward)+'</strong></div></div>';
+}
+function field(backdrop=false){
+ const enemies=state.foes.map((foe,i)=>'<span class="drop" data-drop="'+i+'" style="left:'+foe.x+'%;top:'+foe.y+'%"></span><img class="actor enemy" src="'+assets[foe.x<37?'attack':'slime']+'" data-foe="'+i+'" alt="슬라임" style="left:'+foe.x+'%;top:'+foe.y+'%">'+(foe.x<37?'<img class="warning-dot" src="'+assets['ui-warning']+'" alt="공격 예고" style="left:'+foe.x+'%;top:'+(foe.y-8)+'%">':'')).join('');
+ const hit=Date.now()<state.shieldHitUntil;
+ const ward=img(hit?'ui-shield-hit':state.hp<=2?'ui-shield-weak':'ui-shield-normal','shield-art'+(hit?' hit':''));
+ return '<div class="scene field" '+(backdrop?'aria-hidden="true"':'')+'><div class="hud"><div class="hud-box"><span class="eyebrow">스테이지 1 · 초원</span><strong>웨이브 '+state.wave+' / 5</strong></div>'+shield()+'</div><div class="actors"><span class="drop" style="left:18%;top:69%"></span>'+ward+'<span class="mage-frame">'+img(state.casting?'cast':'mage','actor','마법사')+'</span><div class="enemies">'+enemies+'</div></div>'+(!backdrop&&state.notice?'<p class="field-message">'+state.notice+'</p>':'')+'</div>';
+}
+function card(key,mode,i){
+ if(!key)return btn(img('ui-plus','plus')+'<strong>빈 슬롯</strong>','empty','card empty','disabled aria-label="'+(i+1)+'번 빈 슬롯"');
+ const spell=spells[key];
+ const cool=Math.max(0,(state.cool[key]??0)-Date.now());
+ const type=mode==='reward'?'<small><span class="type">'+spell.type+'</span><br>'+spell.desc+'</small>':'<span class="charge" aria-hidden="true"><i></i></span>';
+ return btn(img(spell.icon)+'<strong>'+spell.name+'</strong>'+type,mode==='reward'?'reward-'+key:'cast-'+key,'card '+key+(mode==='battle'&&cool?' cool':''),(mode==='battle'&&(cool||state.casting)?'disabled ':'')+(mode==='battle'?'aria-label="'+spell.name+' 시전" style="--cooldown:'+Math.round(cool)+'ms"':''));
+}
+function dock(scene){
+ const reward=scene==='reward';
+ const title=reward?'주문 보상':'장착 주문';
+ const meta=reward?'장착 화면에서 한 장 선택':'1 · 2 · 3';
+ const cards=reward?['fire','lightning','burst']:state.slots;
+ return '<div class="dock"><div class="dock-head"><h2>'+title+'</h2><p>'+meta+'</p></div><div class="cards">'+cards.map((key,i)=>card(key,reward?'reward':'battle',i)).join('')+'</div></div>';
+}
+function equipView(){
+ const slots=state.slots.map((key,i)=>btn(
+  '<span class="slot-number">'+(i+1)+'</span>'+img(key??'ui-plus')+
+  '<strong>'+(key?spells[key].name:'빈 슬롯')+'</strong><small>'+(key?'Lv. '+(state.levels[key]??1):'새 주문')+'</small>',
+  'slot-'+i,'equip-slot'+(key?'':' empty'),'data-drop-slot="'+i+'" '+(state.rewardUsed?'disabled':'')
+ )).join('');
+ const hand=Object.entries(spells).map(([key,spell])=>btn(
+  '<strong>'+spell.name+'</strong><span class="hand-copy"><small>'+spell.desc+'</small><em>'+(state.slots.includes(key)?'같은 주문에 합치기':'빈 슬롯에 장착')+'</em></span>',
+  'hand-'+key,'hand-card '+key,'style="--hand-face:var(--ui-hand-'+key+')" data-hand="'+key+'" aria-pressed="false" '+(state.rewardUsed?'disabled':'')
+ )).join('');
+ return '<div class="equip-stack">'+field(true)+'<section class="equip-overlay" aria-labelledby="equip-title"><header class="equip-head"><p class="equip-label">웨이브 1 방어 완료</p><h2 id="equip-title" tabindex="-1" data-focus>주문 장착</h2></header><div class="equip-slots" role="group" aria-label="장착 슬롯 3개">'+slots+'</div><p class="equip-feedback" aria-live="polite"></p><section class="hand-group" aria-labelledby="hand-title"><div class="hand-head"><h3 id="hand-title">보상 손패</h3><p>한 장 선택 · 좌우 스와이프</p></div><div class="hand-controls">'+btn(img('ui-arrow'),'handprev','mini','aria-label="이전 카드"')+'<div class="hand-track">'+hand+'</div>'+btn(img('ui-arrow'),'handnext','mini','aria-label="다음 카드"')+'</div></section>'+btn('다음 웨이브','next','primary next-wave')+'</section></div>';
+}
+function canPlace(key,index){
+ const current=state.slots[index];
+ return current===key||(!current&&!state.slots.includes(key));
+}
+function paintEquip(){
+ const note=game.querySelector('.equip-feedback');
+ note.textContent=state.equipNote||(state.handPick?spells[state.handPick].name+' 선택 · 빛나는 슬롯으로 옮기세요.':'카드를 위로 끌어 장착하거나 같은 주문에 합치세요.');
+ game.querySelectorAll('[data-hand]').forEach(card=>{
+  const selected=card.dataset.hand===state.handPick;
+  card.classList.toggle('is-selected',selected);card.setAttribute('aria-pressed',selected);
+ });
+ game.querySelectorAll('[data-drop-slot]').forEach(slot=>{
+  slot.classList.toggle('match',Boolean(state.handPick&&canPlace(state.handPick,Number(slot.dataset.dropSlot))));
+ });
+}
+function placeCard(key,index){
+ if(state.scene!=='equip'||state.rewardUsed||!key)return;
+ if(!canPlace(key,index)){
+  state.equipNote=state.slots.includes(key)?'같은 주문 카드 위로 옮기면 합쳐집니다.':'새 주문은 빈 슬롯에 넣을 수 있습니다.';
+  paintEquip();return;
+ }
+ const merged=state.slots[index]===key;
+ if(merged)state.levels[key]=(state.levels[key]??1)+1;
+ else state.slots[index]=key;
+ state.rewardUsed=true;
+ state.handPick=null;
+ state.equipNote=spells[key].name+(merged?' 합치기 완료 · Lv. '+state.levels[key]:' 장착 완료');
+ renderGame();
+ game.querySelector('[data-act="next"]').focus({preventScroll:true});
+}
+function outcome(scene){
+ const retreat=scene==='retreat',road=scene==='road';
+ const title=retreat?'실드 붕괴':road?'다음 지역으로':'스테이지 클리어';
+ const detail=retreat?'마법사가 포탈을 열어 후퇴했습니다.':road?'“준비하고 올까. 아니면 계속 갈까.”':'초원 방어 완료 · 웨이브 5 / 5';
+ const buttons=retreat?'':road?'<div class="buttons">'+btn('계속 간다','continue','primary','data-focus')+btn('초원 다시 도전','retry','ghost')+'</div>':btn('다음 지역 보기','road','primary','data-focus');
+ const balance=road?'':'<div class="balance">이번 도전 <b>+'+state.loot+'</b> · 보유 잔재 <b>'+state.coins+'</b></div>';
+ const story='<div class="story"><p class="chapter">'+(road?'스테이지 2 · 오솔길':'스테이지 1 · 초원')+'</p><h2 class="small-title">'+title+'</h2><p>'+detail+'</p>'+balance+buttons+'</div>';
+ const upgrade=(key,title,desc)=>btn('<span><strong>'+title+'</strong><small>'+desc+'</small></span><b>'+(state[key]?'구매 완료':'잔재 60')+'</b>','buy-'+key,'upgrade',state[key]||state.coins<60?'disabled':'');
+ const shop=retreat?'<div class="dock retreat-dock"><div class="dock-head"><h2>영구 강화</h2><p>보유 마력 잔재 '+state.coins+'</p></div><div class="cards">'+upgrade('ward','최대 실드 +1','기본 실드 5칸 → 6칸')+upgrade('haste','주문 충전 시간 −5%','기본 충전 시간 감소')+'</div><div class="inventory"><p class="dock-sub">스테이지 1 · 웨이브 '+state.wave+'에서 후퇴</p>'+btn('다시 도전','retry','primary','data-focus')+'</div></div>':'';
+ return art(retreat?'retreat':'victory',story,retreat)+shop;
+}
+function ritual(){
+ return '<div class="scene ritual"><div class="ritual-ui"><div><h2>마력 폭발</h2><p id="trace-help">빛나는 첫 점에서 시작해 별을 그리세요.</p></div><canvas id="star" width="360" height="246" tabindex="0" aria-label="별 그리기. 키보드는 1부터 5까지 순서대로 누르세요." data-focus></canvas>'+btn('시전 취소','cancel','mini')+'</div></div>';
+}
+function renderGame(){
+ const scene=state.scene;
+ game.innerHTML=scene==='equip'?equipView():combat.includes(scene)||scene==='reward'?field()+dock(scene):scene==='trace'?ritual():scene==='title'||scene==='intro'?hero(scene):outcome(scene);
+ if(scene==='equip'){paintEquip();game.querySelector('[data-hand="'+state.handPick+'"]')?.scrollIntoView({block:'nearest',inline:'nearest'});}
+}
+function render(){
+ renderGame();
+ steps.innerHTML=Object.entries(scenes).map(([id,[label,group]],i)=>(group?'<p class="nav-group">'+group+'</p>':'')+'<button type="button" class="step" data-scene="'+id+'" '+(state.scene===id?'aria-current="step"':'')+'><b>'+String(i+1).padStart(2,'0')+'</b>'+label+'</button>').join('');
+ document.querySelector('#caption').textContent=scenes[state.scene][2];
+ preview.innerHTML=state.scene==='battle'?btn('보상 장면 보기','demo-reward','mini'):state.scene==='later'?btn('후퇴 결과 보기','demo-retreat','mini')+btn('클리어 장면 보기','demo-clear','mini'):'';
+}
+function lose(){
+ state.loot=state.wave===1?12:state.wave===2?23:32;
+ state.coins+=state.loot;go('retreat');
+}
+function victory(){
+ state.loot=75;state.coins+=state.loot;go('clear');
+}
+function tick(){
+ if(state.casting){schedule(tick,800);return;}
+ state.foes.forEach(foe=>foe.x-=8);
+ const remaining=state.foes.filter(foe=>foe.x>24);
+ if(remaining.length<state.foes.length){state.hp=Math.max(0,state.hp-(state.foes.length-remaining.length));state.foes=remaining;state.shieldHitUntil=Date.now()+340;}
+ if(!state.hp){lose();return;}
+ if(!state.foes.length){finishWave();return;}
+ refreshField();
+ if(Date.now()<state.shieldHitUntil)schedule(()=>{
+  const ward=game.querySelector('.shield-art.hit');
+  if(ward){ward.classList.remove('hit');ward.src=assets[state.hp<=2?'ui-shield-weak':'ui-shield-normal'];}
+ },340);
+ schedule(tick,1050);
+}
+function finishWave(){
+ state.notice='웨이브 '+state.wave+' 방어 완료';
+ if(state.wave===5){victory();return;}
+ state.hp=Math.min(5+state.ward,state.hp+1);
+ if(state.wave===1){go('reward');return;}
+ state.casting=true;refreshField();
+ stop();
+ schedule(()=>{loadWave(state.wave+1);go('later',false)},850);
+}
+function refreshField(){
+ const active=document.activeElement?.dataset.act;
+ const template=document.createElement('template');
+ template.innerHTML=field()+dock(state.scene);
+ game.querySelector('.field').replaceWith(template.content.firstElementChild);
+ game.querySelector('.dock').replaceWith(template.content.firstElementChild);
+ if(active) game.querySelector('[data-act="'+active+'"]')?.focus({preventScroll:true});
+}
+function cast(key,traced=false){
+ if(!combat.includes(state.scene)||!state.slots.includes(key)||state.casting||state.cool[key]>Date.now())return;
+ if(key==='burst'&&!traced){traceFrom=state.scene;go('trace');return;}
+ const scene=state.scene;
+ const targets=key==='burst'?state.foes.slice():state.foes.slice().sort((a,b)=>a.x-b.x).slice(0,key==='lightning'?2:1);
+ state.cool[key]=Date.now()+Math.round(spells[key].cd*(state.haste ? .95 : 1));
+ state.casting=true;refreshField();
+ const fx=document.createElement('img');
+ fx.src=assets[key==='burst'?'impact':'bolt'];fx.alt='';fx.className=key==='burst'?'flash':'bolt '+key;
+ game.querySelector('.actors').append(fx);
+ schedule(()=>{
+  targets.forEach(foe=>{foe.hp-=(state.levels[key]??1)+(key==='burst'?1:0)});
+  state.foes=state.foes.filter(foe=>foe.hp>0);
+  state.casting=false;
+  if(!state.foes.length){finishWave();return;}
+  refreshField();
+  schedule(()=>{if(state.scene===scene&&!state.casting)refreshField()},Math.max(0,state.cool[key]-Date.now()));
+ },key==='burst'?470:300);
+ status.textContent=spells[key].name+' 시전';
+}
+function take(cmd){
+ const [verb,key]=cmd.split('-');
+ if(verb==='cast'){cast(key);return;}
+ if(verb==='reward'){
+  state.handPick=key;
+  go('equip');return;
+ }
+ if(verb==='slot'){placeCard(state.handPick,Number(key));return;}
+ if(verb==='hand'){
+  if(state.rewardUsed)return;
+  state.handPick=key;state.equipNote='';paintEquip();return;
+ }
+ if(cmd==='handprev'||cmd==='handnext'){
+  const track=game.querySelector('.hand-track');
+  track.scrollBy({left:(cmd==='handnext'?1:-1)*track.firstElementChild.offsetWidth,behavior:'smooth'});
+  return;
+ }
+ if(verb==='buy'){
+  if(state[key]||state.coins<60)return;
+  state[key]=1;state.coins-=60;renderGame();
+  game.querySelector('[data-act="retry"]').focus();return;
+ }
+ if(cmd==='demo-reward'){state.foes=[];finishWave();return;}
+ if(cmd==='demo-retreat'){state.hp=0;lose();return;}
+ if(cmd==='demo-clear'){state.wave=5;victory();return;}
+ if(cmd==='intro'||cmd==='road'){go(cmd);return;}
+ if(cmd==='start'||cmd==='next'||cmd==='retry'){
+  if(cmd==='retry'){state.slots=['fire',null,null];state.levels={};state.handPick=null;state.rewardUsed=false;state.equipNote='';state.hp=5+state.ward;}
+  loadWave(cmd==='next'?2:1);
+  go({start:'battle',next:'later',retry:'retry'}[cmd],false);return;
+ }
+ if(cmd==='continue'){
+  const story=game.querySelector('.story');
+  story.querySelector('h2').textContent='오솔길';
+  story.querySelector('p:nth-of-type(2)').textContent='스테이지 2 도착 · 다음 지역 진입 시안';
+  story.querySelector('[data-act="continue"]').disabled=true;
+  status.textContent='스테이지 2 오솔길 도착';return;
+ }
+ if(cmd==='cancel')go(traceFrom,false);
+}
+function setupTrace(){
+ const canvas=game.querySelector('#star');
+ const ctx=canvas.getContext('2d');
+ const nodes=[[180,36],[226,185],[101,92],[259,92],[134,185]];
+ tracing={index:0,active:false,tail:null};
+ function paint(){
+  ctx.clearRect(0,0,360,246);
+  for(const [radius,alpha] of [[98,'.25'],[103,'.33']]){
+   ctx.beginPath();ctx.arc(180,120,radius,0,Math.PI*2);ctx.strokeStyle='rgba(210,169,255,'+alpha+')';ctx.lineWidth=1;ctx.stroke();
+  }
+  const shape=[...nodes,nodes[0]];
+  const line=(points,color,width,dashed)=>{
+   if(points.length<2)return;
+   ctx.beginPath();ctx.moveTo(...points[0]);points.slice(1).forEach(point=>ctx.lineTo(...point));ctx.setLineDash(dashed?[5,5]:[]);ctx.lineWidth=width;ctx.strokeStyle=color;ctx.stroke();ctx.setLineDash([]);
+  };
+  line(shape,'#8067aa',2,true);
+  line([...shape.slice(0,tracing.index),...(tracing.tail?[tracing.tail]:[])],'#f0cbff',4,false);
+  nodes.forEach(([x,y],i)=>{
+   const next=i===tracing.index||(!i&&tracing.index===5);
+   ctx.fillStyle=next?'#fff0c5':i<tracing.index?'#d7a8fa':'#3d2c57';
+   ctx.strokeStyle=next?'#fff0c5':'#ba98e4';ctx.lineWidth=2;
+   ctx.beginPath();ctx.arc(x,y,next?10:8,0,Math.PI*2);ctx.fill();ctx.stroke();
+   ctx.font='bold 10px monospace';ctx.textAlign='center';ctx.textBaseline='middle';
+   ctx.fillStyle=next||i<tracing.index?'#2d2140':'#eed8ff';ctx.fillText(i+1,x,y+1);
+  });
+ }
+ function visit(point){
+  if(!tracing.active)return;
+  tracing.tail=point;
+  const target=nodes[tracing.index%5];
+  if(Math.hypot(point[0]-target[0],point[1]-target[1])<=22) advance();
+  else paint();
+ }
+ function advance(){
+  tracing.index++;
+  if(tracing.index===6){go(traceFrom,false);cast('burst',true);return;}
+  document.querySelector('#trace-help').textContent=tracing.index===5?'첫 점으로 돌아가 별을 닫으세요.':'다음 점 '+(tracing.index+1)+'을 이으세요.';
+  paint();
+ }
+ const point=e=>{const rect=canvas.getBoundingClientRect();return [(e.clientX-rect.left)*360/rect.width,(e.clientY-rect.top)*246/rect.height]};
+ canvas.addEventListener('pointerdown',e=>{
+  canvas.setPointerCapture(e.pointerId);tracing.active=true;visit(point(e));
+ });
+ canvas.addEventListener('pointermove',e=>visit(point(e)));
+ canvas.addEventListener('pointerup',()=>{tracing.active=false;tracing.tail=null;paint()});
+ canvas.addEventListener('pointercancel',()=>{tracing.active=false;tracing.tail=null;paint()});
+ canvas.addEventListener('keydown',e=>{
+  if(e.key!==String(tracing.index%5+1))return;
+  e.preventDefault();advance();
+ });
+ paint();
+}
+game.addEventListener('pointerdown',event=>{
+ const track=event.target.closest('.hand-track');
+ if(!track||event.button!==0||!event.isPrimary)return;
+ const card=event.target.closest('[data-hand]:enabled');
+ handGesture={track,card,key:card?.dataset.hand,id:event.pointerId,
+  x:event.clientX,y:event.clientY,left:track.scrollLeft,mode:null,ghost:null};
+});
+game.addEventListener('pointermove',event=>{
+ const drag=handGesture;
+ if(!drag||event.pointerId!==drag.id)return;
+ const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
+ if(!drag.mode){
+  if(Math.max(Math.abs(dx),Math.abs(dy))<9)return;
+  drag.mode=drag.card&&dy<0&&Math.abs(dy)>Math.abs(dx)?'drag':'pan';
+  drag.track.setPointerCapture(event.pointerId);
+  if(drag.mode==='pan')drag.track.classList.add('is-panning');
+  else{
+   state.handPick=drag.key;state.equipNote='';paintEquip();
+   drag.card.classList.add('is-source');
+   drag.ghost=document.createElement('div');
+   drag.ghost.className='hand-card drag-card '+drag.key;
+   drag.ghost.style.setProperty('--hand-face','var(--ui-hand-'+drag.key+')');
+   drag.ghost.setAttribute('aria-hidden','true');
+   drag.ghost.innerHTML=drag.card.innerHTML;
+   document.body.append(drag.ghost);
+  }
+ }
+ if(drag.mode==='pan'){drag.track.scrollLeft=drag.left-dx;return;}
+ drag.ghost.style.left=event.clientX+'px';drag.ghost.style.top=event.clientY+'px';
+ const target=document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-drop-slot]');
+ game.querySelectorAll('[data-drop-slot]').forEach(slot=>{
+  slot.classList.toggle('is-target',slot===target&&canPlace(drag.key,Number(slot.dataset.dropSlot)));
+  slot.classList.toggle('is-blocked',slot===target&&!canPlace(drag.key,Number(slot.dataset.dropSlot)));
+ });
+});
+function endHandGesture(event, cancelled=false){
+ const drag=handGesture;
+ if(!drag||event.pointerId!==drag.id)return;
+ handGesture=null;
+ if(!drag.mode)return;
+ skipHandClickUntil=performance.now()+250;
+ drag.track.classList.remove('is-panning');
+ if(drag.mode==='pan')return;
+ drag.ghost.remove();drag.card.classList.remove('is-source');
+ game.querySelectorAll('[data-drop-slot]').forEach(slot=>slot.classList.remove('is-target','is-blocked'));
+ if(cancelled)return;
+ const slot=document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-drop-slot]');
+ if(slot)placeCard(drag.key,Number(slot.dataset.dropSlot));
+}
+window.addEventListener('pointerup',event=>endHandGesture(event));
+window.addEventListener('pointercancel',event=>endHandGesture(event,true));
+game.addEventListener('click',e=>{
+ const button=e.target.closest('[data-act]');
+ if(!button)return;
+ if(e.detail&&performance.now()<skipHandClickUntil&&button.closest('.hand-track,.equip-slots'))return;
+ take(button.dataset.act);
+});
+preview.addEventListener('click',e=>{const button=e.target.closest('[data-act]');if(button)take(button.dataset.act)});
+steps.addEventListener('click',e=>{const button=e.target.closest('[data-scene]');if(!button)return;jump(button.dataset.scene);steps.querySelector('[aria-current="step"]').focus()});
+document.addEventListener('keydown',e=>{
+ if(state.scene==='trace'&&e.key==='Escape'){go(traceFrom,false);return;}
+ if(!combat.includes(state.scene)||e.repeat||!['1','2','3'].includes(e.key))return;
+ const key=state.slots[Number(e.key)-1];if(key){e.preventDefault();cast(key);}
+});
+jump('title');
+</script>
+<style>.mage-frame .actor{left:18%;top:69%}</style>
+</body>
+</html>
+

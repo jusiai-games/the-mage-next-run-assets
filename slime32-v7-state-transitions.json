@@ -1,0 +1,734 @@
+{
+  "palette": "palettes/meadow_slime_attack.json",
+  "outline_colors": [
+    "#23361E",
+    "#48643C"
+  ],
+  "limits": {
+    "min_overlap": 0.3,
+    "max_color_shift": 0.42,
+    "max_cluster_shift": 0.23
+  },
+  "edges": [
+    {
+      "id": "advance_17_to_advance_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_17.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_17_to_attack_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_17.png",
+      "to": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_0_to_advance_1",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_01.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_1_to_advance_2",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_02.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_2_to_advance_3",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_03.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_3_to_advance_4",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_04.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_4_to_advance_5",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_04.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_05.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_5_to_advance_6",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_06.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_6_to_advance_7",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_06.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_07.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_7_to_advance_8",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_07.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_08.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_8_to_advance_9",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_08.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_09.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_9_to_advance_10",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_09.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_10.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_10_to_advance_11",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_10.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_11.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_11_to_advance_12",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_11.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_12.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_12_to_advance_13",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_12.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_13.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_13_to_advance_14",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_13.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_14.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_14_to_advance_15",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_14.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_15.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_15_to_advance_16",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_15.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_16.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "advance_16_to_advance_17",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_16.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_17.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 2
+      }
+    },
+    {
+      "id": "attack_5_to_idle_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_2_to_idle_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "hurt_3_to_advance_0",
+      "from": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "hurt_3_to_idle_0",
+      "from": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_00.png",
+      "mode": "exact",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_0_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_0_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_1_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_1_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_2_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_2_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_3_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_3_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_4_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_04.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_4_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_04.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_5_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 5
+      }
+    },
+    {
+      "id": "advance_5_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 5
+      }
+    },
+    {
+      "id": "advance_6_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_06.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 7
+      }
+    },
+    {
+      "id": "advance_6_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_06.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 7
+      }
+    },
+    {
+      "id": "advance_7_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_07.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 8
+      }
+    },
+    {
+      "id": "advance_7_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_07.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 8
+      }
+    },
+    {
+      "id": "advance_8_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_08.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 8
+      }
+    },
+    {
+      "id": "advance_8_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_08.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 8
+      }
+    },
+    {
+      "id": "advance_9_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_09.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 7
+      }
+    },
+    {
+      "id": "advance_9_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_09.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 7
+      }
+    },
+    {
+      "id": "advance_10_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_10.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 6
+      }
+    },
+    {
+      "id": "advance_10_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_10.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 6
+      }
+    },
+    {
+      "id": "advance_11_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_11.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_11_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_11.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_12_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_12.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_12_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_12.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_13_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_13.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_13_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_13.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_14_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_14.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_14_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_14.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_15_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_15.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_15_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_15.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_16_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_16.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_16_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_16.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_17_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_17.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "advance_17_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/advance/slime32_advance_left_17.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_0_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_0_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_1_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_1_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_2_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_2_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_3_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_3_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_03.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_4_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_04.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_4_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_04.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_5_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "attack_5_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/attack/slime32_attack_left_05.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_0_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_0_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_1_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_1_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_2_to_hurt_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "idle_2_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/idle/slime32_idle_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "hurt_0_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_00.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "hurt_1_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_01.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    },
+    {
+      "id": "hurt_2_to_death_0",
+      "from": "approved/meadow_slime_combat32_v7/hurt/slime32_hurt_left_02.png",
+      "to": "approved/meadow_slime_combat32_v7/death/slime32_death_left_00.png",
+      "mode": "pose",
+      "limits": {
+        "max_contact_shift": 4
+      }
+    }
+  ]
+}

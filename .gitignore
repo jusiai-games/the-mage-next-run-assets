@@ -1,0 +1,64 @@
+# Local transfers, repository backups, and machine settings
+/.local/
+*.bundle
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vs/
+.idea/
+*.user
+*.swp
+*~
+
+# Python, Node, Unity, and .NET generated files
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+node_modules/
+.dotnet/
+.nuget/
+/Library/
+/Temp/
+/Logs/
+/UserSettings/
+/work/meadow-tilemap-qa/bin/
+/work/meadow-tilemap-qa/obj/
+
+# Local review files and transfer helpers
+/prototypes/.qa-*
+/exports/spells-to-go-ui/qa/
+/work/meadow-screen-qa/
+/work/meadow-screen-title-source/
+/work/meadow-screen-ui-qa/
+/work/meadow-wood-ui-qa/
+/work/meadow-tilemap-qa/slot-grid/
+/work/meadow-tilemap-qa/*.png
+/work/**/transfer/
+/work/reference-inspection/*.png
+/work/**/review/
+/work/meadow_slime_combat32_v7/*-review/
+/work/meadow_slime_combat32_v7/transitions/
+/work/magic-bolt-electric-fx/source-grid/
+/work/sorceress-vfx/
+/work/sorceress-vfx-smoke/
+
+# ZIPs whose contents are already available as individual files
+/exports/meadow-slime-combat-32-v7.zip
+/exports/sorceress-vfx-30.zip
+/exports/spells-to-go-ui/spells-to-go-unity-ui.zip
+/exports/meadow-tilemap/meadow-tilemap-ui.zip
+/prototypes/meadow-visual/mage-next-run-meadow-pack.zip
+
+# Imported reference originals. Keep provenance and identified CC0 files.
+/references/reference-components/**/*
+!/references/reference-components/**/
+!/references/reference-components/README.md
+!/references/reference-components/*-대조표.csv
+!/references/reference-components/*-좌표와-경계.json
+!/references/reference-components/출처와-라이선스/**
+!/references/reference-components/**/*-Foozle.png
+!/references/reference-components/**/*-Foozle.gif

@@ -1,0 +1,34 @@
+{
+  "references": [
+    {
+      "id": "hood_wizard",
+      "role": "character",
+      "png": "../../exports/meadow-color-v3/exports/hood-staff-32-quick-cast/idle/hood_staff_idle.png",
+      "crop": [0, 0, 32, 32],
+      "ramps": {"robe": ["#303251", "#40466F", "#4D507C", "#585D8A"]}
+    },
+    {
+      "id": "meadow_slime",
+      "role": "character",
+      "png": "../../exports/meadow-color-v3/exports/meadow_slime_combat32_v7/idle/slime32_idle.png",
+      "crop": [0, 0, 32, 32],
+      "ramps": {"gel": ["#215D42", "#34815D", "#55A373", "#8BD99D"]}
+    },
+    {
+      "id": "meadow_ground",
+      "role": "environment",
+      "png": "../../exports/meadow-color-v3/exports/meadow-wave-mobile/meadow-terrain.png"
+    },
+    {
+      "id": "meadow_distance",
+      "role": "environment",
+      "png": "../../exports/meadow-color-v3/exports/meadow-wave-mobile/distant-meadow.png"
+    },
+    {
+      "id": "electric_bolt",
+      "role": "effect",
+      "png": "../../exports/meadow-color-v3/exports/magic-bolt-electric/flight/magic_bolt_electric.png",
+      "ramps": {"bolt": ["#3D76B8", "#619CDD", "#84CCFC", "#B6E9FF", "#F2FAFF"]}
+    }
+  ]
+}

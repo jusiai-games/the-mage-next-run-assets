@@ -1,0 +1,9 @@
+{
+  "kind": "character",
+  "name": "slime32_hurt",
+  "directions": [
+    "left"
+  ],
+  "frames_per_direction": 4,
+  "palette": "../palettes/meadow_slime_attack.json"
+}

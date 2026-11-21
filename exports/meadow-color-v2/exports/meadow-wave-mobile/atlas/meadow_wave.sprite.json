@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "kind": "tile",
+  "width": 160,
+  "height": 144,
+  "cell": 16,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.5,
+  "sha256": "954c41411a2151f191772e65c9cc842fba738db7eea1a252a9577a84aa1f4c03",
+  "sprites": [
+    {
+      "name": "meadow_wave_t000",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t001",
+      "x": 16,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t002",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t003",
+      "x": 48,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t004",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t005",
+      "x": 80,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t006",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t007",
+      "x": 112,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t008",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t009",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "name": "meadow_wave_t010",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t011",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t012",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t013",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t014",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t015",
+      "x": 80,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t016",
+      "x": 96,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t017",
+      "x": 112,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t018",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t019",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "name": "meadow_wave_t020",
+      "x": 0,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t021",
+      "x": 16,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t022",
+      "x": 32,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t023",
+      "x": 48,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t024",
+      "x": 64,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t025",
+      "x": 80,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t026",
+      "x": 96,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t027",
+      "x": 112,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t028",
+      "x": 128,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t029",
+      "x": 144,
+      "y": 32
+    },
+    {
+      "name": "meadow_wave_t030",
+      "x": 0,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t031",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t032",
+      "x": 32,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t033",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t034",
+      "x": 64,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t035",
+      "x": 80,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t036",
+      "x": 96,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t037",
+      "x": 112,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t038",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t039",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "name": "meadow_wave_t040",
+      "x": 0,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t041",
+      "x": 16,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t042",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t043",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t044",
+      "x": 64,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t045",
+      "x": 80,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t046",
+      "x": 96,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t047",
+      "x": 112,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t048",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t049",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "name": "meadow_wave_t050",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t051",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t052",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t053",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t054",
+      "x": 64,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t055",
+      "x": 80,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t056",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t057",
+      "x": 112,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t058",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t059",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "name": "meadow_wave_t060",
+      "x": 0,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t061",
+      "x": 16,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t062",
+      "x": 32,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t063",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t064",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t065",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t066",
+      "x": 96,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t067",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t068",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t069",
+      "x": 144,
+      "y": 96
+    },
+    {
+      "name": "meadow_wave_t070",
+      "x": 0,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t071",
+      "x": 16,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t072",
+      "x": 32,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t073",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t074",
+      "x": 64,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t075",
+      "x": 80,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t076",
+      "x": 96,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t077",
+      "x": 112,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t078",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t079",
+      "x": 144,
+      "y": 112
+    },
+    {
+      "name": "meadow_wave_t080",
+      "x": 0,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t081",
+      "x": 16,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t082",
+      "x": 32,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t083",
+      "x": 48,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t084",
+      "x": 64,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t085",
+      "x": 80,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t086",
+      "x": 96,
+      "y": 128
+    },
+    {
+      "name": "meadow_wave_t087",
+      "x": 112,
+      "y": 128
+    }
+  ]
+}

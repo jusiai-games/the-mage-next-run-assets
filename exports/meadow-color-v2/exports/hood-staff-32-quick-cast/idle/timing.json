@@ -1,0 +1,11 @@
+{
+  "loop": true,
+  "samples_per_second": 5,
+  "frame_durations_ms": [
+    200,
+    200,
+    200,
+    200,
+    200
+  ]
+}

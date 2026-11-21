@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 192,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "204bfbbd41bae7b52cad5666553f16cc2df6023740001ff895e6bbce31668b83",
+  "sprites": [
+    {
+      "name": "slime32_attack_left_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "slime32_attack_left_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "slime32_attack_left_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "slime32_attack_left_03",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "name": "slime32_attack_left_04",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "name": "slime32_attack_left_05",
+      "x": 160,
+      "y": 0
+    }
+  ]
+}

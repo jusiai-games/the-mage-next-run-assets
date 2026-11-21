@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 128,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "497396876fa00e3996706fe41aa4c6cd417380d666fa4481e12d16a7644d7fe5",
+  "sprites": [
+    {
+      "name": "hood_staff_walk_right_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_walk_right_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_walk_right_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "hood_staff_walk_right_03",
+      "x": 96,
+      "y": 0
+    }
+  ]
+}

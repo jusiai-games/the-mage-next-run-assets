@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <UnityReferences>C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed/UnityEngine</UnityReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(UnityReferences)/UnityEngine.CoreModule.dll" />
+    <Compile Include="../../exports/meadow-tilemap/SpellCooldownView.cs" />
+    <Compile Include="../../exports/meadow-tilemap/StartStripScroll.cs" />
+    <Compile Include="../../exports/meadow-tilemap/StageSlimeHop.cs" />
+  </ItemGroup>
+</Project>

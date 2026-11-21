@@ -1,0 +1,172 @@
+{
+  "palette": "hood-staff-quick-state-transitions/palette.json",
+  "effect_colors": [
+    "#619CDD",
+    "#84CCFC",
+    "#B6E9FF",
+    "#F2FAFF"
+  ],
+  "outline_colors": [
+    "#242338",
+    "#303251"
+  ],
+  "limits": {
+    "min_overlap": 0.35,
+    "max_color_shift": 0.4,
+    "min_outline_coverage": 0.64,
+    "max_cluster_shift": 0.19,
+    "max_contact_shift": 2
+  },
+  "edges": [
+    {
+      "id": "walk_00_to_idle_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_walk_right_00.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png"
+    },
+    {
+      "id": "walk_01_to_idle_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_walk_right_01.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png"
+    },
+    {
+      "id": "walk_02_to_idle_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_walk_right_02.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png"
+    },
+    {
+      "id": "walk_03_to_idle_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_walk_right_03.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png"
+    },
+    {
+      "id": "idle_00_to_cast_00",
+      "mode": "exact",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png"
+    },
+    {
+      "id": "idle_00_to_fall_00",
+      "mode": "exact",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png"
+    },
+    {
+      "id": "idle_01_to_cast_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_01.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png"
+    },
+    {
+      "id": "idle_01_to_fall_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_01.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png"
+    },
+    {
+      "id": "idle_02_to_cast_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_02.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png"
+    },
+    {
+      "id": "idle_02_to_fall_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_02.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png"
+    },
+    {
+      "id": "idle_03_to_cast_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_03.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png"
+    },
+    {
+      "id": "idle_03_to_fall_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_03.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png"
+    },
+    {
+      "id": "idle_04_to_cast_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_04.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png"
+    },
+    {
+      "id": "idle_04_to_fall_00",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_idle_right_04.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png"
+    },
+    {
+      "id": "cast_00_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_00.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "cast_01_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_01.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "cast_02_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_02.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "cast_03_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_03.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "cast_04_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_04.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "cast_04_to_idle_00",
+      "mode": "exact",
+      "from": "hood-staff-quick-state-transitions/hood_staff_cast_right_04.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_idle_right_00.png"
+    },
+    {
+      "id": "fall_00_to_fall_01",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_fall_right_00.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_01.png"
+    },
+    {
+      "id": "fall_01_to_fall_02",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_fall_right_01.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png"
+    },
+    {
+      "id": "fall_02_to_fall_03",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_fall_right_02.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_03.png"
+    },
+    {
+      "id": "fall_03_to_fall_04",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_fall_right_03.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_04.png"
+    },
+    {
+      "id": "fall_04_to_fall_05",
+      "mode": "pose",
+      "from": "hood-staff-quick-state-transitions/hood_staff_fall_right_04.png",
+      "to": "hood-staff-quick-state-transitions/hood_staff_fall_right_05.png"
+    }
+  ]
+}

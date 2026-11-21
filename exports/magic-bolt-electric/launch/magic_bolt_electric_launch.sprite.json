@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "kind": "tile32",
+  "width": 128,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.5,
+  "sha256": "c153b62d9e7eeb929cccd5b1b57f62bcc3d40215038c612591adf321fc66ecf1",
+  "sprites": [
+    {
+      "name": "magic_bolt_electric_launch_launch_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_launch_launch_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_launch_launch_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "magic_bolt_electric_launch_launch_03",
+      "x": 96,
+      "y": 0
+    }
+  ]
+}

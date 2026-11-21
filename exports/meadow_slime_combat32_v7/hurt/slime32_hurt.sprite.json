@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 128,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "b06fb43d95c48cdfd386ed0bcfe029abe14a4137fd14df0427bd8f3be5e9b0b3",
+  "sprites": [
+    {
+      "name": "slime32_hurt_left_00",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "slime32_hurt_left_01",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "name": "slime32_hurt_left_02",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "name": "slime32_hurt_left_03",
+      "x": 96,
+      "y": 0
+    }
+  ]
+}

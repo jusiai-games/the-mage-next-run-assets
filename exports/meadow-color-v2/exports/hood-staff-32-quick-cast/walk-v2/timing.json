@@ -1,0 +1,23 @@
+{
+  "loop": true,
+  "samples_per_second": 10,
+  "frame_durations_ms": [
+    100,
+    100,
+    100,
+    100
+  ],
+  "movement_units_per_second": 1.0,
+  "source_frame_order_zero_based": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "frame_x_offset_px": [
+    0,
+    2,
+    1,
+    2
+  ]
+}

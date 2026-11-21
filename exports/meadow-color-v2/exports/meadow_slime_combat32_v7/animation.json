@@ -1,0 +1,95 @@
+{
+  "frame_size": [
+    32,
+    32
+  ],
+  "pivot_top_left": [
+    16,
+    28
+  ],
+  "ppu": 32,
+  "facing": "front_left",
+  "shadow": {
+    "file": "meadow_slime_shadow.png",
+    "pivot_top_left": [
+      16,
+      28
+    ],
+    "layer": "below body"
+  },
+  "clips": {
+    "advance": {
+      "sheet": "advance/slime32_advance.png",
+      "duration_ms": [
+        40,
+        30,
+        30,
+        20,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "loop": true
+    },
+    "attack": {
+      "sheet": "attack/slime32_attack.png",
+      "duration_ms": [
+        65,
+        105,
+        105,
+        80,
+        85,
+        70
+      ],
+      "loop": false
+    },
+    "idle": {
+      "sheet": "idle/slime32_idle.png",
+      "duration_ms": [
+        230,
+        240,
+        220
+      ],
+      "loop": true
+    },
+    "hurt": {
+      "sheet": "hurt/slime32_hurt.png",
+      "duration_ms": [
+        55,
+        80,
+        70,
+        65
+      ],
+      "loop": false
+    },
+    "death": {
+      "sheet": "death/slime32_death.png",
+      "duration_ms": [
+        85,
+        90,
+        110,
+        105
+      ],
+      "loop": false
+    }
+  },
+  "attack_impact": {
+    "zero_based_frame": 3,
+    "time_ms": 275
+  },
+  "death_end": {
+    "hide_body": true,
+    "hide_shadow": true
+  }
+}

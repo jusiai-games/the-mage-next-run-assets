@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "colorSpace": "OKLCH",
+  "referenceCount": 5,
+  "roles": {
+    "character": {
+      "status": "limited",
+      "referenceCount": 2,
+      "metrics": {
+        "lightness": {
+          "p10": {
+            "median": 0.2948349136668152,
+            "minOffset": -0.02729489460409046,
+            "maxOffset": 0.02729489460409046,
+            "tolerance": 0.04046741074002451,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.524804343592459,
+            "minOffset": -0.11696680815716143,
+            "maxOffset": 0.11696680815716143,
+            "tolerance": 0.17341498977380754,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.5674845135813862,
+            "minOffset": -0.07428663816823411,
+            "maxOffset": 0.07428663816823422,
+            "tolerance": 0.11013736974822397,
+            "referenceCount": 2
+          }
+        },
+        "chroma": {
+          "p10": {
+            "median": 0.03926297370127889,
+            "minOffset": -0.00048476693984414454,
+            "maxOffset": 0.00048476693984414454,
+            "tolerance": 0.02,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.07260265792248241,
+            "minOffset": -0.016246726716358934,
+            "maxOffset": 0.016246726716358947,
+            "tolerance": 0.024087397029673763,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.08049563040762861,
+            "minOffset": -0.008353754231212762,
+            "maxOffset": 0.008353754231212748,
+            "tolerance": 0.02,
+            "referenceCount": 2
+          }
+        },
+        "contrast": {
+          "median": 0.27264959991457105,
+          "minOffset": -0.046991743564143706,
+          "maxOffset": 0.046991743564143706,
+          "tolerance": 0.06966995900819946,
+          "referenceCount": 2
+        },
+        "shadowHueShift": {
+          "median": 2.711563988604496,
+          "minOffset": -2.665283975099385,
+          "maxOffset": 2.6652839750994133,
+          "tolerance": 12,
+          "referenceCount": 2
+        },
+        "paletteSize": {
+          "median": 7.5,
+          "minOffset": -2.5,
+          "maxOffset": 2.5,
+          "tolerance": 3.7064999999999997,
+          "referenceCount": 2
+        }
+      },
+      "typicalRampColors": 4.0,
+      "typicalRampSpan": 0.2750358784646265
+    },
+    "environment": {
+      "status": "limited",
+      "referenceCount": 2,
+      "metrics": {
+        "lightness": {
+          "p10": {
+            "median": 0.6889027176074971,
+            "minOffset": -0.010182484400526826,
+            "maxOffset": 0.010182484400526715,
+            "tolerance": 0.035,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.7859274302112272,
+            "minOffset": -0.0505108563486677,
+            "maxOffset": 0.0505108563486677,
+            "tolerance": 0.07488739562253473,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.7859274302112272,
+            "minOffset": -0.0505108563486677,
+            "maxOffset": 0.0505108563486677,
+            "tolerance": 0.07488739562253473,
+            "referenceCount": 2
+          }
+        },
+        "chroma": {
+          "p10": {
+            "median": 0.048999045182755226,
+            "minOffset": -0.015200400901310925,
+            "maxOffset": 0.015200400901310925,
+            "tolerance": 0.022536114376283577,
+            "referenceCount": 2
+          },
+          "p50": {
+            "median": 0.050063672192371,
+            "minOffset": -0.016265027910926697,
+            "maxOffset": 0.016265027910926697,
+            "tolerance": 0.024114530380739917,
+            "referenceCount": 2
+          },
+          "p90": {
+            "median": 0.05701717359012419,
+            "minOffset": -0.009311526513173497,
+            "maxOffset": 0.009311526513173504,
+            "tolerance": 0.02,
+            "referenceCount": 2
+          }
+        },
+        "contrast": {
+          "median": 0.09702471260373019,
+          "minOffset": -0.04032837194814093,
+          "maxOffset": 0.04032837194814093,
+          "tolerance": 0.06,
+          "referenceCount": 2
+        },
+        "paletteSize": {
+          "median": 7.0,
+          "minOffset": -1.0,
+          "maxOffset": 1.0,
+          "tolerance": 2,
+          "referenceCount": 2
+        }
+      },
+      "typicalRampColors": null,
+      "typicalRampSpan": null
+    },
+    "effect": {
+      "status": "insufficient",
+      "referenceCount": 1,
+      "metrics": {}
+    }
+  },
+  "references": [
+    {
+      "id": "hood_wizard",
+      "role": "character",
+      "png": "../../exports/meadow-color-v2/exports/hood-staff-32-quick-cast/idle/hood_staff_idle.png",
+      "crop": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "ramps": {
+        "robe": {
+          "colors": [
+            "#303251",
+            "#40466F",
+            "#4D507C",
+            "#585D8A"
+          ],
+          "lightnessSteps": [
+            0.07760047290510508,
+            0.04037276800941292,
+            0.04498757196844161
+          ],
+          "lightnessSpan": 0.1629608128829596,
+          "shadowHueShift": 0.04628001350511113
+        }
+      },
+      "alpha": {
+        "transparent": 666,
+        "partial": 0,
+        "opaque": 358
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.26754001906272473,
+          "p50": 0.40783753543529755,
+          "p90": 0.4931978754131521
+        },
+        "chroma": {
+          "p10": 0.038778206761434744,
+          "p50": 0.05635593120612348,
+          "p90": 0.07214187617641585
+        },
+        "contrast": 0.22565785635042734,
+        "paletteSize": 10,
+        "shadowHueShift": 0.04628001350511113
+      }
+    },
+    {
+      "id": "meadow_slime",
+      "role": "character",
+      "png": "../../exports/meadow-color-v2/exports/meadow_slime_combat32_v7/idle/slime32_idle.png",
+      "crop": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "ramps": {
+        "gel": {
+          "colors": [
+            "#2C5843",
+            "#407B5F",
+            "#5D9D76",
+            "#91D3A1"
+          ],
+          "lightnessSteps": [
+            0.11241026184704744,
+            0.10733188869902255,
+            0.16736879350022338
+          ],
+          "lightnessSpan": 0.38711094404629337,
+          "shadowHueShift": 5.376847963703909
+        }
+      },
+      "alpha": {
+        "transparent": 567,
+        "partial": 0,
+        "opaque": 457
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.32212980827090565,
+          "p50": 0.6417711517496204,
+          "p90": 0.6417711517496204
+        },
+        "chroma": {
+          "p10": 0.03974774064112303,
+          "p50": 0.08884938463884136,
+          "p90": 0.08884938463884136
+        },
+        "contrast": 0.31964134347871476,
+        "paletteSize": 5,
+        "shadowHueShift": 5.376847963703909
+      }
+    },
+    {
+      "id": "meadow_ground",
+      "role": "environment",
+      "png": "../../exports/meadow-color-v2/exports/meadow-wave-mobile/meadow-terrain.png",
+      "alpha": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 23040
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.6787202332069703,
+          "p50": 0.7354165738625595,
+          "p90": 0.7354165738625595
+        },
+        "chroma": {
+          "p10": 0.06419944608406615,
+          "p50": 0.0663287001032977,
+          "p90": 0.0663287001032977
+        },
+        "contrast": 0.05669634065558926,
+        "paletteSize": 6
+      },
+      "ramps": {}
+    },
+    {
+      "id": "meadow_distance",
+      "role": "environment",
+      "png": "../../exports/meadow-color-v2/exports/meadow-wave-mobile/distant-meadow.png",
+      "alpha": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 12800
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.6990852020080238,
+          "p50": 0.8364382865598949,
+          "p90": 0.8364382865598949
+        },
+        "chroma": {
+          "p10": 0.0337986442814443,
+          "p50": 0.0337986442814443,
+          "p90": 0.04770564707695069
+        },
+        "contrast": 0.13735308455187112,
+        "paletteSize": 8
+      },
+      "ramps": {}
+    },
+    {
+      "id": "electric_bolt",
+      "role": "effect",
+      "png": "../../exports/meadow-color-v2/exports/magic-bolt-electric/flight/magic_bolt_electric.png",
+      "ramps": {
+        "bolt": {
+          "colors": [
+            "#3D76B8",
+            "#619CDD",
+            "#84CCFC",
+            "#B6E9FF",
+            "#F2FAFF"
+          ],
+          "lightnessSteps": [
+            0.12119936830210443,
+            0.13579877112762084,
+            0.09025901219889543,
+            0.07467231529919316
+          ],
+          "lightnessSpan": 0.42192946692781386,
+          "shadowHueShift": 14.764145817084682
+        }
+      },
+      "alpha": {
+        "transparent": 5238,
+        "partial": 0,
+        "opaque": 906
+      },
+      "metrics": {
+        "lightness": {
+          "p10": 0.5586119438354995,
+          "p50": 0.8156100832652248,
+          "p90": 0.9805414107633134
+        },
+        "chroma": {
+          "p10": 0.010811715274894764,
+          "p50": 0.09913479458231074,
+          "p90": 0.11933331477656008
+        },
+        "contrast": 0.42192946692781386,
+        "paletteSize": 5,
+        "shadowHueShift": 14.764145817084682
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "tile32",
+  "name": "magic_bolt_electric",
+  "tiles": [
+    "flight_00",
+    "flight_01",
+    "flight_02",
+    "flight_03",
+    "flight_04",
+    "flight_05"
+  ],
+  "columns": 6,
+  "palette": "../sources/magic_bolt_candidates/01/palette.json"
+}
