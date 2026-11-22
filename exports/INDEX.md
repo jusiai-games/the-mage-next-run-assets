@@ -17,6 +17,7 @@
 | [모바일 초원](v1/meadow-wave-mobile/README.md) | 160×352 화면, 16×16 타일, 24×24 주문 슬롯 |
 | [Spells to Go UI](v1/spells-to-go-ui/README.md) | Unity 9슬라이스 버튼과 패널, 인벤토리 슬롯 상태와 아이템 아이콘 |
 | [나무 명판 주문 카드](v1/wood-spell-cards/README.md) | v1 초안. 기본 주문 삽화 5종, 빈 슬롯, 발동 테두리, 충전 게이지 |
+| [머리 위 체력바](v1/health-bars/README.md) | 20×4px 공용 바. 피해 잔상 350ms 유지 후 250ms 감소 |
 | [결과와 웨이브 알림](v1/wave-notices/README.md) | 결과 요약형과 버프·패널티 픽셀 소거형 |
 | [기본 주문 이펙트 5종](v1/spell-effects/README.md) | 주문별 투명 시트 6장, 20 FPS(차지드 볼트 회전 파편 25 FPS), Unity 분할 안내 |
 | [초원 타일과 마법사 그림자](v1/meadow-terrain/meadow/layout.json) | 타일 16×16 |

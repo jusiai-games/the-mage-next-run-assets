@@ -28,10 +28,13 @@
 | wood-spell-cards · [기본 주문 카드 삽화 5종](v1/wood-spell-cards/skill-art/basic/manifest.json) | 기본 전투 주문 다섯 장은 이 매핑의 art와 frame을 합성한다. 매직 볼트는 푸른 잔광 버전, 차지드 볼트는 회전 파편 버전이다. |
 | wood-spell-cards · `sacrifice/embers-{mask,overlay}.png` | 선택한 카드를 희생할 때 카드와 글씨가 타들어 가는 마스크와 불씨 |
 | wood-spell-cards · `number-change/scan-{mask,overlay}.png` | 희생 후 다른 카드의 이전 숫자만 스캔해 지우는 마스크와 불티 |
+| [health-bars](v1/health-bars/README.md) · `hp-frame.png`, `hp-fill.png`, `hp-chip.png` | 마법사와 몬스터 머리 위 20×4px 체력바의 테두리·현재 체력·피해 잔상. 캐릭터별 위치는 매니페스트의 `barTopLeftFromFeetPx` |
 | [wave-notices](v1/wave-notices/README.md) · `{victory,defeat}-rule.png` | 결과 요약형 결과창에서 승리/패배에 맞춰 쓰는 장식선 |
 | wave-notices · `{buff,penalty}-card.png`, `erase-mask.png`, `{buff,penalty}-erase.png` | 웨이브 효과 알림 카드와 퇴장용 픽셀 소거 마스크·파티클 |
 
 ## 검토 이미지와 제작 자료
+
+- [걷기 10프레임 정리](../work/wizard-walk-clean/README.md)는 현재 채택된 걷기 시트의 이전/이후 비교 GIF와 재생성 스크립트다.
 
 - [전신 걷기 10프레임 시안](../work/wizard-walk-review/README.md)은 복원된 걷기와 팔·지팡이·망토가 보폭에 맞춰 움직이는 새 포즈를 비교하는 검토 자료다.
 

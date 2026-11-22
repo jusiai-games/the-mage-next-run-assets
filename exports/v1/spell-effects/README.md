@@ -12,13 +12,15 @@
 
 | 주문 | 적용 |
 | --- | --- |
-| 파이어 볼트 · 1 | 지팡이 끝에서 `fire-bolt.png`를 생성해 단일 표적까지 이동시킵니다. |
+| 파이어 볼트 · 1 | 지팡이 끝에서 `fire-bolt.png`를 생성해 단일 표적까지 이동시킵니다. 64×40px 셀, 불꽃 머리 중심이 피벗이며 머리 지름 약 13px, 꼬리 포함 약 38px입니다. |
 | 차지드 볼트 · 1 | `charged-bolt-orb.png`를 여러 개 생성해 진행 각도와 시작 프레임을 다르게 줍니다. 꺾인 번개 조각이 12프레임(0.48초)에 한 바퀴 회전합니다. [비행 미리보기](preview-charged-bolt.gif) |
 | 아이스 볼트 · 1 | 발사점에서 `ice-bolt.png`를 재생합니다. 시트 안에 전진 동작이 있으며 명중 시 둔화를 적용합니다. |
-| 매직 볼트 (Magic Missile) | `arcane/magic-missile.png`의 파란 에너지 구체 중심을 기준으로 이동시킵니다. 발사 시 가장 가까운 적을 정하고, 비행 중 대상 위치를 향해 방향을 갱신합니다. 둥근 탄두가 앞서고 푸른 잔광이 뒤로 흐르도록 속도 방향에 맞춰 시트를 회전합니다. [비행 미리보기](preview-magic-bolt.gif) |
+| 매직 볼트 (Magic Missile) | `arcane/magic-missile.png`의 파란 에너지 구체 중심을 기준으로 이동시킵니다. 발사 시 가장 가까운 적을 정하고, 비행 중 대상 위치를 향해 방향을 갱신합니다. 둥근 탄두가 앞서고 푸른 잔광이 뒤로 흐르도록 속도 방향에 맞춰 시트를 회전합니다. 48×28px 셀, 탄두 지름 약 14px입니다. [비행 미리보기](preview-magic-bolt.gif) |
 | 매직 실드 | 피해 흡수량이 남아 있는 동안 `arcane/magic-shield.png`를 발 피벗에 반복합니다. 피해를 흡수하면 같은 피벗에 `magic-shield-block.png`를 한 번 겹칩니다. 왼쪽에서 맞으면 피격 시트를 좌우 반전하고, 흡수량이 소진되면 유지 효과를 종료합니다. |
 
 [다섯 주문 미리보기](preview-basic-spells.gif)
+
+파이어 볼트와 매직 볼트는 전투에서 잘 보이도록 이전보다 약 1.5배 크게 다시 그렸습니다. 두 시트와 미리보기 GIF, ZIP은 `work/spell-scale-up/`의 `build.py` → `preview.py` 순서로 다시 만듭니다.
 
 
 [카드 삽화와 프레임 매핑](../wood-spell-cards/skill-art/basic/manifest.json) · [Unity 분할 데이터](unity-slicing.json) · [사용 조건](PIXELFX-LICENSE.txt) · [출처](PIXELFX-NOTICES.md)

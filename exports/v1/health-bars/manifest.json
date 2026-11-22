@@ -1,0 +1,54 @@
+{
+  "pixelsPerUnit": 32,
+  "filter": "Point",
+  "barSizePx": [
+    20,
+    4
+  ],
+  "files": {
+    "frame": "hp-frame.png",
+    "fill": "hp-fill.png",
+    "chip": "hp-chip.png"
+  },
+  "fillOriginPx": [
+    1,
+    1
+  ],
+  "fillSizePx": [
+    18,
+    2
+  ],
+  "fillRule": "채움 너비 = round(18 × 현재체력/최대체력). 체력이 0보다 크면 최소 1px.",
+  "barTopLeftFromFeetPx": {
+    "wizard": [
+      -10,
+      -32
+    ],
+    "slime": [
+      -10,
+      -27
+    ],
+    "note": "원본 32px 셀 기준. 표시 배율이 있는 캐릭터는 y 오프셋에만 배율을 곱하고 바는 1배로 그린다."
+  },
+  "timing": {
+    "chipHoldMs": 350,
+    "chipDrainMs": 250,
+    "hideWhenFullForEnemies": true,
+    "hideAfterDeathMs": 0
+  },
+  "colors": {
+    "outline": "#222034",
+    "track": [
+      "#393B5B",
+      "#28283F"
+    ],
+    "fill": [
+      "#EC6942",
+      "#A74739"
+    ],
+    "chip": [
+      "#FFD78F",
+      "#FFAD54"
+    ]
+  }
+}

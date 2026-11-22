@@ -43,12 +43,12 @@
     {
       "name": "Fire Bolt",
       "tree": "fire",
-      "source": "fire/fireball",
+      "source": "Original project pixel art (work/spell-scale-up/build.py)",
       "recommendedUse": "Small right-facing projectile",
       "sheet": "spritesheets/fire/fire-bolt.png",
       "cell": [
-        48,
-        32
+        64,
+        40
       ],
       "columns": 8,
       "rows": 3,
@@ -56,12 +56,12 @@
       "fps": 20,
       "loop": true,
       "pivotTopLeftPx": [
-        31,
-        13
+        44,
+        20
       ],
       "pivotUnity": [
-        0.6458333333333334,
-        0.59375
+        0.6875,
+        0.5
       ],
       "contactFrameIndex": 2
     },
@@ -117,11 +117,11 @@
     {
       "name": "Magic Missile",
       "tree": "arcane",
-      "source": "Original project pixel art",
+      "source": "Original project pixel art (work/spell-scale-up/build.py)",
       "sheet": "spritesheets/arcane/magic-missile.png",
       "cell": [
-        32,
-        20
+        48,
+        28
       ],
       "columns": 8,
       "rows": 2,
@@ -129,11 +129,11 @@
       "fps": 20,
       "loop": true,
       "pivotTopLeftPx": [
-        23,
-        10
+        33,
+        14
       ],
       "pivotUnity": [
-        0.71875,
+        0.6875,
         0.5
       ],
       "recommendedUse": "Aim the round leading core toward the target and rotate the tapered blue wake along velocity. Use the orb center as pivot.",
