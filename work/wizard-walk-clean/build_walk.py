@@ -128,6 +128,11 @@ for i, (_, near_dx, far_dx, b, staff_dx, stretch) in enumerate(FRAME_POSES):
             oy = b_lag if is_cloak_tail(x, y) else b
             if 0 <= y + oy < 32:
                 f.putpixel((x, y + oy), px)
+            # when the tail hangs lower than the body, repeat its top row at
+            # the body offset so no 1px gap opens between cloak and torso
+            if b_lag > b and is_cloak_tail(x, y) and not is_cloak_tail(x, y - 1):
+                if not f.getpixel((x, y + b))[3]:
+                    f.putpixel((x, y + b), px)
     sheet.paste(f, (i * 32, 0))
 
 sheet.save(OUT)
