@@ -4,7 +4,7 @@
 
 네 동작 모두 32×32, 발 피벗 (16, 28), 32 PPU다. 각 PNG를 같은 이름의 .sprite.json과 함께 Unity로 가져온다.
 
-- [걷기 10프레임](walk/hood_staff_walk.png)
+- [걷기 10프레임](walk/hood_staff_walk.png): 상체를 대기 자세 하나로 고정하고 다리를 새로 그린 정리본이다. 변경 내용은 [걷기 정리 기록](../../../work/wizard-walk-clean/README.md)에 있다.
 - [대기 5프레임](idle/hood_staff_idle.png)
 - [시전 8프레임](cast/hood_staff_cast.png)
 - [쓰러짐 6프레임](fall/hood_staff_fall.png)
