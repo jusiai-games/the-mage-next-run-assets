@@ -1,0 +1,22 @@
+{
+  "canvas_px": [
+    971,
+    1620
+  ],
+  "background": "background.png",
+  "button": {
+    "file": "button-game-start.png",
+    "top_left_px": [
+      227,
+      1426
+    ],
+    "size_px": [
+      516,
+      103
+    ],
+    "label": "게임 시작"
+  },
+  "title": "주문 넣고 갑니다",
+  "subtitle": "Spells to Go",
+  "chapter": "CHAPTER 1"
+}

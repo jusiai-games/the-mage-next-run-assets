@@ -1,0 +1,13 @@
+{
+  "cellPx": [80, 94],
+  "columns": 8,
+  "rows": 3,
+  "frameCount": 24,
+  "frameDurationMs": 50,
+  "loop": false,
+  "cardSizePx": [44, 64],
+  "cardOriginPx": [18, 16],
+  "mask": "embers-mask.png",
+  "overlay": "embers-overlay.png",
+  "preview": "preview.gif"
+}

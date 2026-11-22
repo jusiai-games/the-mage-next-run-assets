@@ -1,0 +1,52 @@
+{
+  "canvasPx": [
+    28,
+    26
+  ],
+  "cardOriginPx": [
+    8,
+    8
+  ],
+  "spells": [
+    {
+      "id": "fire-bolt",
+      "name": "Fire Bolt",
+      "image": "basic/fire-bolt.png",
+      "frame": "fire/frame.png",
+      "effectSheet": "spell-effects/spritesheets/fire/fire-bolt.png",
+      "element": "fire"
+    },
+    {
+      "id": "ice-bolt",
+      "name": "Ice Bolt",
+      "image": "basic/ice-bolt.png",
+      "frame": "cold/frame.png",
+      "effectSheet": "spell-effects/spritesheets/cold/ice-bolt.png",
+      "element": "cold"
+    },
+    {
+      "id": "charged-bolt",
+      "name": "Charged Bolt Orb",
+      "image": "basic/charged-bolt.png",
+      "frame": "lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/lightning/charged-bolt-orb.png",
+      "element": "lightning"
+    },
+    {
+      "id": "magic-bolt",
+      "name": "Magic Missile",
+      "image": "basic/magic-bolt.png",
+      "frame": "lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/arcane/magic-missile.png",
+      "element": "arcane"
+    },
+    {
+      "id": "magic-shield",
+      "name": "Magic Shield",
+      "image": "basic/magic-shield.png",
+      "frame": "lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/arcane/magic-shield.png",
+      "element": "arcane"
+    }
+  ]
+}

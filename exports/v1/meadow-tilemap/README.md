@@ -2,7 +2,7 @@
 
 게임 제목은 **주문 넣고 갑니다**, 영문 제목은 **Spells to Go**다. 두 제목은 메인 화면 상단의 고정 제목 레이어에 배치한다.
 
-모든 맵은 160×352 논리 픽셀에 16×16px 타일을 쓰는 10열×22행이다. Tiled에는 `game-title.tmj`, `stage-start.tmj`, `battle.tmj`, `battle-six-slots.tmj`가 있다. 네 맵은 같은 `meadow-ui-tiles.png`를 사용한다.
+모든 맵은 160×352 논리 픽셀에 16×16px 타일을 쓰는 10열×22행이다. Tiled에는 `game-title.tmj`, `stage-start.tmj`, `battle.tmj`, `battle-five-slots.tmj`가 있다. 네 맵은 같은 `meadow-ui-tiles.png`를 사용한다.
 
 | 파일 | 내용 |
 | --- | --- |
@@ -11,15 +11,21 @@
 | `stage-path-strip.png` | 기존 초원 그림의 흙길 부분을 16×16px 텍스처로 잘라 구성한 별도 텍스처 레이어 |
 | `stage-slime-hop.png`, `stage-slime-hop.json` | 32×32px 원본 크기의 슬라임 전진 18프레임과 재생 시간 |
 | `*-foreground.png` | 시작 화면의 정지 제목과 버튼 레이어 |
-| `spell-slot-layouts.png` | 주문 3개와 6개를 장착했을 때의 하단 HUD 비교 |
+| `spell-slot-layouts.png` | 주문 3개와 5개를 장착했을 때의 하단 HUD 비교 |
 | `spell-cooldown-styles.png` | 세 주문의 시전 직후, 25%, 50%, 75%, 사용 가능 |
-| `sprites/` | 슬롯 프레임 22×22px, 주문 안쪽 18×18px 6종, 준비 테두리 22×22px, 원소별 충전 경계 18×1px 6종 |
+| `sprites/` | 슬롯 프레임 22×22px, 주문 안쪽 18×18px 5종, 준비 테두리 22×22px, 원소별 충전 경계 18×1px 5종 |
 | `SpellCooldownView.cs` | 주문마다 별도로 연결하는 Unity 슬롯 표시 코드 |
 | `StartStripScroll.cs`, `StageSlimeHop.cs` | 배경 레이어 반복과 슬라임 전진 재생 코드 |
 
-게임 시작은 폐허가 보이는 초원을 고정하고 구름만 오른쪽으로 흐르게 한다. 전투 시작은 다른 초원의 원경과 지면을 각각 왼쪽으로 흘리며, 작은 슬라임은 오른쪽을 보고 뛴다. 전투 HUD는 방어막 에너지 5/5와 전투력 120을 예시로 표시한다. 장착한 주문 아이콘은 2px 간격으로 한 줄에 최대 6개가 들어간다.
+게임 시작은 폐허가 보이는 초원을 고정하고 구름만 오른쪽으로 흐르게 한다. 전투 시작은 다른 초원의 원경과 지면을 각각 왼쪽으로 흘리며, 작은 슬라임은 오른쪽을 보고 뛴다. 전투 HUD는 방어막 에너지 5/5와 전투력 120을 예시로 표시한다. 장착한 주문 아이콘은 2px 간격으로 한 줄에 기본 주문 5개가 들어간다.
+
+스테이지 1~3의 시작 화면에는 [스테이지별 에셋](stages/README.md)의 원경·지면·이름 레이어를 같은 번호끼리 조합한다.
+
+앱 진입 타이틀의 배경과 게임 시작 버튼은 [챕터 1 홈 화면](chapter-01-home/README.md)에 별도 PNG로 제공한다.
 
 ## 화면 픽셀 배율 검수
+
+[산 배경과 오솔길 3종 시안](../../../work/meadow-mountain-concepts/README.md)에서 꽃초원, 청록 산길, 노을 고개를 비교할 수 있다. 같은 시작 화면 배치에 맞춘 원경·지면 PNG와 16×16px Tiled 지형 맵을 제공한다.
 
 1. 1배 원본의 논리 크기와 화면에 들어가는 에셋의 기준 크기를 기록한다. 이 샘플은 화면 160×352px, 타일 16×16px, 양쪽 시작 버튼 92×28px이다. 타이틀 배경은 원본에서 세로 구도를 먼저 잡고 출력 크기로 한 번 샘플링한다.
 2. 빌드에서 모든 화면 레이어의 논리 크기를 검사한다. 타이틀 배경은 2·3·4배로 규칙적으로 반복된 픽셀 블록도 검사한다. 아틀라스에서 재조립한 화면이 원본과 일치하는지 이어서 검사한다.
@@ -40,6 +46,5 @@
 
 ## 참고한 파일
 
-- 손패 카드의 출발점은 비교 시안 **`spell-card-directions.png`의 C · 원소**다. 적용된 앞면은 `hand-fire.png`, `hand-lightning.png`, `hand-burst.png`이며 삽화에 쓴 기존 아이콘은 `icon-fire.png`, `icon-lightning.png`, `icon-burst.png`다.
 - 하단 스펠 창은 **`스킬-트리-패널-Questwood-1x.png`**의 제목판과 안쪽 홈, **`spell-panel.png`**, **`spell-slots.png`**의 배치와 슬롯 구조를 참고했다. 새 프레임에는 프로젝트의 나무·조약돌 스프라이트인 `panel.png`, `hud.png`, `card.png`를 사용했다.
-- 확장 예시의 낙석·물기둥·회오리 아이콘은 Foozle의 [Pixel Magic Effects](https://foozlecc.itch.io/pixel-magic-sprite-effects)에서 가져왔다.
+- 주문 슬롯 앞면은 파이어 볼트, 아이스 볼트, 차지드 볼트, 매직 볼트, 매직 실드 다섯 가지뿐이다. 카드 삽화와 전투 이펙트는 [공식 주문 매핑](../wood-spell-cards/skill-art/basic/manifest.json)에서 찾는다.

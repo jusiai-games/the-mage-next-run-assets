@@ -1,0 +1,79 @@
+{
+  "viewport_px": [
+    160,
+    352
+  ],
+  "tile_px": 16,
+  "loop_ms": 8640,
+  "layers": [
+    {
+      "file": "stage-far-loop.png",
+      "size_px": [
+        160,
+        352
+      ],
+      "scroll_left_px_per_second": 18.51851851851852
+    },
+    {
+      "file": "stage-ground-loop.png",
+      "size_px": [
+        320,
+        352
+      ],
+      "scroll_left_px_per_second": 37.03703703703704
+    },
+    {
+      "file": "stage-start-foreground.png",
+      "size_px": [
+        160,
+        352
+      ]
+    }
+  ],
+  "split_far_layers": [
+    "stage-mountains-loop.png",
+    "stage-foothills-loop.png"
+  ],
+  "path_overlay": "stage-path-strip.png",
+  "tiled_map": "terrain.tmj",
+  "scene_map": "stage-start.tmj",
+  "slime_sheet": "../tilemap/stage-slime-hop.png",
+  "slime_timing": "../tilemap/stage-slime-hop.json",
+  "slime_feet_px": [
+    76,
+    232
+  ],
+  "slime_presentation_scale": 0.75,
+  "stages": [
+    {
+      "number": 1,
+      "name": "들꽃 언덕",
+      "directory": "stage-01",
+      "path_width_px": 24
+    },
+    {
+      "number": 2,
+      "name": "솔바람 고개",
+      "directory": "stage-02",
+      "path_width_px": 20
+    },
+    {
+      "number": 3,
+      "name": "노을마루",
+      "directory": "stage-03",
+      "path_width_px": 22
+    }
+  ],
+  "split_ui": {
+    "foreground_without_button": "stage-start-title.png",
+    "shared_button": "button-battle-start.png",
+    "button_top_left_px": [
+      34,
+      289
+    ],
+    "button_size_px": [
+      92,
+      28
+    ]
+  }
+}

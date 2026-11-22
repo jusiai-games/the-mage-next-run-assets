@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 256,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "81951b968ed33d7c50089014d58e443d0727a1d03a4454737d3cf1c3b152a0b8",
+  "sprites": [
+    {
+      "name": "title_hero_cast_right_00",
+      "y": 0,
+      "x": 0
+    },
+    {
+      "name": "title_hero_cast_right_01",
+      "y": 0,
+      "x": 32
+    },
+    {
+      "name": "title_hero_cast_right_02",
+      "y": 0,
+      "x": 64
+    },
+    {
+      "name": "title_hero_cast_right_03",
+      "y": 0,
+      "x": 96
+    },
+    {
+      "name": "title_hero_cast_right_04",
+      "y": 0,
+      "x": 128
+    },
+    {
+      "name": "title_hero_cast_right_05",
+      "y": 0,
+      "x": 160
+    },
+    {
+      "name": "title_hero_cast_right_06",
+      "y": 0,
+      "x": 192
+    },
+    {
+      "name": "title_hero_cast_right_07",
+      "y": 0,
+      "x": 224
+    }
+  ]
+}

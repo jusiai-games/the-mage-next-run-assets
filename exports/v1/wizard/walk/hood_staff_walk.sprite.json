@@ -1,33 +1,63 @@
 {
   "version": 1,
   "kind": "character",
-  "width": 128,
+  "width": 320,
   "height": 32,
   "cell": 32,
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "a82f65b4e497d60f6520153a86c7cb781d034320d71323ae1787f7999aa072b6",
+  "sha256": "649fce67db752f999fc8ca5202e2856505476d8e75cffb9dba1d7d8afcf82365",
   "sprites": [
     {
-      "name": "hood_staff_walk_right_00",
       "x": 0,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_walk_right_00"
     },
     {
-      "name": "hood_staff_walk_right_01",
       "x": 32,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_walk_right_01"
     },
     {
-      "name": "hood_staff_walk_right_02",
       "x": 64,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_walk_right_02"
     },
     {
-      "name": "hood_staff_walk_right_03",
       "x": 96,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_walk_right_03"
+    },
+    {
+      "x": 128,
+      "y": 0,
+      "name": "hood_staff_walk_right_04"
+    },
+    {
+      "x": 160,
+      "y": 0,
+      "name": "hood_staff_walk_right_05"
+    },
+    {
+      "x": 192,
+      "y": 0,
+      "name": "hood_staff_walk_right_06"
+    },
+    {
+      "x": 224,
+      "y": 0,
+      "name": "hood_staff_walk_right_07"
+    },
+    {
+      "x": 256,
+      "y": 0,
+      "name": "hood_staff_walk_right_08"
+    },
+    {
+      "x": 288,
+      "y": 0,
+      "name": "hood_staff_walk_right_09"
     }
   ]
 }

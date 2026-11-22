@@ -235,15 +235,15 @@ def preview(sprites, ornaments):
     draw.text((662, 168), "초원 마법 상인", font=body, fill=WOOD, anchor="mm")
     label(71, 196, "보유 주문", body)
     draw.line((72, 232, 433, 232), fill=BRONZE, width=2)
-    for index, (spell, name) in enumerate((("fire", "화염탄"), ("lightning", "연쇄 번개"), ("burst", "마력 폭발"))):
+    for index, (spell, name) in enumerate((("fire-bolt", "파이어 볼트"), ("charged-bolt", "차지드 볼트"), ("magic-bolt", "매직 볼트"))):
         x = 75 + 125 * index
         place(sliced(sprites["nameplate"], 34, 28), x, 247)
-        with Image.open(PROTOTYPES / f"meadow-visual/assets/icon-{spell}.png") as art:
+        with Image.open(GAME / f"exports/v1/wood-spell-cards/skill-art/basic/{spell}.png") as art:
             place(art.convert("RGBA"), x + 15, 253)
         draw.text((x + 51, 344), name, font=small, fill=PARCHMENT, anchor="mm")
 
     label(553, 214, "다음 길에 쓸 주문을 골라 봐.", body, WOOD)
-    label(553, 250, "오늘은 화염탄이 잘 나가.", body, WOOD)
+    label(553, 250, "오늘은 파이어 볼트가 잘 나가.", body, WOOD)
     draw.line((552, 295, 899, 295), fill=COPPER, width=2)
     label(553, 317, "주문을 챙기고 초원으로", small, WOOD)
     label(39, 426, "버튼 상태", body, "#F0FCFF")

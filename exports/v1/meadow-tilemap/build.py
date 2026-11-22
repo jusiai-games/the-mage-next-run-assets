@@ -19,14 +19,13 @@ TILE, WIDTH, HEIGHT = 16, 160, 352
 NEAREST = Image.Resampling.NEAREST
 INK, CREAM, GOLD, ICE = "#222034", "#F8CFAB", "#EAB853", "#ADE9FF"
 SPELLS = [
-    ("fire", "화염탄", "#FA9B46", 0.72),
-    ("lightning", "연쇄 번개", ICE, 2.4),
-    ("burst", "마력 폭발", "#FBDFFF", 3.4),
+    ("fire-bolt", "파이어 볼트", "#FA9B46", 0.72),
+    ("ice-bolt", "아이스 볼트", ICE, 2.4),
+    ("charged-bolt", "차지드 볼트", "#B8ACFF", 3.4),
 ]
 EXPANSION_ICONS = {
-    "rock": ("낙석", "#D3B082"),
-    "geyser": ("물기둥", "#86C9F1"),
-    "tornado": ("회오리", "#C6E7BB"),
+    "magic-bolt": ("매직 볼트", "#65C6FF"),
+    "magic-shield": ("매직 실드", "#E4A5CE"),
 }
 SPELL_COLORS = {key: accent for key, _, accent, _ in SPELLS}
 SPELL_COLORS.update({key: accent for key, (_, accent) in EXPANSION_ICONS.items()})
@@ -337,13 +336,8 @@ def make_faces():
         image = Image.new("RGBA",(FACE_SIZE,FACE_SIZE))
         draw = ImageDraw.Draw(image)
         draw.rectangle((0,0,FACE_SIZE-1,FACE_SIZE-1),fill="#222034",outline=accent)
-        if key in EXPANSION_ICONS:
-            folder, _ = EXPANSION_ICONS[key]
-            icon = rgba(REFERENCE_ICONS / folder / f"{folder}-Foozle.png")
-            icon = icon.crop((4,4,icon.width-4,icon.height-4))
-        else:
-            icon = rgba(ASSETS / f"icon-{key}.png")
-            icon = icon.crop(icon.getbbox())
+        icon = rgba(ROOT.parent / "wood-spell-cards/skill-art/basic" / f"{key}.png")
+        icon = icon.crop(icon.getbbox())
         icon = ImageOps.contain(icon,(FACE_SIZE-2,FACE_SIZE-2),NEAREST)
         image.alpha_composite(icon,((FACE_SIZE-icon.width)//2,(FACE_SIZE-icon.height)//2))
         image.save(SPRITES / f"{key}-face.png")
@@ -458,7 +452,7 @@ def compare(screens):
 
 def compare_slot_counts(screens):
     overview = Image.new("RGBA",(1048,340),"#1A1928")
-    for index, (key, text) in enumerate((("battle","3개 장착"),("battle-six-slots","6개 장착 예시"))):
+    for index, (key, text) in enumerate((("battle","3개 장착"),("battle-five-slots","5개 장착 예시"))):
         x = 28 + 512*index
         label(overview,text,x+240,21,23)
         panel = pack_layers(screens[key]).crop((0,264,WIDTH,HEIGHT))
@@ -466,7 +460,7 @@ def compare_slot_counts(screens):
     overview.convert("RGB").save(OUTPUT/"spell-slot-layouts.png",optimize=True)
     # Fit the full 20:9 logical image inside an example 390x844px viewport.
     mobile = Image.new("RGBA",(390,844),"#1A1928")
-    battle = ImageOps.contain(pack_layers(screens["battle-six-slots"]), mobile.size, NEAREST)
+    battle = ImageOps.contain(pack_layers(screens["battle-five-slots"]), mobile.size, NEAREST)
     mobile.alpha_composite(battle,((mobile.width-battle.width)//2,0))
     mobile.convert("RGB").save(OUTPUT/"mobile-battle-390.png",optimize=True)
 
@@ -521,7 +515,7 @@ if __name__ == "__main__":
         "game-title": title_frame(landscape,clouds,title,0),
         "stage-start": stage_frame(far,ground,path,sheet,pivot,stage,.25,6),
         "battle": battle+[cooldown_layer(starter)],
-        "battle-six-slots": battle+[cooldown_layer(expanded)],
+        "battle-five-slots": battle+[cooldown_layer(expanded)],
     }
     for screen, layers in screens.items():
         for name, image in layers:

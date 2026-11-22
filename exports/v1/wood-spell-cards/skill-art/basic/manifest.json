@@ -1,0 +1,64 @@
+{
+  "pathRoot": "exports/v1",
+  "cardSizePx": [
+    44,
+    64
+  ],
+  "artSizePx": [
+    28,
+    26
+  ],
+  "artOriginPx": [
+    8,
+    8
+  ],
+  "filter": "Point",
+  "spells": [
+    {
+      "id": "fire-bolt",
+      "nameKo": "파이어 볼트",
+      "effectName": "Fire Bolt",
+      "art": "wood-spell-cards/skill-art/basic/fire-bolt.png",
+      "frame": "wood-spell-cards/skill-art/fire/frame.png",
+      "effectSheet": "spell-effects/spritesheets/fire/fire-bolt.png",
+      "motif": "단일 화염탄과 뒤로 꺾인 불꽃"
+    },
+    {
+      "id": "ice-bolt",
+      "nameKo": "아이스 볼트",
+      "effectName": "Ice Bolt",
+      "art": "wood-spell-cards/skill-art/basic/ice-bolt.png",
+      "frame": "wood-spell-cards/skill-art/cold/frame.png",
+      "effectSheet": "spell-effects/spritesheets/cold/ice-bolt.png",
+      "motif": "길고 날카로운 빙정과 작은 얼음 파편"
+    },
+    {
+      "id": "charged-bolt",
+      "nameKo": "차지드 볼트",
+      "effectName": "Charged Bolt Orb",
+      "art": "wood-spell-cards/skill-art/basic/charged-bolt.png",
+      "frame": "wood-spell-cards/skill-art/lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/lightning/charged-bolt-orb.png",
+      "motif": "서로 다른 각도로 회전하는 번개 조각 세 개"
+    },
+    {
+      "id": "magic-bolt",
+      "nameKo": "매직 볼트",
+      "effectName": "Magic Missile",
+      "art": "wood-spell-cards/skill-art/basic/magic-bolt.png",
+      "frame": "wood-spell-cards/skill-art/lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/arcane/magic-missile.png",
+      "motif": "둥근 파란 탄두와 길게 흐르는 잔광"
+    },
+    {
+      "id": "magic-shield",
+      "nameKo": "매직 실드",
+      "effectName": "Magic Shield",
+      "art": "wood-spell-cards/skill-art/basic/magic-shield.png",
+      "frame": "wood-spell-cards/skill-art/lightning/frame.png",
+      "effectSheet": "spell-effects/spritesheets/arcane/magic-shield.png",
+      "motif": "가운데가 열린 연보라색 보호막과 피격 섬광",
+      "blockSheet": "spell-effects/spritesheets/arcane/magic-shield-block.png"
+    }
+  ]
+}

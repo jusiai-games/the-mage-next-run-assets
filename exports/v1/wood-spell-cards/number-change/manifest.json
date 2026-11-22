@@ -1,0 +1,14 @@
+{
+  "cellPx": [24, 18],
+  "columns": 8,
+  "rows": 2,
+  "frameCount": 16,
+  "frameDurationMs": 50,
+  "loop": false,
+  "cardOriginPx": [10, 46],
+  "mask": "scan-mask.png",
+  "overlay": "scan-overlay.png",
+  "newNumberFrame": 11,
+  "newNumberStyle": { "color": "#A12E24", "outlineColor": "#FFF0B7", "bold": true, "sizeMultiplier": 1.26 },
+  "preview": "preview.gif"
+}

@@ -5,7 +5,10 @@
     0,
     1,
     3,
+    4,
     5,
+    6,
+    7,
     8
   ],
   "release_time_ms": 100,
@@ -15,11 +18,22 @@
     14
   ],
   "clip_duration_samples": 8,
-  "source_frame_order_zero_based": [
-    0,
-    3,
-    5,
+  "unity_release_frame_order_zero_based": [
     2,
-    6
+    5,
+    3,
+    6,
+    7,
+    4
+  ],
+  "playback_frame_order_zero_based": [
+    0,
+    1,
+    2,
+    5,
+    3,
+    6,
+    7,
+    4
   ]
 }

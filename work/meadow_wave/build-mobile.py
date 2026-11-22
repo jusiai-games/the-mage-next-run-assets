@@ -22,7 +22,6 @@ def palette(name):
     return json.loads((game / 'palettes' / f'{name}.json').read_text())
 
 meadow = palette('hood_staff_32_meadow')
-wizard_colors = palette('hood_staff_32_quick')
 effects = palette('hood_staff_32_cast_quick')
 slime_source = game / 'approved/meadow_slime_combat32_v7/advance'
 slime_frames = [Image.open(slime_source / f'slime32_advance_left_{index:02}.png').convert('RGBA')
@@ -37,6 +36,8 @@ terrain = Image.open(old / 'terrain.png').convert('RGBA').crop((64,16,224,160))
 terrain.save(out / 'meadow-terrain.png')
 wizard = Image.open(quick / 'idle/hood_staff_idle.png').convert('RGBA').crop((0,0,32,32))
 wizard.save(out / 'wizard-idle.png')
+wizard_colors = sorted({'#%02X%02X%02X' % pixel[:3] for pixel in wizard.get_flattened_data() if pixel[3]})
+write_json(work / 'wizard-palette.json', wizard_colors)
 
 # Sample the generated horizon on the game's pixel grid and use only existing colors.
 sky_source = Image.open(source / 'generated.png').convert('RGB')
@@ -195,7 +196,7 @@ commands = [
     
     ['validate',str(out/'meadow-terrain.png'),'--size','160','144','--palette',str(game/'palettes/hood_staff_32_meadow.json')],
     ['validate',str(out/'distant-meadow.png'),'--size','160','80','--palette',str(game/'palettes/hood_staff_32_meadow.json')],
-    ['validate',str(out/'wizard-idle.png'),'--kind','character','--palette',str(game/'palettes/hood_staff_32_quick.json')],
+    ['validate',str(out/'wizard-idle.png'),'--kind','character','--palette',str(work/'wizard-palette.json')],
     ['validate',str(out/'spell-panel.png'),'--size','160','128','--palette',str(work/'palette.json')],
     ['validate',str(out/'spell-slots.png'),'--size','72','24','--palette',str(work/'palette.json')],
     ['validate',str(out/'meadow-wave-preview.png'),'--size','640','1408','--palette',str(work/'palette.json')],

@@ -29,6 +29,14 @@
       "#A8A1FF",
       "#D9C6FF",
       "#FBF5FF"
+    ],
+    "arcane": [
+      "#483361",
+      "#795496",
+      "#B77CB4",
+      "#E4A5CE",
+      "#FFE2CD",
+      "#FFF6DC"
     ]
   },
   "effects": [
@@ -58,231 +66,6 @@
       "contactFrameIndex": 2
     },
     {
-      "name": "Warmth",
-      "tree": "fire",
-      "source": "custom/warmth",
-      "recommendedUse": "Passive mana recovery aura around the caster",
-      "sheet": "spritesheets/fire/warmth.png",
-      "cell": [
-        48,
-        48
-      ],
-      "columns": 8,
-      "rows": 4,
-      "frameCount": 30,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        22,
-        39
-      ],
-      "pivotUnity": [
-        0.4583333333333333,
-        0.1875
-      ],
-      "contactFrameIndex": 22
-    },
-    {
-      "name": "Inferno",
-      "tree": "fire",
-      "source": "fire/flamethrower",
-      "recommendedUse": "Continuous right-facing flame jet",
-      "sheet": "spritesheets/fire/inferno.png",
-      "cell": [
-        88,
-        56
-      ],
-      "columns": 8,
-      "rows": 4,
-      "frameCount": 32,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        16,
-        30
-      ],
-      "pivotUnity": [
-        0.18181818181818182,
-        0.4642857142857143
-      ],
-      "contactFrameIndex": 0
-    },
-    {
-      "name": "Blaze",
-      "tree": "fire",
-      "source": "custom/blaze",
-      "recommendedUse": "Place persistent flame trail segments at previous caster positions",
-      "sheet": "spritesheets/fire/blaze.png",
-      "cell": [
-        56,
-        32
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 20,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        27,
-        23
-      ],
-      "pivotUnity": [
-        0.48214285714285715,
-        0.28125
-      ],
-      "contactFrameIndex": 8
-    },
-    {
-      "name": "Fire Ball",
-      "tree": "fire",
-      "source": "fire/fireball",
-      "recommendedUse": "Heavy right-facing projectile",
-      "sheet": "spritesheets/fire/fire-ball.png",
-      "cell": [
-        72,
-        32
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 24,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        53,
-        15
-      ],
-      "pivotUnity": [
-        0.7361111111111112,
-        0.53125
-      ],
-      "contactFrameIndex": 9
-    },
-    {
-      "name": "Fire Wall",
-      "tree": "fire",
-      "source": "custom/fire-wall",
-      "recommendedUse": "Persistent horizontal barrier of flame",
-      "sheet": "spritesheets/fire/fire-wall.png",
-      "cell": [
-        104,
-        40
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 24,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        50,
-        34
-      ],
-      "pivotUnity": [
-        0.4807692307692308,
-        0.15000000000000002
-      ],
-      "contactFrameIndex": 17
-    },
-    {
-      "name": "Enchant",
-      "tree": "fire",
-      "source": "fire/spirit-flame",
-      "recommendedUse": "Flame to attach to the enchanted weapon",
-      "sheet": "spritesheets/fire/enchant.png",
-      "cell": [
-        32,
-        48
-      ],
-      "columns": 8,
-      "rows": 8,
-      "frameCount": 60,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        16,
-        35
-      ],
-      "pivotUnity": [
-        0.5,
-        0.27083333333333337
-      ],
-      "contactFrameIndex": 50
-    },
-    {
-      "name": "Meteor",
-      "tree": "fire",
-      "source": "fire/meteor",
-      "recommendedUse": "Falling fire mass and ground impact",
-      "sheet": "spritesheets/fire/meteor.png",
-      "cell": [
-        136,
-        120
-      ],
-      "columns": 8,
-      "rows": 13,
-      "frameCount": 101,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        72,
-        101
-      ],
-      "pivotUnity": [
-        0.5294117647058824,
-        0.15833333333333333
-      ],
-      "contactFrameIndex": 17
-    },
-    {
-      "name": "Fire Mastery",
-      "tree": "fire",
-      "source": "fire/fire-tornado",
-      "recommendedUse": "Optional passive upgrade flourish",
-      "sheet": "spritesheets/fire/fire-mastery.png",
-      "cell": [
-        48,
-        80
-      ],
-      "columns": 8,
-      "rows": 5,
-      "frameCount": 40,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        23,
-        67
-      ],
-      "pivotUnity": [
-        0.4791666666666667,
-        0.16249999999999998
-      ],
-      "contactFrameIndex": 20
-    },
-    {
-      "name": "Hydra",
-      "tree": "fire",
-      "source": "custom/hydra",
-      "recommendedUse": "Triple flame familiar turret",
-      "sheet": "spritesheets/fire/hydra.png",
-      "cell": [
-        64,
-        48
-      ],
-      "columns": 8,
-      "rows": 5,
-      "frameCount": 36,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        27,
-        35
-      ],
-      "pivotUnity": [
-        0.421875,
-        0.27083333333333337
-      ],
-      "contactFrameIndex": 7
-    },
-    {
       "name": "Ice Bolt",
       "tree": "cold",
       "source": "projectiles/magic-missile",
@@ -308,114 +91,37 @@
       "contactFrameIndex": 18
     },
     {
-      "name": "Frozen Armor",
-      "tree": "cold",
-      "source": "custom/frozen-armor",
-      "recommendedUse": "Thin frost guard that keeps the caster readable",
-      "sheet": "spritesheets/cold/frozen-armor.png",
+      "name": "Charged Bolt Orb",
+      "tree": "lightning",
+      "source": "Original project pixel art",
+      "recommendedUse": "Spawn several spinning lightning shards on independent erratic paths. Offset the starting frame per shard. Rotation is baked into the sheet.",
+      "sheet": "spritesheets/lightning/charged-bolt-orb.png",
       "cell": [
-        48,
-        40
+        20,
+        20
       ],
       "columns": 8,
-      "rows": 3,
-      "frameCount": 24,
-      "fps": 20,
+      "rows": 2,
+      "frameCount": 12,
+      "fps": 25,
       "loop": true,
       "pivotTopLeftPx": [
-        21,
-        32
+        13,
+        10
       ],
       "pivotUnity": [
-        0.4375,
-        0.19999999999999996
-      ],
-      "contactFrameIndex": 6
+        0.65,
+        0.5
+      ]
     },
     {
-      "name": "Frost Nova",
-      "tree": "cold",
-      "source": "ice/frost-nova",
-      "recommendedUse": "Expanding ground-level wave",
-      "sheet": "spritesheets/cold/frost-nova.png",
+      "name": "Magic Missile",
+      "tree": "arcane",
+      "source": "Original project pixel art",
+      "sheet": "spritesheets/arcane/magic-missile.png",
       "cell": [
-        136,
-        64
-      ],
-      "columns": 8,
-      "rows": 9,
-      "frameCount": 69,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        66,
-        47
-      ],
-      "pivotUnity": [
-        0.4852941176470588,
-        0.265625
-      ],
-      "contactFrameIndex": 17
-    },
-    {
-      "name": "Ice Blast",
-      "tree": "cold",
-      "source": "ice/ice-shatter",
-      "recommendedUse": "Burst of ice shards at the target",
-      "sheet": "spritesheets/cold/ice-blast.png",
-      "cell": [
-        96,
-        56
-      ],
-      "columns": 8,
-      "rows": 8,
-      "frameCount": 57,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        27,
-        35
-      ],
-      "pivotUnity": [
-        0.28125,
-        0.375
-      ],
-      "contactFrameIndex": 14
-    },
-    {
-      "name": "Shiver Armor",
-      "tree": "cold",
-      "source": "custom/shiver-armor",
-      "recommendedUse": "Ring of raised spikes at the caster",
-      "sheet": "spritesheets/cold/shiver-armor.png",
-      "cell": [
-        64,
-        48
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 24,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        29,
-        35
-      ],
-      "pivotUnity": [
-        0.453125,
-        0.27083333333333337
-      ],
-      "contactFrameIndex": 23
-    },
-    {
-      "name": "Glacial Spike",
-      "tree": "cold",
-      "source": "ice/ice-lance",
-      "recommendedUse": "Large right-facing spear-shaped projectile",
-      "sheet": "spritesheets/cold/glacial-spike.png",
-      "cell": [
-        72,
-        24
+        32,
+        20
       ],
       "columns": 8,
       "rows": 2,
@@ -423,364 +129,70 @@
       "fps": 20,
       "loop": true,
       "pivotTopLeftPx": [
-        62,
+        23,
         10
       ],
       "pivotUnity": [
-        0.8611111111111112,
-        0.5833333333333333
+        0.71875,
+        0.5
       ],
-      "contactFrameIndex": 13
+      "recommendedUse": "Aim the round leading core toward the target and rotate the tapered blue wake along velocity. Use the orb center as pivot.",
+      "palette": [
+        "#223D77",
+        "#2F61AD",
+        "#378CEE",
+        "#65C6FF",
+        "#B5EBFF",
+        "#F0FCFF"
+      ]
     },
     {
-      "name": "Blizzard",
-      "tree": "cold",
-      "source": "custom/blizzard",
-      "recommendedUse": "Sustained staggered ice strikes across an area",
-      "sheet": "spritesheets/cold/blizzard.png",
+      "name": "Magic Shield",
+      "tree": "arcane",
+      "source": "Original project pixel art",
+      "sheet": "spritesheets/arcane/magic-shield.png",
       "cell": [
-        104,
-        88
-      ],
-      "columns": 8,
-      "rows": 4,
-      "frameCount": 30,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        57,
-        65
-      ],
-      "pivotUnity": [
-        0.5480769230769231,
-        0.26136363636363635
-      ],
-      "contactFrameIndex": 2
-    },
-    {
-      "name": "Chilling Armor",
-      "tree": "cold",
-      "source": "scifi/force-field",
-      "recommendedUse": "Dome used to signal projectile defense",
-      "sheet": "spritesheets/cold/chilling-armor.png",
-      "cell": [
-        88,
-        48
-      ],
-      "columns": 8,
-      "rows": 6,
-      "frameCount": 48,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        27,
-        39
-      ],
-      "pivotUnity": [
-        0.3068181818181818,
-        0.1875
-      ],
-      "contactFrameIndex": 12
-    },
-    {
-      "name": "Frozen Orb",
-      "tree": "cold",
-      "source": "arcane/arcane-orb",
-      "recommendedUse": "Spinning cold orb shedding ice motes",
-      "sheet": "spritesheets/cold/frozen-orb.png",
-      "cell": [
-        48,
-        64
-      ],
-      "columns": 8,
-      "rows": 6,
-      "frameCount": 48,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        21,
-        48
-      ],
-      "pivotUnity": [
-        0.4375,
-        0.25
-      ],
-      "contactFrameIndex": 24
-    },
-    {
-      "name": "Cold Mastery",
-      "tree": "cold",
-      "source": "ice/snowflake-burst",
-      "recommendedUse": "Optional passive upgrade flourish",
-      "sheet": "spritesheets/cold/cold-mastery.png",
-      "cell": [
-        56,
-        64
-      ],
-      "columns": 8,
-      "rows": 9,
-      "frameCount": 65,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        25,
-        51
-      ],
-      "pivotUnity": [
-        0.44642857142857145,
-        0.203125
-      ],
-      "contactFrameIndex": 7
-    },
-    {
-      "name": "Charged Bolt",
-      "tree": "lightning",
-      "source": "custom/charged-bolt",
-      "recommendedUse": "Three short ground arcs moving right",
-      "sheet": "spritesheets/lightning/charged-bolt.png",
-      "cell": [
-        88,
-        56
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 18,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        5,
-        25
-      ],
-      "pivotUnity": [
-        0.056818181818181816,
-        0.5535714285714286
-      ],
-      "contactFrameIndex": 11
-    },
-    {
-      "name": "Static Field",
-      "tree": "lightning",
-      "source": "custom/static-field",
-      "recommendedUse": "Low expanding electric field",
-      "sheet": "spritesheets/lightning/static-field.png",
-      "cell": [
-        112,
-        56
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 18,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        54,
-        26
-      ],
-      "pivotUnity": [
-        0.48214285714285715,
-        0.5357142857142857
-      ],
-      "contactFrameIndex": 5
-    },
-    {
-      "name": "Telekinesis",
-      "tree": "lightning",
-      "source": "custom/telekinesis",
-      "recommendedUse": "Remote pull with a converging field at the target",
-      "sheet": "spritesheets/lightning/telekinesis.png",
-      "cell": [
-        88,
-        72
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 17,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
         44,
-        35
-      ],
-      "pivotUnity": [
-        0.5,
-        0.5138888888888888
-      ],
-      "contactFrameIndex": 8
-    },
-    {
-      "name": "Nova",
-      "tree": "lightning",
-      "source": "lightning/thunderclap",
-      "recommendedUse": "Electric area burst around the caster",
-      "sheet": "spritesheets/lightning/nova.png",
-      "cell": [
-        136,
-        72
-      ],
-      "columns": 8,
-      "rows": 5,
-      "frameCount": 39,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        67,
-        48
-      ],
-      "pivotUnity": [
-        0.49264705882352944,
-        0.33333333333333337
-      ],
-      "contactFrameIndex": 3
-    },
-    {
-      "name": "Lightning",
-      "tree": "lightning",
-      "source": "arcane/arcane-beam",
-      "recommendedUse": "Sustained straight right-facing electric beam",
-      "sheet": "spritesheets/lightning/lightning.png",
-      "cell": [
-        120,
-        48
-      ],
-      "columns": 8,
-      "rows": 3,
-      "frameCount": 24,
-      "fps": 20,
-      "loop": true,
-      "pivotTopLeftPx": [
-        6,
-        40
-      ],
-      "pivotUnity": [
-        0.05,
-        0.16666666666666663
-      ],
-      "contactFrameIndex": 7
-    },
-    {
-      "name": "Chain Lightning",
-      "tree": "lightning",
-      "source": "lightning/chain-lightning",
-      "recommendedUse": "Sequential links between targets",
-      "sheet": "spritesheets/lightning/chain-lightning.png",
-      "cell": [
-        112,
-        48
-      ],
-      "columns": 8,
-      "rows": 5,
-      "frameCount": 37,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        8,
-        35
-      ],
-      "pivotUnity": [
-        0.07142857142857142,
-        0.27083333333333337
-      ],
-      "contactFrameIndex": 7
-    },
-    {
-      "name": "Teleport",
-      "tree": "lightning",
-      "source": "arcane/blink-in",
-      "recommendedUse": "Arrival burst at the destination",
-      "sheet": "spritesheets/lightning/teleport.png",
-      "cell": [
-        48,
-        48
+        44
       ],
       "columns": 8,
       "rows": 4,
-      "frameCount": 29,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        23,
-        34
-      ],
-      "pivotUnity": [
-        0.4791666666666667,
-        0.29166666666666663
-      ],
-      "contactFrameIndex": 10
-    },
-    {
-      "name": "Thunder Storm",
-      "tree": "lightning",
-      "source": "lightning/lightning-strike",
-      "recommendedUse": "Vertical strike at the chosen target",
-      "sheet": "spritesheets/lightning/thunder-storm.png",
-      "cell": [
-        112,
-        136
-      ],
-      "columns": 8,
-      "rows": 8,
-      "frameCount": 61,
-      "fps": 20,
-      "loop": false,
-      "pivotTopLeftPx": [
-        55,
-        117
-      ],
-      "pivotUnity": [
-        0.49107142857142855,
-        0.13970588235294112
-      ],
-      "contactFrameIndex": 16
-    },
-    {
-      "name": "Energy Shield",
-      "tree": "lightning",
-      "source": "holy/divine-shield",
-      "recommendedUse": "Sustained protection around the caster",
-      "sheet": "spritesheets/lightning/energy-shield.png",
-      "cell": [
-        40,
-        48
-      ],
-      "columns": 8,
-      "rows": 6,
-      "frameCount": 48,
+      "frameCount": 32,
       "fps": 20,
       "loop": true,
       "pivotTopLeftPx": [
-        20,
-        32
+        22,
+        36
       ],
       "pivotUnity": [
         0.5,
-        0.33333333333333337
+        0.18181818181818177
       ],
-      "contactFrameIndex": 34
+      "recommendedUse": "Anchor to caster feet while absorb capacity remains."
     },
     {
-      "name": "Lightning Mastery",
-      "tree": "lightning",
-      "source": "lightning/charge-up",
-      "recommendedUse": "Optional passive upgrade flourish",
-      "sheet": "spritesheets/lightning/lightning-mastery.png",
+      "name": "Magic Shield Block",
+      "tree": "arcane",
+      "source": "Original project pixel art",
+      "sheet": "spritesheets/arcane/magic-shield-block.png",
       "cell": [
-        120,
-        88
+        44,
+        44
       ],
       "columns": 8,
-      "rows": 7,
-      "frameCount": 55,
+      "rows": 2,
+      "frameCount": 12,
       "fps": 20,
       "loop": false,
       "pivotTopLeftPx": [
-        58,
-        62
+        22,
+        36
       ],
       "pivotUnity": [
-        0.48333333333333334,
-        0.2954545454545454
+        0.5,
+        0.18181818181818177
       ],
-      "contactFrameIndex": 33
+      "recommendedUse": "Overlay on shield when damage is absorbed. Mirror horizontally for a hit from the left."
     }
   ]
 }

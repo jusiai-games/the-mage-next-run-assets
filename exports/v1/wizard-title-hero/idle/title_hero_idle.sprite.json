@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "kind": "character",
+  "width": 160,
+  "height": 32,
+  "cell": 32,
+  "ppu": 32,
+  "pivotX": 0.5,
+  "pivotY": 0.125,
+  "sha256": "207a7a27acd830e3d6beebfe56fe327d1fbef30f23883dccb1b2ed40affcb912",
+  "sprites": [
+    {
+      "name": "title_hero_idle_right_00",
+      "y": 0,
+      "x": 0
+    },
+    {
+      "name": "title_hero_idle_right_01",
+      "y": 0,
+      "x": 32
+    },
+    {
+      "name": "title_hero_idle_right_02",
+      "y": 0,
+      "x": 64
+    },
+    {
+      "name": "title_hero_idle_right_03",
+      "y": 0,
+      "x": 96
+    },
+    {
+      "name": "title_hero_idle_right_04",
+      "y": 0,
+      "x": 128
+    }
+  ]
+}

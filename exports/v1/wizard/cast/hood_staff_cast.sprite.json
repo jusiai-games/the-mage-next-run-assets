@@ -1,38 +1,53 @@
 {
   "version": 1,
   "kind": "character",
-  "width": 160,
+  "width": 256,
   "height": 32,
   "cell": 32,
   "ppu": 32,
   "pivotX": 0.5,
   "pivotY": 0.125,
-  "sha256": "d4968deb84aa6d34220734eac9926f35c4b7c221097a0f81a19edd60bb0c8052",
+  "sha256": "81951b968ed33d7c50089014d58e443d0727a1d03a4454737d3cf1c3b152a0b8",
   "sprites": [
     {
-      "name": "hood_staff_cast_right_00",
       "x": 0,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_cast_right_00"
     },
     {
-      "name": "hood_staff_cast_right_01",
       "x": 32,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_cast_right_01"
     },
     {
-      "name": "hood_staff_cast_right_02",
       "x": 64,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_cast_right_02"
     },
     {
-      "name": "hood_staff_cast_right_03",
       "x": 96,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_cast_right_03"
     },
     {
-      "name": "hood_staff_cast_right_04",
       "x": 128,
-      "y": 0
+      "y": 0,
+      "name": "hood_staff_cast_right_04"
+    },
+    {
+      "x": 160,
+      "y": 0,
+      "name": "hood_staff_cast_right_05"
+    },
+    {
+      "x": 192,
+      "y": 0,
+      "name": "hood_staff_cast_right_06"
+    },
+    {
+      "x": 224,
+      "y": 0,
+      "name": "hood_staff_cast_right_07"
     }
   ]
 }

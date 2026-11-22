@@ -26,3 +26,7 @@
 인벤토리 슬롯과 아이콘은 `Image Type → Simple`로 배치한다.
 
 양피지 이름표의 기준은 첨부 레퍼런스 두 번째 이미지의 가로 띠다. 중앙 위아래는 얇고 곧게 두고, 끝에서 종이 앞면이 말린 뒷면을 덮어 깊이가 읽히도록 그린다. 빌드는 48px·84px·101px 폭에서 고정 모서리와 수평 중앙을 확인한다.
+
+## 안내용 나무틀 양피지
+
+[`NoticeParchment.png`](package/Assets/SpellsToGo/UI/Sprites/NoticeParchment.png)는 v1 공용 안내 문구에 채택한 36×36px 투명 프레임이다. 왼쪽과 오른쪽에 두꺼운 나무판과 회청색 조약돌을 배치하고, 위아래는 얇은 나무 띠로 연결한다. Unity 패키지의 .meta에는 Sprite (2D and UI), Point 필터, 32 PPU, Full Rect와 네 방향 12px Border를 설정했다. Image Type을 Sliced로 두면 웨이브 예고, 선택 안내, 확인창의 길이에 맞게 가로·세로로 늘릴 수 있다. 문구는 중앙 정렬하고, 내용 길이가 달라지는 경우 텍스트 높이와 여백으로 프레임 높이를 정한다.
