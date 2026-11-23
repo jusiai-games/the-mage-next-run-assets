@@ -4,10 +4,10 @@
 
 네 동작 모두 32×32, 발 피벗 (16, 28), 32 PPU다. 각 PNG를 같은 이름의 .sprite.json과 함께 Unity로 가져온다.
 
-- [걷기 10프레임](walk/hood_staff_walk.png): 상체를 대기 자세 하나로 고정하고 다리를 새로 그린 정리본이다. 변경 내용은 [걷기 정리 기록](../../../work/wizard-walk-clean/README.md)에 있다.
+- [걷기 10프레임](walk/hood_staff_walk.png)은 발을 디딜 때 어깨와 몸통이 내려가고, 팔과 지팡이가 보폭에 맞춰 움직인다. 망토는 한 박자 늦게 따라오며 중간 프레임에서도 몸통에 이어진다. 400ms 주기로 반복한다.
 - [대기 5프레임](idle/hood_staff_idle.png)
 - [시전 8프레임](cast/hood_staff_cast.png)
-- [쓰러짐 6프레임](fall/hood_staff_fall.png)
+- [쓰러짐 6프레임](fall/hood_staff_fall.png)은 무릎이 접히고 손이 바닥에 닿은 뒤 가슴과 얼굴이 바닥을 향하며 옆으로 엎어진다. 오른쪽을 보는 시트에서는 오른쪽 앞으로 기울고 망토가 등을 덮는다. 30 Samples로 재생하며 공격 중단 시 샘플 3에서 시작하고 마지막 자세를 유지한다.
 
 시전은 30 Samples, 반복 끔. 키 위치는 0, 1, 3, 4, 5, 6, 7, 8이며, 발사는 샘플 3의 세 번째 프레임에서 시작한다. 실제 투사체를 만드는 타이밍도 시전 시작 후 0.10초에 맞춘다. 스태프 끝 위치는 cast/timing.json을 참고한다. 초원과 그림자는 [초원 지형 패키지](../meadow-terrain/meadow/layout.json)에 있다.
 
@@ -18,7 +18,7 @@
 - 머리카락, 망토, 장화의 어두운 바깥 윤곽을 살린다. 허리 안쪽은 망토와 가죽 띠의 색으로 이어서 검은 띠가 몸통을 가로지르지 않게 한다. 지팡이의 수정과 금빛 받침을 보존하고, 축이 꺾여 보이면 막대 픽셀만 정렬한다.
 - 32×32 셀, 좌상단 기준 발 피벗 (16, 28), 32 PPU를 유지한다. 시전 중 불투명 발바닥은 y=27, 머리 높이 변화는 최대 1px이다. 발사 시점은 100ms, 세 번째 프레임 수정 끝은 (28, 14)다. 걷기와 시전의 재생 순서는 timing.json의 playback_frame_order_zero_based를 읽는다. Unity의 Mage_Release는 발사 직후부터 재생하는 6개 키이며, 별도 unity_release_frame_order_zero_based를 사용한다.
 - 수정본을 적용할 때 이 패키지의 PNG와 .sprite.json 해시를 맞춘다. 별도 Unity 프로젝트의 Assets/Art/PixelArt/wizard_* 폴더에 있는 PNG를 교체할 경우 기존 파일명, 스프라이트 이름 및 .meta를 유지한다. 대기 첫 프레임이 바뀌면 [모바일 초원의 대기 이미지](../meadow-wave-mobile/README.md)도 맞춘다.
-- 현재 채택본은 PNG, 프레임 분할 및 Unity 에셋 참조를 확인했다. Unity 플레이 모드에서 애니메이션 재생을 확인하는 작업이 남아 있다.
+- 새 걷기와 쓰러짐은 PNG, 프레임 분할과 33개 상태 전환을 검수했다. 별도 Unity 프로젝트에서의 동작 재생 확인이 남아 있다.
 
 ## 디자인 검토 기록
 
@@ -26,4 +26,4 @@
 
 [표지 디자인 마법사 교체 패키지](../wizard-title-hero/README.md)는 대기·걷기·시전·쓰러짐 제작 원본과 프레임 비교판을 담고 있다. 게임 적용 시트는 이 문서 상단에서 고른다. walk/transition-review/의 보고서는 이전 후드 디자인의 검수 기록이다.
 
-[전신 걷기 10프레임 시안](../../../work/wizard-walk-review/README.md)은 복원된 걷기 시트와 비교하는 검토 자료다.
+[걷기 10프레임 정리](../../../work/wizard-walk-clean/README.md)와 [전신 걷기 10프레임 시안](../../../work/wizard-walk-review/README.md)은 이전 걷기 시트의 검토 자료다.

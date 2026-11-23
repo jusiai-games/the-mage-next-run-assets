@@ -4,7 +4,7 @@
 
 | 패키지·이미지 | 게임에서 쓰는 경우 |
 | --- | --- |
-| [wizard](v1/wizard/README.md) · `walk/`, `idle/`, `cast/`, `fall/` PNG | 채택된 주인공의 이동 10장, 대기 5장, 시전 8장, 쓰러짐 6장 |
+| [wizard](v1/wizard/README.md) · `walk/`, `idle/`, `cast/`, `fall/` PNG | 주인공의 전신 걷기 10장, 대기 5장, 시전 8장, 손을 짚고 옆으로 엎어지는 쓰러짐 6장 |
 | [wizard-title-hero](v1/wizard-title-hero/README.md) · `idle/`, `walk/`, `cast/`, `fall/` PNG | 채택된 마법사의 제작 시트와 비교판. 게임 적용에는 위 wizard 패키지 사용 |
 | [meadow-slime](v1/meadow-slime/README.md) · `advance/`, `idle/`, `attack/`, `hurt/`, `death/` PNG, `meadow_slime_shadow.png` | 초원 슬라임의 다섯 상태와 발밑 그림자 |
 | [meadow-terrain](v1/meadow-terrain/meadow/layout.json) · `meadow/terrain.png`, `atlas/hood_staff_meadow.png`, `wizard-shadow.png` | 초원 지형 배치용 이미지, 해당 맵용 지형 타일 아틀라스, 마법사 발밑 그림자 |
@@ -34,7 +34,7 @@
 
 ## 검토 이미지와 제작 자료
 
-- [걷기 10프레임 정리](../work/wizard-walk-clean/README.md)는 현재 채택된 걷기 시트의 이전/이후 비교 GIF와 재생성 스크립트다.
+- [걷기 10프레임 정리](../work/wizard-walk-clean/README.md)는 이전 걷기 시트의 비교 GIF와 재생성 스크립트다.
 
 - [전신 걷기 10프레임 시안](../work/wizard-walk-review/README.md)은 복원된 걷기와 팔·지팡이·망토가 보폭에 맞춰 움직이는 새 포즈를 비교하는 검토 자료다.
 
