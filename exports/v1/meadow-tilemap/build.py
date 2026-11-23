@@ -8,7 +8,6 @@ from PIL import Image, ImageColor, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT.parents[2] / "prototypes/meadow-visual/assets"
-REFERENCE_ICONS = ROOT.parents[2] / "references/reference-components/아이콘/스킬"
 OUTPUT = ROOT / "tilemap"
 OUTPUT.mkdir(exist_ok=True)
 SPRITES = OUTPUT / "sprites"
@@ -509,7 +508,7 @@ if __name__ == "__main__":
     path = stage_path(ground.width)
     sheet, timing, pivot = stage_hop()
     starter = [(spell[0], progress) for spell, progress in zip(SPELLS,(0,.5,1))]
-    expanded = starter + list(zip(EXPANSION_ICONS,(.25,.75,1)))
+    expanded = starter + list(zip(EXPANSION_ICONS,(.25,.75)))
     assert all(9 <= x and x+SLOT_SIZE <= 151 for x in slot_origins(len(expanded)))
     screens = {
         "game-title": title_frame(landscape,clouds,title,0),

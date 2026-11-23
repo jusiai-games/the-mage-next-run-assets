@@ -38,43 +38,11 @@
 
 - [전신 걷기 10프레임 시안](../work/wizard-walk-review/README.md)은 복원된 걷기와 팔·지팡이·망토가 보폭에 맞춰 움직이는 새 포즈를 비교하는 검토 자료다.
 
-- [마법사 도트 제작 방식 비교](../work/wizard-pixel-comparison/README.md)는 32×32 정지 포즈 디자인 검토용이다.
-
-- [첨부 캐릭터 축소](../work/wizard-portrait-reduction/README.md)는 32×32 정지 포즈 디자인 검토용이다.
-
-- [원본 자세의 후드 벗은 마법사](../work/wizard-original-pose/README.md)는 머리만 수정한 32×32 대기 포즈 디자인 검토용이다.
-
-- [옆모습 전투 마법사](../work/wizard-side-battle/README.md)는 32×32 오른쪽 전투 포즈 디자인 검토용이다.
-
-- [망토 마법사 전투 시안](../work/wizard-battle-mantle/README.md)은 32×32 주인공 디자인 검토용이다.
-
 - [챕터 1 타이틀](../work/wizard-title-illustrated/chapter-01/README.md)은 초원에서 대도시로 향하는 여정과 지하 던전 입구를 담은 홈 화면 시안이다.
 
 - [표지 마법사 스프라이트](../work/wizard-title-sprite/README.md)는 표지 주인공을 옮긴 32×32 정지 포즈 디자인 검토용이다.
 
 - [마법사 일러스트 타이틀](../work/wizard-title-illustrated/README.md)은 새 주인공 일러스트와 산길 배경, 룬석 버튼의 조합을 확인하는 홈 화면 시안이다.
-
-- [마법사 모험 타이틀 3종](../work/wizard-title-concepts/README.md)은 앱을 처음 열었을 때의 홈 화면 시안이다. 최신 후드 없는 마법사 대기 포즈를 사용했다.
-
-- [후드를 벗은 마법사](../work/wizard-unhooded/README.md)는 기존 마법사의 머리와 무표정 얼굴을 비교하는 32×32 대기 포즈다.
-
-- [진홍 코트 마법사 시안](../work/wizard-crimson/README.md)은 새 주인공의 32×32 시전 준비 포즈 디자인 검토용이다.
-
-- [마법사 16비트 전투 도트 시안](../work/wizard-snes/README.md)은 32×32 정지 포즈 디자인 검토용이다.
-
-- [두루마리 마법사 시안](../work/wizard-scroll-mage/README.md)은 별도 주인공 디자인을 비교하는 32×32 정지 포즈다.
-
-- [후드 마법사 수정 시안](../work/wizard-hero-refined/README.md)은 32×32 정지 포즈 디자인 검토용이다.
-
-- [후드 마법사 주인공 시안](../work/wizard-hero/README.md)은 32×32 정지 포즈 디자인 검토용이다.
-
-- [후드 마법사 여행자 시안](../work/wizard-traveler/README.md)은 주인공의 32×32 정지 포즈 디자인 검토용이다.
-
-- [후드 마법사·초원 슬라임 성격 시안](../work/character-redesign-personality/README.md)은 기존 콘셉트를 살린 32×32 대기 포즈 검토용이다.
-
-- [전투 마법사·슬라임 리디자인](../work/character-redesign-combat/README.md)의 32×32 PNG와 비교판은 대기 포즈 디자인 검토용이다.
-
-- [마법사·초원 슬라임 리디자인](../work/character-redesign/README.md)의 32×32 PNG와 비교판은 대기 포즈 디자인 검토용이다.
 
 - `exports/v1/**/preview.*`, `result-preview.png`, `wave-preview.gif`는 사용 화면이나 재생을 확인하는 검토 이미지다.
 - `work/button-review/`, `work/parchment-review/`의 이미지와 GIF는 카드, 버튼, 양피지 비교용이다.

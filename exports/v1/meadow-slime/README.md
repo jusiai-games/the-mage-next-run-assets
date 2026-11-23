@@ -3,9 +3,3 @@
 - 전진 도약 18프레임, 한 주기 540ms. 이륙, 공중 정점, 하강, 착지 압축, 복원 순서.
 - 지면 피벗과 그림자는 고정한다. 몸체만 정수 픽셀 격자 위에서 이동한다.
 - 프레임 32×32px, 발 피벗 (16,28), 32 PPU. 시간은 animation.json 참고.
-
-[초원 슬라임 리디자인 시안](../../../work/character-redesign/README.md)은 32×32 대기 포즈 비교용이다.
-
-[전투 슬라임 시안](../../../work/character-redesign-combat/README.md)은 핵, 전격, 결정 테마를 비교하는 대기 포즈다.
-
-[초원 슬라임 표정 시안](../../../work/character-redesign-personality/README.md)은 기존 몸체에서 눈매와 입을 비교하는 대기 포즈다.

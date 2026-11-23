@@ -22,37 +22,7 @@
 
 ## 디자인 검토 기록
 
-[마법사 리디자인 시안](../../../work/character-redesign/README.md)은 32×32 대기 포즈 비교용이다.
-
-[전투 마법사 시안](../../../work/character-redesign-combat/README.md)은 장비와 전투 실루엣을 비교하는 대기 포즈다.
-
-[후드 마법사 성격 시안](../../../work/character-redesign-personality/README.md)은 기존 콘셉트에서 얼굴과 의상 디테일을 비교하는 대기 포즈다.
-
-[후드 마법사 여행자 시안](../../../work/wizard-traveler/README.md)은 주인공의 실루엣·자세·소품을 비교하는 정지 포즈다.
-
-[후드 마법사 주인공 시안](../../../work/wizard-hero/README.md)은 새 실루엣을 비교하는 정지 포즈다.
-
-[후드 마법사 수정 시안](../../../work/wizard-hero-refined/README.md)은 체형과 망토 실루엣을 비교하는 정지 포즈다.
-
-[두루마리 마법사 시안](../../../work/wizard-scroll-mage/README.md)은 머리와 코트가 드러나는 별도 주인공 디자인의 정지 포즈다.
-
-[16비트 전투 도트 시안](../../../work/wizard-snes/README.md)은 기존 후드 마법사를 전투 도트 스타일로 그린 정지 포즈다.
-
-[진홍 코트 마법사 시안](../../../work/wizard-crimson/README.md)은 새 주인공의 시전 준비 실루엣을 비교하는 정지 포즈다.
-
-[후드를 벗은 마법사](../../../work/wizard-unhooded/README.md)는 기존 대기 포즈의 머리와 무표정 얼굴을 비교하는 시안이다.
-
 [표지 마법사 스프라이트](../../../work/wizard-title-sprite/README.md)는 표지 주인공의 의상과 장비를 적용한 정지 포즈 시안이다.
-
-[망토 마법사 전투 시안](../../../work/wizard-battle-mantle/README.md)은 넓은 어깨 망토와 시전 자세를 비교하는 정지 포즈다.
-
-[옆모습 전투 마법사](../../../work/wizard-side-battle/README.md)는 오른쪽 옆모습과 팔다리 겹침을 비교하는 정지 포즈다.
-
-[원본 자세의 후드 벗은 마법사](../../../work/wizard-original-pose/README.md)는 기존 대기 프레임에서 머리만 수정한 디자인 시안이다.
-
-[첨부 캐릭터 축소](../../../work/wizard-portrait-reduction/README.md)는 원화를 게임 크기로 줄인 정지 포즈 시안이다.
-
-[마법사 도트 제작 방식 비교](../../../work/wizard-pixel-comparison/README.md)는 작은 전투 도트와 기존 포즈 기반의 새 디자인을 비교하는 정지 포즈다.
 
 [표지 디자인 마법사 교체 패키지](../wizard-title-hero/README.md)는 대기·걷기·시전·쓰러짐 제작 원본과 프레임 비교판을 담고 있다. 게임 적용 시트는 이 문서 상단에서 고른다. walk/transition-review/의 보고서는 이전 후드 디자인의 검수 기록이다.
 
