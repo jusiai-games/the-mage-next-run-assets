@@ -29,6 +29,7 @@ node_modules/
 /work/meadow-tilemap-qa/obj/
 
 # Local review files and transfer helpers
+/work/tmp/
 /prototypes/.qa-*
 /exports/v1/spells-to-go-ui/qa/
 /work/meadow-screen-qa/
